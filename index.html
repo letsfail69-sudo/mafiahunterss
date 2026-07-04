@@ -3,170 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Mafia Hunterss | Online mafiánská hra zdarma</title>
-
-<meta name="description" content="Mafia Hunterss je česká online mafiánská hra zdarma. Staň se bossem podsvětí, vydělávej peníze, bojuj s ostatními hráči a vybuduj nejmocnější impérium.">
-
-<meta name="keywords" content="mafia, mafiánská hra, online hra, browser hra, česká hra, mafiánská hra zdarma, Mafia Hunterss">
+<title>Mafia Hunterss – Online mafiánská hra zdarma</title>
+<meta name="description" content="Mafia Hunterss je online mafiánská browser hra zdarma. Buduj své mafiánské impérium, založ rodinu a staň se nejmocnějším bossem.">
 
 <style>
-
+*{box-sizing:border-box}
 body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#111;
-color:white;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#fff;
+  background:#050505 url("mesto.png") center top/cover fixed no-repeat;
 }
-
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.72);
+  z-index:-1;
+}
 header{
-background:linear-gradient(90deg,#111,#8b0000);
-padding:80px 20px;
-text-align:center;
+  text-align:center;
+  padding:35px 15px 20px;
+  background:rgba(0,0,0,.75);
+  border-bottom:2px solid #7ee000;
 }
-
+.logo{
+  max-width:420px;
+  width:90%;
+  margin:auto;
+}
 h1{
-font-size:60px;
-margin:0;
+  font-size:46px;
+  margin:15px 0 5px;
+  color:#fff;
 }
-
-h2{
-color:#ffcc00;
+.red{color:#ff2020}
+.subtitle{
+  font-size:20px;
+  color:#ddd;
 }
-
-.button{
-display:inline-block;
-margin-top:30px;
-padding:18px 35px;
-background:#ff0000;
-color:white;
-text-decoration:none;
-font-size:22px;
-border-radius:8px;
-transition:0.3s;
+.play{
+  display:block;
+  width:260px;
+  margin:30px auto;
+  padding:18px 25px;
+  background:#8cff00;
+  color:#111;
+  font-size:26px;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:10px;
+  box-shadow:0 0 25px #7ee000;
 }
-
-.button:hover{
-background:#b30000;
+.play:hover{
+  background:#aaff22;
 }
-
 section{
-max-width:1000px;
-margin:auto;
-padding:50px 20px;
+  max-width:1100px;
+  margin:35px auto;
+  padding:25px;
+  background:rgba(0,0,0,.78);
+  border:1px solid #333;
+  border-radius:14px;
+  text-align:center;
 }
-
+h2{
+  color:#8cff00;
+  font-size:30px;
+}
+.screenshot{
+  max-width:100%;
+  border-radius:12px;
+  border:3px solid #8cff00;
+  box-shadow:0 0 25px rgba(140,255,0,.35);
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  margin-top:25px;
+}
 .card{
-background:#1d1d1d;
-padding:25px;
-margin-top:25px;
-border-radius:10px;
+  background:#111;
+  border:1px solid #333;
+  border-radius:12px;
+  padding:22px;
 }
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.card h3{
+  color:#ffcc00;
 }
-
-.gallery img{
-width:100%;
-border-radius:10px;
+.languages span{
+  display:inline-block;
+  margin:8px;
+  padding:10px 15px;
+  background:#111;
+  border-radius:8px;
+  border:1px solid #333;
 }
-
 footer{
-text-align:center;
-padding:40px;
-background:#000;
-color:#999;
+  text-align:center;
+  padding:30px;
+  background:#000;
+  color:#aaa;
 }
-
 </style>
-
 </head>
 
 <body>
 
 <header>
+  <h1>MAFIA HUNTER<span class="red">SS</span></h1>
+  <p class="subtitle">Staň se nejmocnějším mafiánem!</p>
 
-<h1>Mafia Hunterss</h1>
-
-<p>Staň se bossem podsvětí a ovládni celé město.</p>
-
-<a class="button" href="http://mafiahunterss.mafiacontrol.com/" target="_blank">
-🎮 Hrát zdarma
-</a>
-
+  <a class="play" href="http://mafiahunterss.mafiacontrol.com/" target="_blank">
+    ZAČÍT HRÁT
+  </a>
 </header>
 
 <section>
+  <h2>Online mafiánská hra Mafia Hunterss</h2>
+  <p>
+    Připoj se do hry Mafia Hunterss a vybuduj své mafiánské impérium.
+    Založ rodinu, vydělávej peníze, bojuj s ostatními hráči
+    a staň se uznávaným bossem podsvětí.
+  </p>
 
-<div class="card">
+  <a class="play" href="http://mafiahunterss.mafiacontrol.com/" target="_blank">
+    HRÁT HRU
+  </a>
+</section>
 
-<h2>O hře</h2>
+<section>
+  <h2>Ukázka ze hry</h2>
+  <img class="screenshot" src="login.png" alt="Mafia Hunterss přihlášení">
+</section>
 
-<p>
+<section>
+  <h2>Město Mafia Hunterss</h2>
+  <img class="screenshot" src="mesto.png" alt="Mafia Hunterss město">
+</section>
 
-Mafia Hunterss je česká online mafiánská hra hraná přímo v prohlížeči.
-Začni jako obyčejný gangster a vypracuj se na nejmocnějšího bosse mafie.
+<section>
+  <h2>Proč hrát?</h2>
 
-</p>
+  <div class="cards">
+    <div class="card">
+      <h3>💰 Vydělávej peníze</h3>
+      <p>Buduj své bohatství a posiluj svou pozici ve městě.</p>
+    </div>
 
-<p>
+    <div class="card">
+      <h3>👥 Založ rodinu</h3>
+      <p>Spoj se s hráči a vytvoř silnou mafiánskou rodinu.</p>
+    </div>
 
-Vydělávej peníze, plň mise, bojuj proti ostatním hráčům,
-buduj své impérium a staň se legendou podsvětí.
+    <div class="card">
+      <h3>⚔️ Bojuj s hráči</h3>
+      <p>Ukaž ostatním, kdo je skutečný boss.</p>
+    </div>
 
-</p>
+    <div class="card">
+      <h3>🏆 Staň se legendou</h3>
+      <p>Získej respekt a ovládni celé podsvětí.</p>
+    </div>
+  </div>
+</section>
 
-</div>
+<section>
+  <h2>Hra je dostupná v 5 jazycích</h2>
+  <div class="languages">
+    <span>🇨🇿 Čeština</span>
+    <span>🇬🇧 English</span>
+    <span>🇩🇪 Deutsch</span>
+    <span>🇵🇱 Polski</span>
+    <span>🇷🇺 Русский</span>
+  </div>
+</section>
 
-<div class="card">
+<section>
+  <h2>Začni hrát zdarma</h2>
+  <p>Klikni na tlačítko a vstup do světa Mafia Hunterss.</p>
 
-<h2>Proč hrát Mafia Hunterss?</h2>
-
-<ul>
-
-<li>🕹️ Zdarma</li>
-
-<li>🌍 Hraješ přímo v prohlížeči</li>
-
-<li>👥 Online komunita hráčů</li>
-
-<li>💰 Vydělávání peněz</li>
-
-<li>🔫 Souboje s ostatními hráči</li>
-
-<li>🏆 Budování respektu</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Začni ještě dnes</h2>
-
-<p>
-
-Klikni na tlačítko níže a vstup do světa mafie.
-
-</p>
-
-<a class="button" href="http://mafiahunterss.mafiacontrol.com/" target="_blank">
-
-Hrát Mafia Hunterss
-
-</a>
-
-</div>
-
+  <a class="play" href="http://mafiahunterss.mafiacontrol.com/" target="_blank">
+    ZAČÍT HRÁT
+  </a>
 </section>
 
 <footer>
-
-© 2026 Mafia Hunterss
-
+  © 2026 Mafia Hunterss | Fan web hry
 </footer>
 
 </body>
