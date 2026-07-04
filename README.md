@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Mafia Hunterss – online mafiánská hra</title>
+  Mafia Hunterss – online mafiánská hra
   <meta name="description" content="Mafia Hunterss je online browser mafiánská hra, kde buduješ respekt, vyděláváš peníze, bojuješ s hráči a stoupáš v podsvětí.">
 </head>
 <body>
