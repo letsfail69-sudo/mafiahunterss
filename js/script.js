@@ -1,1 +1,2 @@
-
+const btn=document.querySelector('.hamb');const menu=document.querySelector('.menu');if(btn&&menu){btn.addEventListener('click',()=>menu.classList.toggle('open'));}
+document.querySelectorAll('[data-lightbox]').forEach(img=>{img.style.cursor='zoom-in';img.addEventListener('click',()=>{const box=document.createElement('div');box.className='lightbox open';box.innerHTML=`<img src="${img.src}" alt="${img.alt}">`;box.addEventListener('click',()=>box.remove());document.body.appendChild(box);});});
