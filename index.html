@@ -3,17 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mafia Hunterss – Online mafiánská hra zdarma</title>
 <meta name="description" content="Mafia Hunterss je online mafiánská browser hra zdarma. Buduj své mafiánské impérium, založ rodinu a staň se nejmocnějším bossem.">
 
 <style>
 *{box-sizing:border-box}
+
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
   color:#fff;
   background:#050505 url("mesto.png") center top/cover fixed no-repeat;
 }
+
 body::before{
   content:"";
   position:fixed;
@@ -21,43 +24,56 @@ body::before{
   background:rgba(0,0,0,.72);
   z-index:-1;
 }
+
 header{
   text-align:center;
   padding:35px 15px 20px;
   background:rgba(0,0,0,.75);
   border-bottom:2px solid #7ee000;
 }
-.logo{
-  max-width:420px;
-  width:90%;
-  margin:auto;
-}
+
 h1{
   font-size:46px;
   margin:15px 0 5px;
   color:#fff;
 }
+
 .red{color:#ff2020}
+
 .subtitle{
   font-size:20px;
   color:#ddd;
 }
+
 .play{
   display:block;
   width:260px;
-  margin:30px auto;
+  margin:25px auto;
   padding:18px 25px;
   background:#8cff00;
   color:#111;
-  font-size:26px;
+  font-size:24px;
   font-weight:bold;
   text-decoration:none;
   border-radius:10px;
   box-shadow:0 0 25px #7ee000;
+  text-align:center;
 }
+
 .play:hover{
   background:#aaff22;
 }
+
+.download{
+  width:360px;
+  background:#ffcc00;
+  box-shadow:0 0 25px #ffcc00;
+}
+
+.download:hover{
+  background:#ffe066;
+}
+
 section{
   max-width:1100px;
   margin:35px auto;
@@ -67,31 +83,37 @@ section{
   border-radius:14px;
   text-align:center;
 }
+
 h2{
   color:#8cff00;
   font-size:30px;
 }
+
 .screenshot{
   max-width:100%;
   border-radius:12px;
   border:3px solid #8cff00;
   box-shadow:0 0 25px rgba(140,255,0,.35);
 }
+
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:18px;
   margin-top:25px;
 }
+
 .card{
   background:#111;
   border:1px solid #333;
   border-radius:12px;
   padding:22px;
 }
+
 .card h3{
   color:#ffcc00;
 }
+
 .languages span{
   display:inline-block;
   margin:8px;
@@ -100,11 +122,24 @@ h2{
   border-radius:8px;
   border:1px solid #333;
 }
+
 footer{
   text-align:center;
   padding:30px;
   background:#000;
   color:#aaa;
+}
+
+@media(max-width:500px){
+  h1{
+    font-size:34px;
+  }
+
+  .play,
+  .download{
+    width:90%;
+    font-size:20px;
+  }
 }
 </style>
 </head>
@@ -118,6 +153,10 @@ footer{
   <a class="play" href="http://mafiahunterss.mafiacontrol.com/" target="_blank">
     ZAČÍT HRÁT
   </a>
+
+  <a class="play download" href="https://github.com/letsfail69-sudo/mafiahunterss/releases/tag/v1.0" target="_blank">
+    📱 STÁHNOUT ANDROID APLIKACI
+  </a>
 </header>
 
 <section>
@@ -130,6 +169,10 @@ footer{
 
   <a class="play" href="http://mafiahunterss.mafiacontrol.com/" target="_blank">
     HRÁT HRU
+  </a>
+
+  <a class="play download" href="https://github.com/letsfail69-sudo/mafiahunterss/releases/tag/v1.0" target="_blank">
+    📱 STÁHNOUT APLIKACI
   </a>
 </section>
 
@@ -186,6 +229,10 @@ footer{
 
   <a class="play" href="http://mafiahunterss.mafiacontrol.com/" target="_blank">
     ZAČÍT HRÁT
+  </a>
+
+  <a class="play download" href="https://github.com/letsfail69-sudo/mafiahunterss/releases/tag/v1.0" target="_blank">
+    📱 STÁHNOUT ANDROID APLIKACI
   </a>
 </section>
 
