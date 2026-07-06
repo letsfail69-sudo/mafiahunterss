@@ -1,68 +1,217 @@
-<div class="container grid grid-2">
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android aplikace – Mafia Hunterss</title>
+    <meta name="description" content="Stáhni Android aplikaci Mafia Hunterss a spusť hru pohodlně z mobilu.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <div class="card download-box">
-        <span class="version">Verze 2.0</span>
+<body>
 
-        <h2>📱 Mafia Hunterss pro Android</h2>
+    <div class="bg"></div>
 
-        <p>
-            Oficiální Android aplikace Mafia Hunterss.
-            Po kliknutí na tlačítko <strong>Spustit hru</strong> se hra otevře
-            ve výchozím internetovém prohlížeči pro maximální kompatibilitu.
-        </p>
-
-        <a class="btn btn-gold"
-           href="https://github.com/letsfail69-sudo/mafiahunterss/releases/download/Aplikace/app-debug.apk"
-           target="_blank">
-            📥 Stáhnout aplikaci
-        </a>
-
-        <a class="btn btn-ghost"
-           href="https://github.com/letsfail69-sudo/mafiahunterss/releases/latest"
-           target="_blank">
-            Zobrazit GitHub Release
-        </a>
-
-        <p class="notice">
-            Aplikace není distribuována přes Google Play.
-            Telefon může při instalaci požádat o povolení instalace
-            z neznámých zdrojů.
-        </p>
-    </div>
-
-    <div class="card">
-
-        <h2>Historie verzí</h2>
-
-        <div class="news-item">
-            <div class="date">v2.0</div>
-            <div>
-                <strong>Nová generace Android aplikace</strong><br>
-                <span class="muted">
-                    Kompletně přepracovaná aplikace s moderním vzhledem.
+    <header class="topbar">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <span class="brand-badge">MH</span>
+                <span>
+                    Mafia Hunterss
+                    <small>herní město od roku 2015</small>
                 </span>
+            </a>
+
+            <button class="hamb">MENU</button>
+
+            <nav class="menu">
+                <a href="index.html">Domů</a>
+                <a href="about.html">O hře</a>
+                <a class="active" href="download.html">Android</a>
+                <a href="news.html">Novinky</a>
+                <a href="gallery.html">Galerie</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-head">
+            <div class="container">
+                <h1>Android aplikace</h1>
+                <p class="lead">
+                    Stáhni si oficiální Android aplikaci Mafia Hunterss a spusť hru jediným kliknutím.
+                </p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+
+                <div class="card event center">
+                    <span class="pill">📱 Beta ukázka aplikace</span>
+
+                    <h2>Mafia Hunterss Android 2.0</h2>
+
+                    <p class="lead">
+                        Nová Android aplikace slouží jako jednoduchý launcher pro Mafia Hunterss.
+                        Po kliknutí na tlačítko <strong>Spustit hru</strong> se hra otevře
+                        ve výchozím internetovém prohlížeči.
+                    </p>
+
+                    <div class="actions">
+                        <a class="btn btn-gold"
+                           href="https://github.com/letsfail69-sudo/mafiahunterss/releases/latest"
+                           target="_blank">
+                            📥 Stáhnout aplikaci
+                        </a>
+
+                        <a class="btn btn-primary"
+                           href="http://mafiahunterss.mafiacontrol.com/"
+                           target="_blank">
+                            🎮 Hrát online
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="card center">
+                        <h2>📸 Náhled aplikace</h2>
+
+                        <img class="screenshot"
+                             data-lightbox
+                             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS7Q_q2R2eNfXPAkKu82xE3CWUsEpGl5P3x2GDEg-i7aDzjMxt2xe5IF-fOgqK0FL351nbtJjKltjJA8r_XAZmiVtw308sB6x0An_7gKngfe32ptpBlNq8TTxWHIc3i0XPebN6BIfcyfrhnsvE8y_UqCFjpT7NeBgCK_m52BY6iaPSWcGM9R0vkEYiW6I/s320/741112622_2308594169548078_5232768508765125428_n.jpg"
+                             alt="Náhled Android aplikace Mafia Hunterss">
+
+                        <p class="muted">
+                            Obrázek je zatím z beta verze aplikace.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h2>✨ Co přináší verze 2.0?</h2>
+
+                        <div class="news-item">
+                            <div class="date">🎨</div>
+                            <div>
+                                <strong>Nový vzhled</strong><br>
+                                <span class="muted">Jednoduchá a čistá úvodní obrazovka.</span>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="date">🎮</div>
+                            <div>
+                                <strong>Tlačítko Spustit hru</strong><br>
+                                <span class="muted">Rychlé spuštění hry jedním kliknutím.</span>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="date">🌐</div>
+                            <div>
+                                <strong>Hra v prohlížeči</strong><br>
+                                <span class="muted">Lepší kompatibilita s nákupy a vylepšeními.</span>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="date">📱</div>
+                            <div>
+                                <strong>Podpora displejů</strong><br>
+                                <span class="muted">Aplikace je připravena pro různé velikosti obrazovek.</span>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="date">⚡</div>
+                            <div>
+                                <strong>Rychlé spuštění</strong><br>
+                                <span class="muted">Aplikace slouží jako rychlý vstup do hry.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card stat">
+                        <strong>v2.0</strong>
+                        <span>aktuální verze</span>
+                    </div>
+
+                    <div class="card stat">
+                        <strong>Android</strong>
+                        <span>5.0 a novější</span>
+                    </div>
+
+                    <div class="card stat">
+                        <strong>Zdarma</strong>
+                        <span>ke stažení</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>📌 Důležité informace</h2>
+
+                    <p class="notice">
+                        Aplikace není distribuována přes Google Play.
+                        Při instalaci může telefon požádat o povolení instalace
+                        z neznámých zdrojů.
+                    </p>
+
+                    <p>
+                        Aplikace neobsahuje samotnou hru. Slouží jako jednoduchý vstupní bod,
+                        který otevře Mafia Hunterss ve výchozím internetovém prohlížeči.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h2>🛠️ Plánované funkce</h2>
+
+                    <ul class="list">
+                        <li>📰 Zobrazení nejnovějších novinek přímo v aplikaci.</li>
+                        <li>🔥 Aktuální eventy.</li>
+                        <li>🔔 Upozornění na novou verzi aplikace.</li>
+                        <li>🌍 Další drobná vylepšení.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Mafia Hunterss</h3>
+                <p>
+                    Mafia Hunterss je herní město provozované na platformě MafiaControl.
+                    Každý hráč si buduje vlastní mafiánské město a rozvíjí své impérium.
+                </p>
+            </div>
+
+            <div>
+                <h3>Odkazy</h3>
+                <p>
+                    <a href="index.html">Domů</a><br>
+                    <a href="download.html">Android aplikace</a><br>
+                    <a href="news.html">Novinky</a>
+                </p>
+            </div>
+
+            <div>
+                <h3>Projekt</h3>
+                <p>
+                    © 2015–2026 Mafia Hunterss<br>
+                    Oficiální stránky herního města.
+                </p>
             </div>
         </div>
+    </footer>
 
-        <ul class="list">
-            <li>🎨 Nový jednoduchý vzhled aplikace.</li>
-            <li>🎮 Tlačítko <strong>Spustit hru</strong>.</li>
-            <li>🌐 Hra se otevírá ve výchozím internetovém prohlížeči.</li>
-            <li>💳 Lepší kompatibilita s nákupy a externími odkazy.</li>
-            <li>📱 Optimalizováno pro různé velikosti displejů.</li>
-            <li>⚡ Rychlejší spuštění aplikace.</li>
-            <li>🛠️ Připraveno pro budoucí aktualizace.</li>
-        </ul>
-
-        <h3>Plánované funkce</h3>
-
-        <ul class="list">
-            <li>📰 Zobrazení nejnovějších novinek.</li>
-            <li>🔥 Aktuální eventy přímo v aplikaci.</li>
-            <li>🔔 Oznámení o nové verzi aplikace.</li>
-            <li>🌍 Další drobná vylepšení.</li>
-        </ul>
-
-    </div>
-
-</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
