@@ -7,7 +7,7 @@ fetch("news.json")
     const allBox = document.getElementById("all-news");
 
     if (latestBox) {
-      latestBox.innerHTML = news.slice(0, 2).map(item => `
+      latestBox.innerHTML = news.slice(0, 3).map(item => `
         <div class="news-item">
           <div class="date">${item.date}</div>
           <div>
