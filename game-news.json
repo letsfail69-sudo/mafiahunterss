@@ -1,14 +1,11 @@
 [
   {
-    "title": "Nová budova ve městě",
+    "title": "Hromadné darovaní diamantu",
     "date": "2026-07-07",
-    "text": "Do herního města byla přidána nová budova. Hráči ji mohou navštívit přímo ve hře.",
-    "category": "Budova"
+    "text": "Do herního světa přibyl nové rozšíření a to je hromadné darovaní diamantu.",
+    "category": "Bonus"
   },
   {
-    "title": "Letní event",
-    "date": "2026-07-07",
-    "text": "Ve hře byl spuštěn nový event s odměnami pro aktivní hráče.",
-    "category": "Event"
+
   }
 ]
