@@ -1,0 +1,14 @@
+<section class="section">
+  <h1>Novinky ve hře</h1>
+  <p>
+    Sleduj aktuální změny přímo z herního města Mafia Hunterss.
+    Najdeš zde nové budovy, eventy, opravy a důležité informace pro hráče.
+  </p>
+
+  <div id="gameNewsList" class="news-grid">
+    <div class="card">
+      <h3>Načítám novinky...</h3>
+      <p>Prosím počkej, načítají se aktuální informace ze hry.</p>
+    </div>
+  </div>
+</section>
