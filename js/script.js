@@ -68,3 +68,4 @@ fetch("news.json")
             allBox.innerHTML = `<p class="muted">Novinky se nepodařilo načíst.</p>`;
         }
     });
+/game-news.json
