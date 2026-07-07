@@ -26,6 +26,7 @@ document.querySelectorAll('[data-lightbox]').forEach(img => {
     });
 });
 
+/* KLASICKÉ NOVINKY WEBU */
 fetch("news.json")
     .then(response => response.json())
     .then(news => {
@@ -34,24 +35,20 @@ fetch("news.json")
 
         if (latestBox) {
             latestBox.innerHTML = news.slice(0, 3).map(item => `
-                <div class="news-item">
-                    <div class="date">${item.date}</div>
-                    <div>
-                        <strong>${item.title}</strong><br>
-                        <span class="muted">${item.text}</span>
-                    </div>
+                <div class="card">
+                    <p class="muted">${item.date}</p>
+                    <h3>${item.title}</h3>
+                    <p>${item.text}</p>
                 </div>
             `).join("");
         }
 
         if (allBox) {
             allBox.innerHTML = news.map(item => `
-                <div class="news-item">
-                    <div class="date">${item.date}</div>
-                    <div>
-                        <h3>${item.title}</h3>
-                        <p>${item.text}</p>
-                    </div>
+                <div class="card">
+                    <p class="muted">${item.date}</p>
+                    <h3>${item.title}</h3>
+                    <p>${item.text}</p>
                 </div>
             `).join("");
         }
@@ -68,4 +65,43 @@ fetch("news.json")
             allBox.innerHTML = `<p class="muted">Novinky se nepodařilo načíst.</p>`;
         }
     });
-/game-news.json
+
+/* NOVINKY VE HŘE */
+fetch("game-news.json")
+    .then(response => response.json())
+    .then(news => {
+        const latestGameBox = document.getElementById("latest-game-news");
+        const gameNewsList = document.getElementById("game-news-list");
+
+        if (latestGameBox) {
+            latestGameBox.innerHTML = news.slice(0, 3).map(item => `
+                <div class="card">
+                    <p class="muted">${item.date} • ${item.category}</p>
+                    <h3>${item.title}</h3>
+                    <p>${item.text}</p>
+                </div>
+            `).join("");
+        }
+
+        if (gameNewsList) {
+            gameNewsList.innerHTML = news.map(item => `
+                <div class="card">
+                    <p class="muted">${item.date} • ${item.category}</p>
+                    <h3>${item.title}</h3>
+                    <p>${item.text}</p>
+                </div>
+            `).join("");
+        }
+    })
+    .catch(() => {
+        const latestGameBox = document.getElementById("latest-game-news");
+        const gameNewsList = document.getElementById("game-news-list");
+
+        if (latestGameBox) {
+            latestGameBox.innerHTML = `<p class="muted">Herní novinky se nepodařilo načíst.</p>`;
+        }
+
+        if (gameNewsList) {
+            gameNewsList.innerHTML = `<p class="muted">Herní novinky se nepodařilo načíst.</p>`;
+        }
+    });
