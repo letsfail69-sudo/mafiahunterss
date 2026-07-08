@@ -116,5 +116,22 @@
   "download_planned_4": "🌍 Další drobná vylepšení.",
 
   "android_app": "Android aplikace"
+
+  {
+  "faq_title": "FAQ",
+  "faq_lead": "Často kladené otázky.",
+
+  "faq_q_1": "Je Mafia Hunterss zdarma?",
+  "faq_a_1": "Ano, hru lze hrát zdarma. Ve hře mohou být dostupná volitelná vylepšení.",
+
+  "faq_q_2": "Na čem hra běží?",
+  "faq_a_2": "Mafia Hunterss je herní město provozované na platformě MafiaControl.",
+
+  "faq_q_3": "Má hra Android aplikaci?",
+  "faq_a_3": "Ano, první verze aplikace je dostupná na stránce Android.",
+
+  "faq_q_4": "V jakých jazycích je hra dostupná?",
+  "faq_a_4": "Web je dostupný v češtině, angličtině, němčině, polštině a slovenštině."
+}
 }
 }
