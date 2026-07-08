@@ -1,0 +1,65 @@
+{
+  "brand_subtitle": "Spielstadt seit 2015",
+  "menu_button": "MENÜ",
+
+  "menu_home": "Startseite",
+  "menu_about": "Über das Spiel",
+  "menu_download": "Android",
+  "menu_news": "Neuigkeiten",
+  "menu_game_news": "Spielneuigkeiten",
+  "menu_gallery": "Galerie",
+  "menu_faq": "FAQ",
+  "menu_contact": "Kontakt",
+
+  "home_pill": "🏙️ Spielstadt auf der MafiaControl-Plattform • seit 2015",
+  "home_lead": "Baue deine eigene Mafia-Stadt auf, erweitere dein Imperium, schließe dich einer Familie an und tritt gegen andere Spieler an.",
+
+  "play_online": "🎮 Online spielen",
+  "download_app": "📱 App herunterladen",
+  "about_game": "📖 Über das Spiel",
+
+  "stat_year": "Gründungsjahr",
+  "stat_languages": "Sprachen",
+  "stat_android": "App",
+
+  "announcement_title": "🔥 Aktuelle Ankündigung",
+  "announcement_text": "Die offizielle Website von Mafia Hunterss ist online und die Android-App steht zum Download bereit.",
+  "android_app": "Android-App",
+
+  "why_play_title": "Warum Mafia Hunterss spielen?",
+
+  "feature_city_title": "Eigene Stadt",
+  "feature_city_text": "Jeder Spieler baut nach der Registrierung seine eigene Mafia-Stadt auf.",
+
+  "feature_economy_title": "Wirtschaft",
+  "feature_economy_text": "Verdiene Geld, erweitere deine Basis und stärke deine Position.",
+
+  "feature_families_title": "Familien",
+  "feature_families_text": "Schließe dich mit anderen Spielern zusammen und gründe eine mächtige Mafia-Familie.",
+
+  "feature_competition_title": "Wettkampf",
+  "feature_competition_text": "Kämpfe um Respekt und zeige, wer die Unterwelt beherrscht.",
+
+  "feature_languages_title": "5 Sprachen",
+  "feature_languages_text": "Tschechisch, Englisch, Deutsch, Polnisch und Slowakisch.",
+
+  "feature_android_text": "Spiele bequem über die Android-App.",
+
+  "screenshots_title": "Spielbilder",
+
+  "latest_news": "📰 Neueste Nachrichten",
+  "loading_news": "Neuigkeiten werden geladen...",
+  "show_all_news": "Alle Neuigkeiten anzeigen",
+
+  "latest_game_news": "🎮 Spielneuigkeiten",
+  "loading_game_news": "Spielneuigkeiten werden geladen...",
+  "show_game_news": "Spielneuigkeiten anzeigen",
+
+  "available_languages_title": "🌍 Verfügbare Sprachen",
+  "available_languages_text": "Mafia Hunterss richtet sich an tschechische und internationale Spieler.",
+
+  "footer_about": "Mafia Hunterss ist eine Spielstadt auf der MafiaControl-Plattform. Jeder Spieler baut seine eigene Mafia-Stadt auf und entwickelt sein Imperium weiter.",
+  "footer_links_title": "Links",
+  "footer_project_title": "Projekt",
+  "footer_project_text": "Offizielle Website der Spielstadt."
+}
