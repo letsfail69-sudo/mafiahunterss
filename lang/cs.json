@@ -62,4 +62,16 @@
   "footer_links_title": "Odkazy",
   "footer_project_title": "Projekt",
   "footer_project_text": "Oficiální stránky herního města."
+
+  "about_page_title": "O hře",
+"about_page_lead": "Mafia Hunterss je herní město provozované na platformě MafiaControl od roku 2015.",
+"about_what_title": "Co je Mafia Hunterss?",
+"about_what_text_1": "Mafia Hunterss je vlastní herní město na platformě MafiaControl. Nejde o samostatný herní engine, ale o dlouhodobě provozovaný projekt se svojí komunitou, webem a Android aplikací.",
+"about_what_text_2": "Každý hráč si po registraci buduje vlastní mafiánské město. Postupně rozvíjí ekonomiku, získává respekt, spolupracuje s ostatními a soupeří o postavení v podsvětí.",
+"about_princip_title": "Princip hry",
+"about_princip_1": "vybuduj vlastní město,",
+"about_princip_2": "získávej peníze a respekt,",
+"about_princip_3": "přidej se k mafiánské rodině,",
+"about_princip_4": "soupeř s ostatními hráči,",
+"about_princip_5": "hraj v jednom z pěti jazyků."
 }
