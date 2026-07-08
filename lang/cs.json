@@ -1,17 +1,65 @@
-{ 
-  "menu_button": "MENU"
+{
+  "brand_subtitle": "herní město od roku 2015",
+  "menu_button": "MENU",
+
   "menu_home": "Domů",
-  "menu_about": "O projektu",
-  "menu_download": "Stažení",
+  "menu_about": "O hře",
+  "menu_download": "Android",
   "menu_news": "Novinky",
-  "menu_game_news": "Herní novinky",
+  "menu_game_news": "Novinky ve hře",
   "menu_gallery": "Galerie",
   "menu_faq": "FAQ",
   "menu_contact": "Kontakt",
 
-  "home_title": "Mafia Hunterss",
-  "home_subtitle": "Moderní online hra běžící v prohlížeči.",
-  "play_online": "Hrát online",
-  "download_app": "Stáhnout aplikaci",
-  "latest_news": "Nejnovější novinky"
+  "home_pill": "🏙️ Herní město na platformě MafiaControl • od roku 2015",
+  "home_lead": "Vybuduj vlastní mafiánské město, rozvíjej své impérium, přidej se k rodině a soupeř s ostatními hráči.",
+
+  "play_online": "🎮 Hrát online",
+  "download_app": "📱 Stáhnout aplikaci",
+  "about_game": "📖 O hře",
+
+  "stat_year": "rok založení",
+  "stat_languages": "jazyků",
+  "stat_android": "aplikace",
+
+  "announcement_title": "🔥 Aktuální oznámení",
+  "announcement_text": "Oficiální web Mafia Hunterss je spuštěný a Android aplikace je dostupná ke stažení.",
+  "android_app": "Android aplikace",
+
+  "why_play_title": "Proč hrát Mafia Hunterss?",
+
+  "feature_city_title": "Vlastní město",
+  "feature_city_text": "Každý hráč po registraci buduje své vlastní mafiánské město.",
+
+  "feature_economy_title": "Ekonomika",
+  "feature_economy_text": "Vydělávej peníze, rozvíjej zázemí a posiluj svoji pozici.",
+
+  "feature_families_title": "Rodiny",
+  "feature_families_text": "Spoj se s ostatními hráči a vytvoř silnou mafiánskou rodinu.",
+
+  "feature_competition_title": "Soupeření",
+  "feature_competition_text": "Bojuj o respekt a ukaž, kdo ovládá podsvětí.",
+
+  "feature_languages_title": "5 jazyků",
+  "feature_languages_text": "Čeština, angličtina, němčina, polština a slovenština.",
+
+  "feature_android_text": "Hraj pohodlně i přes mobilní aplikaci.",
+
+  "screenshots_title": "Ukázky ze hry",
+
+  "latest_news": "📰 Nejnovější novinky",
+  "loading_news": "Načítám novinky...",
+  "show_all_news": "Zobrazit všechny novinky",
+
+  "latest_game_news": "🎮 Novinky ve hře",
+  "loading_game_news": "Načítám herní novinky...",
+  "show_game_news": "Zobrazit herní novinky",
+
+  "available_languages_title": "🌍 Dostupné jazyky",
+  "available_languages_text": "Mafia Hunterss cílí na české i zahraniční hráče.",
+
+  "footer_about": "Mafia Hunterss je herní město provozované na platformě MafiaControl. Každý hráč si buduje vlastní mafiánské město a rozvíjí své impérium.",
+  "footer_links_title": "Odkazy",
+  "footer_project_title": "Projekt",
+  "footer_project_text": "Oficiální stránky herního města."
 }
