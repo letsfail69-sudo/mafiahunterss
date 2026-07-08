@@ -50,14 +50,25 @@
 }
 
 @media(max-width:850px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
   #language-switcher {
-    order: 3;
-    width: 100%;
-    max-width: 220px;
+    order: 2;
+    max-width: 145px;
+    min-height: 42px;
     margin-left: auto;
   }
 
-  .nav {
-    flex-wrap: wrap;
+  .hamb {
+    order: 3;
+  }
+
+  .menu {
+    order: 4;
+    width: calc(100% - 40px);
+  }
+}
   }
 }
