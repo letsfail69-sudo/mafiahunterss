@@ -1,32 +1,40 @@
-// Seznam podporovaných jazyků
 const supportedLanguages = ["cs", "en", "de", "pl", "sk"];
 
-// Zjištění jazyka
 let currentLang =
     localStorage.getItem("lang") ||
     navigator.language.substring(0, 2);
 
-// Pokud jazyk nepodporujeme, použij angličtinu
 if (!supportedLanguages.includes(currentLang)) {
-    currentLang = "en";
+    currentLang = "cs";
 }
 
-// Načtení překladu
-fetch(`lang/${currentLang}.json`)
-    .then(response => response.json())
+const switcher = document.getElementById("language-switcher");
+
+if (switcher) {
+    switcher.value = currentLang;
+
+    switcher.addEventListener("change", () => {
+        localStorage.setItem("lang", switcher.value);
+        location.reload();
+    });
+}
+
+fetch(`./lang/${currentLang}.json`)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Soubor jazyka nenalezen: ${currentLang}`);
+        }
+        return response.json();
+    })
     .then(translations => {
-
         document.querySelectorAll("[data-lang]").forEach(element => {
-
-            const key = element.dataset.lang;
+            const key = element.getAttribute("data-lang");
 
             if (translations[key]) {
                 element.textContent = translations[key];
             }
-
         });
-
     })
     .catch(error => {
-        console.error("Language loading failed:", error);
+        console.error("Chyba překladu:", error);
     });
