@@ -7,8 +7,6 @@
     <meta name="description" content="Kontakt a odkazy projektu Mafia Hunterss.">
     <link rel="stylesheet" href="css/style.css">
 </head>
-    <script src="js/script.js"></script>
-<script src="js/analytics.js"></script>
 <body>
 
     <div class="bg"></div>
@@ -17,17 +15,30 @@
         <div class="container nav">
             <a class="brand" href="index.html">
                 <span class="brand-badge">MH</span>
-                <span>Mafia Hunterss<small>herní město od roku 2015</small></span>
+                <span>
+                    Mafia Hunterss
+                    <small data-lang="brand_subtitle">herní město od roku 2015</small>
+                </span>
             </a>
-            <button class="hamb">MENU</button>
+
+            <select id="language-switcher">
+                <option value="cs">🇨🇿 CZ</option>
+                <option value="en">🇬🇧 EN</option>
+                <option value="de">🇩🇪 DE</option>
+                <option value="pl">🇵🇱 PL</option>
+                <option value="sk">🇸🇰 SK</option>
+            </select>
+
+            <button class="hamb" data-lang="menu_button">MENU</button>
+
             <nav class="menu">
-                <a href="index.html">Domů</a>
-                <a href="about.html">O hře</a>
-                <a href="download.html">Android</a>
-                <a href="news.html">Novinky</a>
-                <a href="gallery.html">Galerie</a>
-                <a href="faq.html">FAQ</a>
-                <a class="active" href="contact.html">Kontakt</a>
+                <a href="index.html" data-lang="menu_home">Domů</a>
+                <a href="about.html" data-lang="menu_about">O hře</a>
+                <a href="download.html" data-lang="menu_download">Android</a>
+                <a href="news.html" data-lang="menu_news">Novinky</a>
+                <a href="gallery.html" data-lang="menu_gallery">Galerie</a>
+                <a href="faq.html" data-lang="menu_faq">FAQ</a>
+                <a class="active" href="contact.html" data-lang="menu_contact">Kontakt</a>
             </nav>
         </div>
     </header>
@@ -35,8 +46,8 @@
     <main>
         <section class="page-head">
             <div class="container">
-                <h1>Kontakt</h1>
-                <p class="lead">Kontakt a odkazy projektu Mafia Hunterss.</p>
+                <h1 data-lang="contact_title">Kontakt</h1>
+                <p class="lead" data-lang="contact_lead">Kontakt a odkazy projektu Mafia Hunterss.</p>
             </div>
         </section>
 
@@ -44,17 +55,29 @@
             <div class="container grid grid-2">
                 
                 <div class="card">
-                    <h2>Oficiální web</h2>
-                    <p><a href="https://mafiahunterss.eu">https://mafiahunterss.eu</a></p>
+                    <h2 data-lang="contact_web_title">Oficiální web</h2>
+                    <p>
+                        <a href="https://mafiahunterss.eu" target="_blank" rel="noopener">
+                            https://mafiahunterss.eu
+                        </a>
+                    </p>
                     
-                    <h2>Hra</h2>
-                    <p><a href="http://mafiahunterss.mafiacontrol.com/" target="_blank">mafiahunterss.mafiacontrol.com</a></p>
+                    <h2 data-lang="contact_game_title">Hra</h2>
+                    <p>
+                        <a href="http://mafiahunterss.mafiacontrol.com/" target="_blank" rel="noopener">
+                            mafiahunterss.mafiacontrol.com
+                        </a>
+                    </p>
                 </div>
 
                 <div class="card">
-                    <h2>Podpora a komunita</h2>
-                    <p class="muted">Sem později doplníme Facebook, e-mail, Discord nebo další kontakty.</p>
-                    <p class="notice">Tip: po zřízení e-mailu můžeš používat například support@mafiahunterss.eu.</p>
+                    <h2 data-lang="contact_support_title">Podpora a komunita</h2>
+                    <p class="muted" data-lang="contact_support_text">
+                        Sem později doplníme Facebook, e-mail, Discord nebo další kontakty.
+                    </p>
+                    <p class="notice" data-lang="contact_support_tip">
+                        Tip: po zřízení e-mailu můžeš používat například support@mafiahunterss.eu.
+                    </p>
                 </div>
 
             </div>
@@ -65,26 +88,33 @@
         <div class="container footer-grid">
             <div>
                 <h3>Mafia Hunterss</h3>
-                <p>Mafia Hunterss je herní město provozované na platformě MafiaControl. Každý hráč si buduje vlastní mafiánské město a rozvíjí své impérium.</p>
-            </div>
-            <div>
-                <h3>Odkazy</h3>
-                <p>
-                    <a href="index.html">Domů</a><br>
-                    <a href="download.html">Android aplikace</a><br>
-                    <a href="news.html">Novinky</a>
+                <p data-lang="footer_about">
+                    Mafia Hunterss je herní město provozované na platformě MafiaControl.
+                    Každý hráč si buduje vlastní mafiánské město a rozvíjí své impérium.
                 </p>
             </div>
+
             <div>
-                <h3>Projekt</h3>
+                <h3 data-lang="footer_links_title">Odkazy</h3>
+                <p>
+                    <a href="index.html" data-lang="menu_home">Domů</a><br>
+                    <a href="download.html" data-lang="android_app">Android aplikace</a><br>
+                    <a href="news.html" data-lang="menu_news">Novinky</a>
+                </p>
+            </div>
+
+            <div>
+                <h3 data-lang="footer_project_title">Projekt</h3>
                 <p>
                     © 2015–2026 Mafia Hunterss<br>
-                    Oficiální stránky herního města.
+                    <span data-lang="footer_project_text">Oficiální stránky herního města.</span>
                 </p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>
