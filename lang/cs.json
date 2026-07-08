@@ -74,4 +74,47 @@
 "about_princip_3": "přidej se k mafiánské rodině,",
 "about_princip_4": "soupeř s ostatními hráči,",
 "about_princip_5": "hraj v jednom z pěti jazyků."
+
+  {
+  "download_title": "Android aplikace",
+  "download_lead": "Stáhni si oficiální Android aplikaci Mafia Hunterss a spusť hru jediným kliknutím.",
+
+  "download_beta": "📱 Beta ukázka aplikace",
+  "download_app_title": "Mafia Hunterss Android 2.0",
+  "download_app_text": "Nová Android aplikace slouží jako jednoduchý launcher pro Mafia Hunterss. Po kliknutí na tlačítko Spustit hru se hra otevře ve výchozím internetovém prohlížeči.",
+  "download_app": "📥 Stáhnout aplikaci",
+  "play_online": "🎮 Hrát online",
+
+  "download_preview_title": "📸 Náhled aplikace",
+  "download_preview_note": "Obrázek je zatím z beta verze aplikace.",
+
+  "download_features_title": "✨ Co přináší verze 2.0?",
+  "download_feature_look_title": "Nový vzhled",
+  "download_feature_look_text": "Jednoduchá a čistá úvodní obrazovka.",
+  "download_feature_play_title": "Tlačítko Spustit hru",
+  "download_feature_play_text": "Rychlé spuštění hry jedním kliknutím.",
+  "download_feature_browser_title": "Hra v prohlížeči",
+  "download_feature_browser_text": "Lepší kompatibilita s nákupy a vylepšeními.",
+  "download_feature_display_title": "Podpora displejů",
+  "download_feature_display_text": "Aplikace je připravena pro různé velikosti obrazovek.",
+  "download_feature_fast_title": "Rychlé spuštění",
+  "download_feature_fast_text": "Aplikace slouží jako rychlý vstup do hry.",
+
+  "download_stat_version": "aktuální verze",
+  "download_stat_android": "5.0 a novější",
+  "download_stat_free_title": "Zdarma",
+  "download_stat_free_text": "ke stažení",
+
+  "download_info_title": "📌 Důležité informace",
+  "download_info_notice": "Aplikace není distribuována přes Google Play. Při instalaci může telefon požádat o povolení instalace z neznámých zdrojů.",
+  "download_info_text": "Aplikace neobsahuje samotnou hru. Slouží jako jednoduchý vstupní bod, který otevře Mafia Hunterss ve výchozím internetovém prohlížeči.",
+
+  "download_planned_title": "🛠️ Plánované funkce",
+  "download_planned_1": "📰 Zobrazení nejnovějších novinek přímo v aplikaci.",
+  "download_planned_2": "🔥 Aktuální eventy.",
+  "download_planned_3": "🔔 Upozornění na novou verzi aplikace.",
+  "download_planned_4": "🌍 Další drobná vylepšení.",
+
+  "android_app": "Android aplikace"
+}
 }
