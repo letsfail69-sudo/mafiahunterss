@@ -7,8 +7,6 @@
     <meta name="description" content="Často kladené otázky k Mafia Hunterss.">
     <link rel="stylesheet" href="css/style.css">
 </head>
-    <script src="js/script.js"></script>
-<script src="js/analytics.js"></script>
 <body>
 
     <div class="bg"></div>
@@ -17,17 +15,30 @@
         <div class="container nav">
             <a class="brand" href="index.html">
                 <span class="brand-badge">MH</span>
-                <span>Mafia Hunterss<small>herní město od roku 2015</small></span>
+                <span>
+                    Mafia Hunterss
+                    <small data-lang="brand_subtitle">herní město od roku 2015</small>
+                </span>
             </a>
-            <button class="hamb">MENU</button>
+
+            <select id="language-switcher">
+                <option value="cs">🇨🇿 CZ</option>
+                <option value="en">🇬🇧 EN</option>
+                <option value="de">🇩🇪 DE</option>
+                <option value="pl">🇵🇱 PL</option>
+                <option value="sk">🇸🇰 SK</option>
+            </select>
+
+            <button class="hamb" data-lang="menu_button">MENU</button>
+
             <nav class="menu">
-                <a href="index.html">Domů</a>
-                <a href="about.html">O hře</a>
-                <a href="download.html">Android</a>
-                <a href="news.html">Novinky</a>
-                <a href="gallery.html">Galerie</a>
-                <a class="active" href="faq.html">FAQ</a>
-                <a href="contact.html">Kontakt</a>
+                <a href="index.html" data-lang="menu_home">Domů</a>
+                <a href="about.html" data-lang="menu_about">O hře</a>
+                <a href="download.html" data-lang="menu_download">Android</a>
+                <a href="news.html" data-lang="menu_news">Novinky</a>
+                <a href="gallery.html" data-lang="menu_gallery">Galerie</a>
+                <a class="active" href="faq.html" data-lang="menu_faq">FAQ</a>
+                <a href="contact.html" data-lang="menu_contact">Kontakt</a>
             </nav>
         </div>
     </header>
@@ -35,8 +46,8 @@
     <main>
         <section class="page-head">
             <div class="container">
-                <h1>FAQ</h1>
-                <p class="lead">Často kladené otázky.</p>
+                <h1 data-lang="faq_title">FAQ</h1>
+                <p class="lead" data-lang="faq_lead">Často kladené otázky.</p>
             </div>
         </section>
 
@@ -44,23 +55,23 @@
             <div class="container">
 
                 <details open>
-                    <summary>Je Mafia Hunterss zdarma?</summary>
-                    <p>Ano, hru lze hrát zdarma. Ve hře mohou být dostupná volitelná vylepšení.</p>
+                    <summary data-lang="faq_q_1">Je Mafia Hunterss zdarma?</summary>
+                    <p data-lang="faq_a_1">Ano, hru lze hrát zdarma. Ve hře mohou být dostupná volitelná vylepšení.</p>
                 </details>
 
                 <details>
-                    <summary>Na čem hra běží?</summary>
-                    <p>Mafia Hunterss je herní město provozované na platformě MafiaControl.</p>
+                    <summary data-lang="faq_q_2">Na čem hra běží?</summary>
+                    <p data-lang="faq_a_2">Mafia Hunterss je herní město provozované na platformě MafiaControl.</p>
                 </details>
 
                 <details>
-                    <summary>Má hra Android aplikaci?</summary>
-                    <p>Ano, první verze aplikace je dostupná na stránce Android.</p>
+                    <summary data-lang="faq_q_3">Má hra Android aplikaci?</summary>
+                    <p data-lang="faq_a_3">Ano, první verze aplikace je dostupná na stránce Android.</p>
                 </details>
 
                 <details>
-                    <summary>V jakých jazycích je hra dostupná?</summary>
-                    <p>Čeština, angličtina, němčina, polština a ruština.</p>
+                    <summary data-lang="faq_q_4">V jakých jazycích je hra dostupná?</summary>
+                    <p data-lang="faq_a_4">Web je dostupný v češtině, angličtině, němčině, polštině a slovenštině.</p>
                 </details>
 
             </div>
@@ -71,26 +82,33 @@
         <div class="container footer-grid">
             <div>
                 <h3>Mafia Hunterss</h3>
-                <p>Mafia Hunterss je herní město provozované na platformě MafiaControl. Každý hráč si buduje vlastní mafiánské město a rozvíjí své impérium.</p>
-            </div>
-            <div>
-                <h3>Odkazy</h3>
-                <p>
-                    <a href="index.html">Domů</a><br>
-                    <a href="download.html">Android aplikace</a><br>
-                    <a href="news.html">Novinky</a>
+                <p data-lang="footer_about">
+                    Mafia Hunterss je herní město provozované na platformě MafiaControl.
+                    Každý hráč si buduje vlastní mafiánské město a rozvíjí své impérium.
                 </p>
             </div>
+
             <div>
-                <h3>Projekt</h3>
+                <h3 data-lang="footer_links_title">Odkazy</h3>
+                <p>
+                    <a href="index.html" data-lang="menu_home">Domů</a><br>
+                    <a href="download.html" data-lang="android_app">Android aplikace</a><br>
+                    <a href="news.html" data-lang="menu_news">Novinky</a>
+                </p>
+            </div>
+
+            <div>
+                <h3 data-lang="footer_project_title">Projekt</h3>
                 <p>
                     © 2015–2026 Mafia Hunterss<br>
-                    Oficiální stránky herního města.
+                    <span data-lang="footer_project_text">Oficiální stránky herního města.</span>
                 </p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>
