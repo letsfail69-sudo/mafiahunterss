@@ -132,6 +132,16 @@
 
   "faq_q_4": "V jakých jazycích je hra dostupná?",
   "faq_a_4": "Web je dostupný v češtině, angličtině, němčině, polštině a slovenštině."
+
+  {
+  "contact_title": "Kontakt",
+  "contact_lead": "Kontakt a odkazy projektu Mafia Hunterss.",
+  "contact_web_title": "Oficiální web",
+  "contact_game_title": "Hra",
+  "contact_support_title": "Podpora a komunita",
+  "contact_support_text": "Sem později doplníme Facebook, e-mail, Discord nebo další kontakty.",
+  "contact_support_tip": "Tip: po zřízení e-mailu můžeš používat například support@mafiahunterss.eu."
+}
 }
 }
 }
