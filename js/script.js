@@ -39,7 +39,7 @@ document.querySelectorAll('[data-lightbox]').forEach(img => {
 });
 
 /* KLASICKÉ NOVINKY WEBU */
-fetch("news.json")
+fetch("JSON/news.json")
     .then(response => response.json())
     .then(news => {
         const latestBox = document.getElementById("latest-news");
@@ -79,7 +79,7 @@ fetch("news.json")
     });
 
 /* NOVINKY VE HŘE */
-fetch("game-news.json")
+fetch("JSON/game-news.json")
     .then(response => response.json())
     .then(news => {
         const latestGameBox = document.getElementById("latest-game-news");
@@ -116,4 +116,36 @@ fetch("game-news.json")
         if (gameNewsList) {
             gameNewsList.innerHTML = `<p class="muted">Herní novinky se nepodařilo načíst.</p>`;
         }
+    });
+
+/* VERZE APLIKACE */
+fetch("JSON/app-version.json")
+    .then(response => response.json())
+    .then(app => {
+        document.querySelectorAll("[data-app-version]").forEach(el => {
+            el.textContent = app.version;
+        });
+
+        document.querySelectorAll("[data-app-build]").forEach(el => {
+            el.textContent = app.build;
+        });
+
+        document.querySelectorAll("[data-app-date]").forEach(el => {
+            el.textContent = app.releaseDate;
+        });
+
+        document.querySelectorAll("[data-app-size]").forEach(el => {
+            el.textContent = app.apkSize;
+        });
+
+        document.querySelectorAll("[data-app-min-android]").forEach(el => {
+            el.textContent = app.minAndroid;
+        });
+
+        document.querySelectorAll("[data-app-download]").forEach(el => {
+            el.href = app.downloadUrl;
+        });
+    })
+    .catch(() => {
+        console.warn("Informace o verzi aplikace se nepodařilo načíst.");
     });
