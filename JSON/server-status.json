@@ -1,0 +1,19 @@
+{
+    "server": {
+        "status": "online",
+        "message": "Server je online"
+    },
+
+    "players": {
+        "online": 0,
+        "registered": 1797
+    },
+
+    "game": {
+        "name": "Mafia Hunterss",
+        "website": "https://mafiahunterss.eu",
+        "playUrl": "https://mafiahunterss.mafiacontrol.com/"
+    },
+
+    "lastUpdate": "2026-07-10T20:00:00"
+}
