@@ -30,7 +30,7 @@ $cacheFile = $cacheDirectory . '/server-status.json';
 /**
  * Odešle JSON odpověď.
  */
-function sendJson(array $data, int $statusCode = 200): never
+function sendJson(array $data, int $statusCode = 200)
 {
     http_response_code($statusCode);
 
@@ -132,19 +132,21 @@ function extractStatistics(string $html): array
 
     $xpath = new DOMXPath($document);
 
-    $playersNode = $xpath
-        ->query(
-            "//*[contains(concat(' ', normalize-space(@class), ' '), " .
-            "' outgame_stats_players ')]"
-        )
-        ?->item(0);
+    $playersResult = $xpath->query(
+    "//*[contains(concat(' ', normalize-space(@class), ' '), ' outgame_stats_players ')]"
+);
 
-    $onlineNode = $xpath
-        ->query(
-            "//*[contains(concat(' ', normalize-space(@class), ' '), " .
-            "' outgame_stats_online ')]"
-        )
-        ?->item(0);
+$onlineResult = $xpath->query(
+    "//*[contains(concat(' ', normalize-space(@class), ' '), ' outgame_stats_online ')]"
+);
+
+$playersNode = $playersResult && $playersResult->length > 0
+    ? $playersResult->item(0)
+    : null;
+
+$onlineNode = $onlineResult && $onlineResult->length > 0
+    ? $onlineResult->item(0)
+    : null;
 
     if (!$playersNode || !$onlineNode) {
         throw new RuntimeException(
