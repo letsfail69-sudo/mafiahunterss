@@ -1,8 +1,38 @@
 [
- {
+  {
     "title": "Nové avatary",
     "date": "2026-07-08",
     "text": "Do herního světa přibylo nové rozšíření a to je tvorba obličeje ve hře",
     "category": "Tvorba Postavy"
+  },
+  {
+    "title": "Impérium II: Přepravní společnost",
+    "date": "2026-07-11",
+    "text": "Do hry byla přidána nová budova Impérium II: Přepravní společnost.",
+    "category": "Nové budovy"
+  },
+  {
+    "title": "VIP členství",
+    "date": "2026-07-11",
+    "text": "Do hry bylo přidáno VIP členství, které přináší nové možnosti a výhody pro hráče.",
+    "category": "Novinky"
+  },
+  {
+    "title": "Impérium II: Letiště",
+    "date": "2026-07-11",
+    "text": "Do hry byla přidána nová budova Impérium II: Letiště.",
+    "category": "Nové budovy"
+  },
+  {
+    "title": "Tabáková plantáž",
+    "date": "2026-07-11",
+    "text": "Do herního světa byla přidána nová budova Tabáková plantáž.",
+    "category": "Nové budovy"
+  },
+  {
+    "title": "Vlastní doména a SSL zabezpečení",
+    "date": "2026-07-11",
+    "text": "Hra nyní využívá vlastní doménu a SSL zabezpečení pro bezpečnější a profesionálnější přístup ke hře.",
+    "category": "Technické novinky"
   }
 ]
