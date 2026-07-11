@@ -1,1 +1,295 @@
-<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#070807"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mafia Hunterss"><meta name="mobile-web-app-capable" content="yes"><title>Mafia Hunterss</title><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png"><link rel="icon" href="icons/icon-192.png"><link rel="stylesheet" href="css/app.css"></head><body><div class="bg"></div><main class="shell"><header class="hero"><div class="badge">MH</div><div><h1>MAFIA HUNTER<span>SS</span></h1><p id="subtitle">Oficiální iPhone webová aplikace</p></div></header><section id="home" class="view active"><div class="menu"><a class="menu-btn primary" href="https://mafiahunterss.mafiacontrol.com/" id="playBtn">🎮 <b data-i18n="play">Spustit hru</b></a><button class="menu-btn" data-open="news">📰 <b data-i18n="news">Novinky</b></button><button class="menu-btn" data-open="settings">⚙️ <b data-i18n="settings">Nastavení</b></button></div><div class="card install" id="installCard"><h2 data-i18n="install_title">📱 Přidat na plochu</h2><p data-i18n="install_text">V Safari klepni na Sdílet a potom na Přidat na plochu.</p></div></section><section id="news" class="view"><div class="bar"><button class="back" data-open="home">‹</button><h2 data-i18n="news">Novinky</h2><button class="refresh" id="refreshNews">↻</button></div><div id="newsList"><p class="muted" data-i18n="loading">Načítám novinky…</p></div></section><section id="settings" class="view"><div class="bar"><button class="back" data-open="home">‹</button><h2 data-i18n="settings">Nastavení</h2><span></span></div><div class="card"><label for="lang" data-i18n="language">Jazyk</label><select id="lang"><option value="auto">Automaticky podle telefonu</option><option value="cs">Čeština</option><option value="sk">Slovenština</option><option value="en">English</option><option value="de">Deutsch</option><option value="pl">Polski</option></select></div><div class="card links"><a href="https://www.mafiahunterss.eu/" target="_blank" rel="noopener">🌐 <span data-i18n="website">Web Mafia Hunterss</span></a><a href="https://www.facebook.com/mafiahunterss" target="_blank" rel="noopener">🔵 Facebook</a></div><div class="card"><button id="clearCache" class="plain" data-i18n="clear_cache">Vymazat offline cache</button></div></section><footer>Mafia Hunterss • PWA</footer></main><script src="js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia Hunterss – Oficiální web herního města</title>
+    <meta name="description" content="Oficiální web herního města Mafia Hunterss na platformě MafiaControl. Hraj online nebo si stáhni Android aplikaci.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="bg"></div>
+
+    <header class="topbar">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <span class="brand-badge">MH</span>
+                <span>
+                    Mafia Hunterss
+                    <small data-lang="brand_subtitle">herní město od roku 2015</small>
+                </span>
+            </a>
+
+            <select id="language-switcher">
+                <option value="cs">🇨🇿 CZ</option>
+                <option value="en">🇬🇧 EN</option>
+                <option value="de">🇩🇪 DE</option>
+                <option value="pl">🇵🇱 PL</option>
+                <option value="sk">🇸🇰 SK</option>
+            </select>
+
+            <button class="hamb" data-lang="menu_button">MENU</button>
+
+            <nav class="menu">
+                <a class="active" href="index.html" data-lang="menu_home">Domů</a>
+                <a href="about.html" data-lang="menu_about">O hře</a>
+                <a href="download.html" data-lang="menu_download">Android</a>
+                <a href="news.html" data-lang="menu_news">Novinky</a>
+                <a href="game-news.html" data-lang="menu_game_news">Novinky ve hře</a>
+                <a href="gallery.html" data-lang="menu_gallery">Galerie</a>
+                <a href="faq.html" data-lang="menu_faq">FAQ</a>
+                <a href="contact.html" data-lang="menu_contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <span class="pill" data-lang="home_pill">
+                    🏙️ Herní město na platformě MafiaControl • od roku 2015
+                </span>
+
+                <h1>MAFIA HUNTER<span class="red">SS</span></h1>
+
+                <p class="lead" data-lang="home_lead">
+                    Vybuduj vlastní mafiánské město, rozvíjej své impérium,
+                    přidej se k rodině a soupeř s ostatními hráči.
+                </p>
+
+                <div class="actions">
+                    <a class="btn btn-primary" href="https://mafiahunterss.mafiacontrol.com/" target="_blank" data-lang="play_online">
+                        🎮 Hrát online
+                    </a>
+
+                    <a class="btn btn-gold"
+                       href="https://github.com/letsfail69-sudo/mafiahunterss/releases/download/Aplikace/mafia.apk"
+                       target="_blank"
+                       data-app-download
+                       data-lang="download_app">
+                        📱 Stáhnout aplikaci
+                    </a>
+
+                    <a class="btn btn-ghost" href="about.html" data-lang="about_game">
+                        📖 O hře
+                    </a>
+                </div>
+
+                <p class="muted">
+                    📱 Mafia Hunterss Launcher
+                    <strong>v<span data-app-version>3.0</span></strong>
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid grid-4">
+                <div class="card stat">
+                    <strong>2015</strong>
+                    <span data-lang="stat_year">rok založení</span>
+                </div>
+
+                <div class="card stat">
+                    <strong>5</strong>
+                    <span data-lang="stat_languages">jazyků</span>
+                </div>
+
+                <div class="card stat">
+                    <strong>Android</strong>
+                    <span data-lang="stat_android">aplikace</span>
+                </div>
+
+                <div class="card stat">
+                    <strong>Web</strong>
+                    <span>mafiahunterss.eu</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="card event center">
+                    <h2 data-lang="announcement_title">🔥 Aktuální oznámení</h2>
+
+                    <p data-lang="announcement_text">
+                        Oficiální web Mafia Hunterss je spuštěný
+                        a Android aplikace je dostupná ke stažení.
+                    </p>
+
+                    <p class="muted">
+                        Aktuální verze aplikace:
+                        <strong>v<span data-app-version>3.0</span></strong>
+                    </p>
+
+                    <div class="actions">
+                        <a class="btn btn-primary" href="https://mafiahunterss.mafiacontrol.com/" target="_blank" data-lang="play_online">
+                            Hrát online
+                        </a>
+
+                        <a class="btn btn-gold"
+                           href="https://github.com/letsfail69-sudo/mafiahunterss/releases/download/Aplikace/mafia.apk"
+                           target="_blank"
+                           data-app-download
+                           data-lang="download_app">
+                            📱 Stáhnout aplikaci
+                        </a>
+
+                        <a class="btn btn-ghost" href="download.html" data-lang="android_app">
+                            Více o aplikaci
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section features">
+            <div class="container">
+                <h2 class="section-title" data-lang="why_play_title">Proč hrát Mafia Hunterss?</h2>
+
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="icon">🏙️</div>
+                        <h3 data-lang="feature_city_title">Vlastní město</h3>
+                        <p data-lang="feature_city_text">Každý hráč po registraci buduje své vlastní mafiánské město.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">💰</div>
+                        <h3 data-lang="feature_economy_title">Ekonomika</h3>
+                        <p data-lang="feature_economy_text">Vydělávej peníze, rozvíjej zázemí a posiluj svoji pozici.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">👥</div>
+                        <h3 data-lang="feature_families_title">Rodiny</h3>
+                        <p data-lang="feature_families_text">Spoj se s ostatními hráči a vytvoř silnou mafiánskou rodinu.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">⚔️</div>
+                        <h3 data-lang="feature_competition_title">Soupeření</h3>
+                        <p data-lang="feature_competition_text">Bojuj o respekt a ukaž, kdo ovládá podsvětí.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">🌍</div>
+                        <h3 data-lang="feature_languages_title">5 jazyků</h3>
+                        <p data-lang="feature_languages_text">Čeština, angličtina, němčina, polština a slovenština.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">📱</div>
+                        <h3>Android</h3>
+                        <p data-lang="feature_android_text">
+                            Hraj pohodlně i přes mobilní aplikaci Mafia Hunterss Launcher
+                            v<span data-app-version>3.0</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" data-lang="screenshots_title">Ukázky ze hry</h2>
+
+                <div class="grid grid-2 shots">
+                    <img data-lightbox src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiebg21iviQBmAGq_ZuI4efHigd73msBj57Vjea4iz_OyDg8fGcP74kc7cxJ6XzXfgKgPT8wAV9WIoGTTKe_GGKqgXb01_FO48keJO0k8Fe5wM02LY4zM5xwrIO-tTuEYLR6wf2RmQyz1dM3yetI-5PRgcrg7wIsHCwglCMjvX4Lq_HWm_8L8IESeBvJjE/s320/image%20(1).png" alt="Přihlášení Mafia Hunterss">
+
+                    <img data-lightbox src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfmzasUM5SCSH4w0grjZN8NXjK2yV2Rxsj4T0kmeGFaI5A5QeN1DeBJTxIo9ndTucbSVriGb7qHGPQ-LQyfhMcEykiXig4-R7VfZQY-PueMBX8yT-gDfadGvZXpeQf4_fM-FNOrkzqRSyULmDeZL8B-E81sCD6J19OFzCDylgv9gIoDedbKTIJIXFKPQs/s320/image%20(2).png" alt="Město Mafia Hunterss">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid grid-2">
+
+                <div class="card">
+                    <h2 data-lang="latest_news">📰 Nejnovější novinky</h2>
+
+                    <div id="latest-news">
+                        <p class="muted" data-lang="loading_news">Načítám novinky...</p>
+                    </div>
+
+                    <a class="btn btn-ghost" href="news.html" data-lang="show_all_news">
+                        Zobrazit všechny novinky
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h2 data-lang="latest_game_news">🎮 Novinky ve hře</h2>
+
+                    <div id="latest-game-news">
+                        <p class="muted" data-lang="loading_game_news">Načítám herní novinky...</p>
+                    </div>
+
+                    <a class="btn btn-ghost" href="game-news.html" data-lang="show_game_news">
+                        Zobrazit herní novinky
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="card">
+                    <h2 data-lang="available_languages_title">🌍 Dostupné jazyky</h2>
+
+                    <p>
+                        🇨🇿 Čeština &nbsp;
+                        🇬🇧 English &nbsp;
+                        🇩🇪 Deutsch &nbsp;
+                        🇵🇱 Polski &nbsp;
+                        🇸🇰 Slovenčina
+                    </p>
+
+                    <p class="muted" data-lang="available_languages_text">
+                        Mafia Hunterss cílí na české i zahraniční hráče.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div>
+                <h3>Mafia Hunterss</h3>
+                <p data-lang="footer_about">
+                    Mafia Hunterss je herní město provozované na platformě MafiaControl.
+                    Každý hráč si buduje vlastní mafiánské město a rozvíjí své impérium.
+                </p>
+            </div>
+
+            <div>
+                <h3 data-lang="footer_links_title">Odkazy</h3>
+                <p>
+                    <a href="index.html" data-lang="menu_home">Domů</a><br>
+                    <a href="download.html" data-lang="android_app">Android aplikace</a><br>
+                    <a href="news.html" data-lang="menu_news">Novinky</a><br>
+                    <a href="game-news.html" data-lang="menu_game_news">Novinky ve hře</a>
+                </p>
+            </div>
+
+            <div>
+                <h3 data-lang="footer_project_title">Projekt</h3>
+                <p>
+                    © 2015–2026 Mafia Hunterss<br>
+                    <span data-lang="footer_project_text">Oficiální stránky herního města.</span>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/lang.js"></script>
+
+</body>
+</html>
