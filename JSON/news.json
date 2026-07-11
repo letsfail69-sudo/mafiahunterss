@@ -1,5 +1,15 @@
 [
   {
+    "date": "11.7.2026",
+    "title": "🌐 Mafia Hunterss má vlastní doménu",
+    "text": "Mafia Hunterss nyní funguje na vlastní doméně. Tento krok přináší projektu profesionálnější zázemí, jednodušší přístup pro hráče a vytváří prostor pro další rozvoj webu, Android aplikace i samotné hry. Součástí je také zabezpečené HTTPS připojení pomocí SSL certifikátu."
+  },
+  {
+    "date": "11.7.2026",
+    "title": "🔵 Registrace a přihlášení přes Facebook",
+    "text": "Do Mafia Hunterss byla úspěšně zprovozněna registrace a přihlášení pomocí Facebooku. Hráči tak mohou jednodušeji vytvořit nový účet nebo se přihlásit ke svému účtu prostřednictvím Facebooku. Tato možnost rozšiřuje stávající způsoby přístupu do hry a usnadňuje hráčům vstup do herního světa."
+  },
+  {
     "date": "10.7.2026",
     "title": "🚀 Mafia Hunterss Launcher 3.0 ve vývoji",
     "text": "Začaly práce na největší aktualizaci Android aplikace od jejího vydání. Verze 3.0 přinese zcela nový vzhled inspirovaný oficiálním webem, úvodní Splash Screen, automatickou lokalizaci podle jazyka zařízení, nové logo aplikace, modernější uživatelské rozhraní, dynamické pozadí načítané z internetu a další vylepšení. Cílem je vytvořit profesionální launcher, který bude důstojně reprezentovat projekt Mafia Hunterss."
