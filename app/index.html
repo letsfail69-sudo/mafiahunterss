@@ -1,1 +1,346 @@
-<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#070807"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mafia Hunterss"><meta name="mobile-web-app-capable" content="yes"><title>Mafia Hunterss</title><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png"><link rel="icon" href="icons/icon-192.png"><link rel="stylesheet" href="css/app.css"></head><body><div class="bg"></div><main class="shell"><header class="hero"><div class="badge">MH</div><div><h1>MAFIA HUNTER<span>SS</span></h1><p id="subtitle">Oficiální iPhone webová aplikace</p></div></header><section id="home" class="view active"><div class="menu"><a class="menu-btn primary" href="https://mafiahunterss.mafiacontrol.com/" id="playBtn">🎮 <b data-i18n="play">Spustit hru</b></a><button class="menu-btn" data-open="news">📰 <b data-i18n="news">Novinky</b></button><button class="menu-btn" data-open="settings">⚙️ <b data-i18n="settings">Nastavení</b></button></div><div class="card install" id="installCard"><h2 data-i18n="install_title">📱 Přidat na plochu</h2><p data-i18n="install_text">V Safari klepni na Sdílet a potom na Přidat na plochu.</p></div></section><section id="news" class="view"><div class="bar"><button class="back" data-open="home">‹</button><h2 data-i18n="news">Novinky</h2><button class="refresh" id="refreshNews">↻</button></div><div id="newsList"><p class="muted" data-i18n="loading">Načítám novinky…</p></div></section><section id="settings" class="view"><div class="bar"><button class="back" data-open="home">‹</button><h2 data-i18n="settings">Nastavení</h2><span></span></div><div class="card"><label for="lang" data-i18n="language">Jazyk</label><select id="lang"><option value="auto">Automaticky podle telefonu</option><option value="cs">Čeština</option><option value="sk">Slovenština</option><option value="en">English</option><option value="de">Deutsch</option><option value="pl">Polski</option></select></div><div class="card links"><a href="https://www.mafiahunterss.eu/" target="_blank" rel="noopener">🌐 <span data-i18n="website">Web Mafia Hunterss</span></a><a href="https://www.facebook.com/mafiahunterss" target="_blank" rel="noopener">🔵 Facebook</a></div><div class="card"><button id="clearCache" class="plain" data-i18n="clear_cache">Vymazat offline cache</button></div></section><footer>Mafia Hunterss • PWA</footer></main><script src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+    >
+
+    <meta name="theme-color" content="#070807">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Mafia Hunterss">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>Mafia Hunterss</title>
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <link rel="icon" href="icons/icon-192.png">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <div class="app-background" aria-hidden="true"></div>
+    <div class="app-overlay" aria-hidden="true"></div>
+
+    <main class="app-shell">
+
+        <header class="app-header">
+
+            <div class="brand-logo" aria-hidden="true">
+                MH
+            </div>
+
+            <div class="brand-text">
+                <span class="brand-label">MAFIA</span>
+
+                <h1>
+                    HUNTER<span>SS</span>
+                </h1>
+
+                <p id="subtitle">
+                    Oficiální iPhone webová aplikace
+                </p>
+            </div>
+
+        </header>
+
+        <!-- HLAVNÍ MENU -->
+        <section id="home" class="view active">
+
+            <div class="welcome-card">
+
+                <span class="status-badge">
+                    🍎 iPhone PWA
+                </span>
+
+                <h2>Vítej v Mafia Hunterss</h2>
+
+                <p>
+                    Spusť hru, přečti si nejnovější aktuality nebo uprav
+                    nastavení aplikace.
+                </p>
+
+            </div>
+
+            <nav class="main-menu" aria-label="Hlavní menu">
+
+                <a
+                    class="menu-button menu-button-primary"
+                    href="https://mafiahunterss.mafiacontrol.com/"
+                    id="playBtn"
+                >
+                    <span class="menu-icon">🎮</span>
+
+                    <span class="menu-content">
+                        <b data-i18n="play">Spustit hru</b>
+                        <small>Vstoupit do herního města</small>
+                    </span>
+
+                    <span class="menu-arrow">›</span>
+                </a>
+
+                <button
+                    class="menu-button"
+                    type="button"
+                    data-open="news"
+                >
+                    <span class="menu-icon">📰</span>
+
+                    <span class="menu-content">
+                        <b data-i18n="news">Novinky</b>
+                        <small>Aktuální změny a informace</small>
+                    </span>
+
+                    <span class="menu-arrow">›</span>
+                </button>
+
+                <button
+                    class="menu-button"
+                    type="button"
+                    data-open="settings"
+                >
+                    <span class="menu-icon">⚙️</span>
+
+                    <span class="menu-content">
+                        <b data-i18n="settings">Nastavení</b>
+                        <small>Jazyk, odkazy a offline data</small>
+                    </span>
+
+                    <span class="menu-arrow">›</span>
+                </button>
+
+            </nav>
+
+            <div class="app-card install-card" id="installCard">
+
+                <div class="card-icon">📱</div>
+
+                <div>
+                    <h2 data-i18n="install_title">
+                        Přidat na plochu
+                    </h2>
+
+                    <p data-i18n="install_text">
+                        V Safari klepni na Sdílet a potom na Přidat na plochu.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- NOVINKY -->
+        <section id="news" class="view">
+
+            <div class="page-toolbar">
+
+                <button
+                    class="toolbar-button"
+                    type="button"
+                    data-open="home"
+                    aria-label="Zpět"
+                >
+                    ‹
+                </button>
+
+                <div>
+                    <span class="toolbar-label">Mafia Hunterss</span>
+                    <h2 data-i18n="news">Novinky</h2>
+                </div>
+
+                <button
+                    class="toolbar-button"
+                    type="button"
+                    id="refreshNews"
+                    aria-label="Obnovit novinky"
+                >
+                    ↻
+                </button>
+
+            </div>
+
+            <div class="section-description">
+                Nejnovější změny, budovy a informace přímo ze hry.
+            </div>
+
+            <div id="newsList" class="news-list">
+
+                <div class="app-card loading-card">
+                    <div class="loader" aria-hidden="true"></div>
+
+                    <p class="muted" data-i18n="loading">
+                        Načítám novinky…
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- NASTAVENÍ -->
+        <section id="settings" class="view">
+
+            <div class="page-toolbar">
+
+                <button
+                    class="toolbar-button"
+                    type="button"
+                    data-open="home"
+                    aria-label="Zpět"
+                >
+                    ‹
+                </button>
+
+                <div>
+                    <span class="toolbar-label">Mafia Hunterss</span>
+                    <h2 data-i18n="settings">Nastavení</h2>
+                </div>
+
+                <span class="toolbar-placeholder"></span>
+
+            </div>
+
+            <div class="settings-group">
+
+                <h3 class="settings-title">
+                    🌍 Jazyk aplikace
+                </h3>
+
+                <div class="app-card settings-card">
+
+                    <label for="lang" data-i18n="language">
+                        Jazyk
+                    </label>
+
+                    <select id="lang">
+                        <option value="auto">
+                            Automaticky podle telefonu
+                        </option>
+
+                        <option value="cs">
+                            Čeština
+                        </option>
+
+                        <option value="sk">
+                            Slovenština
+                        </option>
+
+                        <option value="en">
+                            English
+                        </option>
+
+                        <option value="de">
+                            Deutsch
+                        </option>
+
+                        <option value="pl">
+                            Polski
+                        </option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="settings-group">
+
+                <h3 class="settings-title">
+                    🔗 Odkazy
+                </h3>
+
+                <div class="app-card link-list">
+
+                    <a
+                        href="https://www.mafiahunterss.eu/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <span class="link-icon">🌐</span>
+
+                        <span>
+                            <b data-i18n="website">
+                                Web Mafia Hunterss
+                            </b>
+
+                            <small>mafiahunterss.eu</small>
+                        </span>
+
+                        <span class="link-arrow">›</span>
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/mafiahunterss"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <span class="link-icon">🔵</span>
+
+                        <span>
+                            <b>Facebook</b>
+                            <small>Oficiální stránka projektu</small>
+                        </span>
+
+                        <span class="link-arrow">›</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="settings-group">
+
+                <h3 class="settings-title">
+                    💾 Offline data
+                </h3>
+
+                <div class="app-card">
+
+                    <button
+                        id="clearCache"
+                        class="danger-button"
+                        type="button"
+                        data-i18n="clear_cache"
+                    >
+                        🗑️ Vymazat offline cache
+                    </button>
+
+                    <p class="card-note">
+                        Vymaže uložené soubory PWA. Herní účet tím nebude odstraněn.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="app-card about-card">
+
+                <div class="brand-logo brand-logo-small">
+                    MH
+                </div>
+
+                <div>
+                    <strong>Mafia Hunterss</strong>
+                    <p>Oficiální progresivní webová aplikace.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="app-footer">
+            <strong>Mafia Hunterss</strong>
+            <span>Oficiální iPhone PWA</span>
+            <small>© 2015–2026</small>
+        </footer>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
