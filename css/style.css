@@ -19,7 +19,6 @@
     6px 6px,
     100% 100%;
   background-repeat: no-repeat;
-
   color: var(--green);
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -31,44 +30,256 @@
   box-shadow: 0 0 22px rgba(140,255,0,.10);
   transition: .2s;
 }
-
 #language-switcher:hover {
   border-color: rgba(140,255,0,.55);
   box-shadow: 0 0 28px rgba(140,255,0,.22);
   transform: translateY(-1px);
 }
-
 #language-switcher:focus {
   border-color: var(--green);
   box-shadow: 0 0 0 3px rgba(140,255,0,.16);
 }
-
 #language-switcher option {
   background: #0d100c;
   color: var(--text);
   font-weight: 700;
 }
-
 @media(max-width:850px) {
   .nav {
     flex-wrap: wrap;
   }
-
   #language-switcher {
     order: 2;
     max-width: 145px;
     min-height: 42px;
     margin-left: auto;
   }
-
   .hamb {
     order: 3;
   }
-
   .menu {
     order: 4;
     width: calc(100% - 40px);
   }
 }
+
+/* AUTOMATICKÉ BANNERY AKCÍ */
+.promo-section[hidden] {
+  display: none;
+}
+
+.promo-carousel {
+  position: relative;
+  overflow: hidden;
+  min-height: 390px;
+  border: 1px solid rgba(255,209,102,.38);
+  border-radius: 26px;
+  background: #080a07;
+  box-shadow: var(--shadow);
+}
+
+#promo-banner-track {
+  position: relative;
+  min-height: 390px;
+}
+
+.promo-slide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-items: center;
+  min-height: 390px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(24px);
+  pointer-events: none;
+  background:
+    var(--promo-image, none) center / cover no-repeat,
+    linear-gradient(135deg, #182015, #070807);
+  transition: opacity .4s ease, transform .4s ease, visibility .4s;
+}
+
+.promo-slide.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.promo-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(2,3,2,.96) 0%,
+      rgba(4,6,3,.88) 42%,
+      rgba(4,6,3,.42) 72%,
+      rgba(4,6,3,.20) 100%
+    );
+}
+
+.promo-content {
+  position: relative;
+  z-index: 2;
+  width: min(720px, 100%);
+  padding: 48px 58px;
+}
+
+.promo-content h2 {
+  margin: 14px 0 10px;
+  color: var(--gold);
+  font-size: clamp(34px, 5vw, 60px);
+  line-height: 1.05;
+}
+
+.promo-text {
+  max-width: 640px;
+  margin: 0;
+  color: #edf2e8;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.promo-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 13px;
+  border: 1px solid rgba(255,209,102,.5);
+  border-radius: 999px;
+  color: #fff0aa;
+  background: rgba(255,209,102,.13);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.promo-time {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 20px;
+}
+
+.promo-time span {
+  display: inline-flex;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid rgba(140,255,0,.18);
+  border-radius: 12px;
+  color: #dfe8d6;
+  background: rgba(3,5,3,.66);
+}
+
+.promo-time strong {
+  color: var(--green);
+}
+
+.promo-actions {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.promo-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255,209,102,.42);
+  border-radius: 50%;
+  color: var(--gold);
+  background: rgba(5,6,5,.8);
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  backdrop-filter: blur(8px);
+}
+
+.promo-nav:hover {
+  background: rgba(255,209,102,.16);
+}
+
+.promo-prev {
+  left: 14px;
+}
+
+.promo-next {
+  right: 14px;
+}
+
+.promo-dots {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.promo-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 50%;
+  background: rgba(255,255,255,.22);
+  cursor: pointer;
+}
+
+.promo-dot.active {
+  width: 28px;
+  border-radius: 999px;
+  border-color: var(--gold);
+  background: var(--gold);
+}
+
+@media(max-width:700px) {
+  .promo-carousel,
+  #promo-banner-track,
+  .promo-slide {
+    min-height: 520px;
+  }
+
+  .promo-slide {
+    align-items: end;
+    background-position: center;
+  }
+
+  .promo-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(3,4,3,.20) 0%,
+        rgba(3,4,3,.78) 42%,
+        rgba(3,4,3,.98) 100%
+      );
+  }
+
+  .promo-content {
+    padding: 34px 24px 64px;
+  }
+
+  .promo-content h2 {
+    font-size: clamp(30px, 10vw, 44px);
+  }
+
+  .promo-time {
+    display: grid;
+  }
+
+  .promo-time span {
+    width: 100%;
+  }
+
+  .promo-actions .btn {
+    width: 100%;
+  }
+
+  .promo-nav {
+    top: 32px;
+    transform: none;
   }
 }
