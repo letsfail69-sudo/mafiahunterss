@@ -1,0 +1,14 @@
+[
+  {
+    "id": "diamond-sale-2026",
+    "active": true,
+    "title": "💎 Výprodej diamantů",
+    "text": "Speciální časově omezená nabídka diamantů.",
+    "showFrom": "2026-07-15T00:00:00+02:00",
+    "eventFrom": "2026-08-03T18:00:00+02:00",
+    "eventTo": "2026-08-07T23:59:59+02:00",
+    "image": "https://mafiahunterss.eu/obr%C3%A1zky/ChatGPT%20Image%2015.%207.%202026%2010_32_12.png",
+    "buttonText": "🎮 Spustit hru",
+    "buttonUrl": "https://mafiahunterss.com/"
+  },
+  
