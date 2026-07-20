@@ -13,7 +13,18 @@
 <meta content="images/game_socialbanner.jpg" property="og:image"/>
 <link href="styles/main.css?v=4" rel="stylesheet"/>
 <script src="scripts/jquery.min.js"></script>
-</meta></meta><script defer="" src="/js/analytics.js"></script><script defer="" src="scripts/wiki.js?v=3"></script></head>
+</meta></meta><script defer="" src="/js/analytics.js"></script><script defer="" src="scripts/wiki.js?v=3"></script><style>
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  margin: 18px 0 28px;
+  -webkit-overflow-scrolling: touch;
+}
+.table-scroll table {
+  min-width: 760px;
+}
+</style>
+</head>
 <body>
 <div id="bg"><div class="left"></div><div class="right"></div></div>
 <div id="helicopter"><div data-frame="-1" data-left="-100" id="heli"></div></div>
@@ -136,26 +147,46 @@
 </div>
 <div class="lower">
 <h3>Úrovně</h3>
-<p>Sklad budovy Noční klub naplníš nakoupeným zbožím, které se následně průběžně prodává se ziskem. V <a class="link" href="attack-pvp.html">Útok PVP</a> ti ostatní hráči mohou odcizit až 50 % dosud nevybrané hotovosti. Jednotlivé místnosti navíc umožňují směňovat trávu, perník a munici; mezi odměny patří zkušenosti, zdraví, munice, hotovost, diamanty, <a class="link" href="followers.html">stoupenci</a> nebo zbraně.</p>
+<p>Sklad budovy Noční klub naplníš nakoupeným zbožím, které se následně průběžně prodává se ziskem. Při <a class="link" href="attack-pvp.html">Útoku PVP</a> ti ostatní hráči mohou odcizit až 50 % dosud nevybrané hotovosti. Jednotlivé místnosti navíc umožňují směňovat trávu, perník a munici. Mezi odměny patří zkušenosti, zdraví, munice, hotovost, diamanty, <a class="link" href="followers.html">stoupenci</a> nebo zbraně.</p>
+
+<div class="table-scroll">
 <table>
-<tr><th>Úroveň</th><th>Místnosti</th><th>Kapacita</th><th>Skladová kapacita</th><th>Cena vylepšení</th><th>Čas vylepšování</th></tr>
-<tr><td>1</td><td class="icon_rooms">0</td></tr></table></div><td class="icon_cash">30 00</td><td class="icon_stock">500</td><td></td><td></td>
-<tr><td>2</td><td class="icon_rooms">1</td></tr></div><td class="icon_cash">50 000</td><td class="icon_stock">2 300</td><td class="icon_cash">1 000 000</td><td class="icon_timer">1 den</td>
-<tr><td>3</td><td class="icon_rooms">1</td></tr></div><td class="icon_cash">100 000</td><td class="icon_stock">3 500</td><td class="icon_cash">2 000 000</td><td class="icon_timer">2 dnů</td>
-<tr><td>4</td><td class="icon_rooms">2<td class="icon_cash">268 000</td><td class="icon_stock">5 500</td><td class="icon_cash">4 000 000</td><td class="icon_timer">3 dnů</td></td></tr>
-<tr><td>5</td><td class="icon_rooms">2<td class="icon_cash">328 000</td><td class="icon_stock">7 200</td><td class="icon_cash">8 000 000</td><td class="icon_timer">4 dnů</td></td></tr>
-<tr><td>6</td><td class="icon_rooms">3<td class="icon_cash">432 000</td><td class="icon_stock">11 000</td><td class="icon_cash">12 000 000</td><td class="icon_timer">5 dnů</td></td></tr>
-<tr><td>7</td><td class="icon_rooms">3<td class="icon_cash">590 000</td><td class="icon_stock">15 000</td><td class="icon_cash">18 000 000</td><td class="icon_timer">6 dnů</td></td></tr>
-<tr><td>8</td><td class="icon_rooms">4<td class="icon_cash">803 000</td><td class="icon_stock">18 000</td><td class="icon_cash">27 000 000</td><td class="icon_timer">8 dnů</td></td></tr>
-<tr><td>9</td><td class="icon_rooms">4<td class="icon_cash">1 790 000</td><td class="icon_stock">28 000</td><td class="icon_cash">40 500 000</td><td class="icon_timer">10 dnů</td></td></tr>
-<tr><td>10</td><td class="icon_rooms">5<td class="icon_cash">4 600 000</td><td class="icon_stock">45 000</td><td class="icon_cash">60 750 000</td><td class="icon_timer">12 dnů</td></td></tr>
-<tr><td>11</td><td class="icon_rooms">5<td class="icon_cash">6 100 000</td><td class="icon_stock">47 000</td><td class="icon_cash">80 000 000</td><td class="icon_timer">14 dnů</td></td></tr>
-<tr><td>12</td><td class="icon_rooms">5<td class="icon_cash">8 000 000</td><td class="icon_stock">49 000</td><td class="icon_diamonds">1 000</td><td class="icon_timer">16 dnů</td></td></tr>
+<thead>
+<tr>
+<th>Úroveň</th>
+<th>Místnosti</th>
+<th>Kapacita</th>
+<th>Skladová kapacita</th>
+<th>Cena vylepšení</th>
+<th>Čas vylepšování</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td class="icon_rooms">0</td><td class="icon_cash">30 000</td><td class="icon_stock">500</td><td>—</td><td>—</td></tr>
+<tr><td>2</td><td class="icon_rooms">1</td><td class="icon_cash">50 000</td><td class="icon_stock">2 300</td><td class="icon_cash">1 000 000</td><td class="icon_timer">1 den</td></tr>
+<tr><td>3</td><td class="icon_rooms">1</td><td class="icon_cash">100 000</td><td class="icon_stock">3 500</td><td class="icon_cash">2 000 000</td><td class="icon_timer">2 dny</td></tr>
+<tr><td>4</td><td class="icon_rooms">2</td><td class="icon_cash">268 000</td><td class="icon_stock">5 500</td><td class="icon_cash">4 000 000</td><td class="icon_timer">3 dny</td></tr>
+<tr><td>5</td><td class="icon_rooms">2</td><td class="icon_cash">328 000</td><td class="icon_stock">7 200</td><td class="icon_cash">8 000 000</td><td class="icon_timer">4 dny</td></tr>
+<tr><td>6</td><td class="icon_rooms">3</td><td class="icon_cash">432 000</td><td class="icon_stock">11 000</td><td class="icon_cash">12 000 000</td><td class="icon_timer">5 dnů</td></tr>
+<tr><td>7</td><td class="icon_rooms">3</td><td class="icon_cash">590 000</td><td class="icon_stock">15 000</td><td class="icon_cash">18 000 000</td><td class="icon_timer">6 dnů</td></tr>
+<tr><td>8</td><td class="icon_rooms">4</td><td class="icon_cash">803 000</td><td class="icon_stock">18 000</td><td class="icon_cash">27 000 000</td><td class="icon_timer">8 dnů</td></tr>
+<tr><td>9</td><td class="icon_rooms">4</td><td class="icon_cash">1 790 000</td><td class="icon_stock">28 000</td><td class="icon_cash">40 500 000</td><td class="icon_timer">10 dnů</td></tr>
+<tr><td>10</td><td class="icon_rooms">5</td><td class="icon_cash">4 600 000</td><td class="icon_stock">45 000</td><td class="icon_cash">60 750 000</td><td class="icon_timer">12 dnů</td></tr>
+<tr><td>11</td><td class="icon_rooms">5</td><td class="icon_cash">6 100 000</td><td class="icon_stock">47 000</td><td class="icon_cash">80 000 000</td><td class="icon_timer">14 dnů</td></tr>
+<tr><td>12</td><td class="icon_rooms">5</td><td class="icon_cash">8 000 000</td><td class="icon_stock">49 000</td><td class="icon_diamonds">1 000</td><td class="icon_timer">16 dnů</td></tr>
+</tbody>
+</table>
+</div>
 
 <h3>Zbraně nočního klubu</h3>
-<p>Návštěvníci jednotlivých místností v Noční klub mohou jako odměnu poskytnout zbraň. Získej alespoň jednou všechny dostupné kusy a splníš sbírku „Měj všechno vybavení z nočního klubu“ v hodnotě 75 diamantů.</p>
+<p>Návštěvníci jednotlivých místností v Nočním klubu mohou jako odměnu poskytnout zbraň. Získej alespoň jednou všechny dostupné kusy a splníš sbírku „Měj všechno vybavení z nočního klubu“ v hodnotě 75 diamantů.</p>
+
+<div class="table-scroll">
 <table class="nightclub_special">
+<thead>
 <tr><th>Zbraň</th><th>Název</th><th>Útočná síla</th><th>Obranná síla</th></tr>
+</thead>
+<tbody>
 <tr><td><span class="weapon_molotov"></span></td><td>Molotovův koktejl</td><td class="icon_attack">380</td><td class="icon_defence">450</td></tr>
 <tr><td><span class="weapon_flaregun"></span></td><td>Světlicová pistole</td><td class="icon_attack">480</td><td class="icon_defence">480</td></tr>
 <tr><td><span class="weapon_silenceduzi"></span></td><td>Uzi s tlumičem</td><td class="icon_attack">540</td><td class="icon_defence">480</td></tr>
@@ -164,12 +195,16 @@
 <tr><td><span class="weapon_sawedoffshotgun"></span></td><td>Zkrácená brokovnice</td><td class="icon_attack">1 800</td><td class="icon_defence">1 800</td></tr>
 <tr><td><span class="weapon_bullpupshotgun"></span></td><td>Bullpup brokovnice</td><td class="icon_attack">2 400</td><td class="icon_defence">2 200</td></tr>
 <tr><td><span class="weapon_heatseekinglauncher"></span></td><td>Raketomet s infračerveným naváděním</td><td class="icon_attack">11 000</td><td class="icon_defence">11 000</td></tr>
+</tbody>
 </table>
+</div>
+
 <h3>Extra informace / výzkumy</h3>
-<p>úrovně <a class="link" href="meth-lab.html">Varna perníku</a>. Ve <a class="link" href="research-lab.html">Výzkumná laboratoř</a> můžeš zvýšit příjem ze zboží až o 50% navíc. Můžeš odemčít noční klub za 500 diamantů po té, co dosáhneš 14.</p>
-
-
+<p>Noční klub můžeš odemknout za 500 diamantů po dosažení 14. úrovně <a class="link" href="meth-lab.html">Varny perníku</a>. Ve <a class="link" href="research-lab.html">Výzkumné laboratoři</a> můžeš zvýšit příjem z prodávaného zboží až o 50 %.</p>
+</div>
+</div>
 <div style="clear: both; height: 0"></div>
+</div>
 
 <div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
 <div id="bottom">
