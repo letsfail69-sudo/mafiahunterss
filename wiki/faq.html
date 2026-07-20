@@ -13,7 +13,70 @@
 <meta content="images/game_socialbanner.jpg" property="og:image"/>
 <link href="styles/main.css?v=4" rel="stylesheet"/>
 <script src="scripts/jquery.min.js"></script>
-</meta></meta><script defer="" src="/js/analytics.js"></script><script defer="" src="scripts/wiki.js?v=3"></script></head>
+</meta></meta><script defer="" src="/js/analytics.js"></script><script defer="" src="scripts/wiki.js?v=3"></script>
+<style>
+.wiki-faq {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.wiki-faq-item {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.faq_question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq_question:hover,
+.faq_question:focus-visible {
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.faq_question:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
+
+.faq_icon {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.faq_answer {
+  padding: 0 20px 20px;
+  line-height: 1.75;
+}
+
+.faq_answer[hidden] {
+  display: none;
+}
+</style>
+
+</head>
 <body>
 <div id="bg"><div class="left"></div><div class="right"></div></div>
 <div id="helicopter"><div data-frame="-1" data-left="-100" id="heli"></div></div>
@@ -136,27 +199,156 @@
 </div>
 <div class="lower">
 <h3>Často kladené otázky</h3>
-<div class="faq_question" onclick="open_answer(0);">Zlaté granáty?</div>
-<div class="faq_answer" id="faq0">Po té, co získáš úroveň 44, bude potřebovat zlaté granáty. Jsou potřeba pro <a class="link" href="bosses.html">rodinní bossové</a> boje. Rodinní bossové jsou skvělý způsob jak získat výzkumné body, které potřebuješ na své výzkumy v <a class="link" href="research-lab.html">Výzkumná laboratoř</a>.</div>
-<div class="faq_question" onclick="open_answer(1);">Jak získám zlaté Granáty?</div>
-<div class="faq_answer" id="faq1">Je mnoho způsobů jak získat zlaté granáty: zločiny, <a class="link" href="car-robbery.html">krádež auta</a>, <a class="link" href="attack-pvp.html">Útok PVP</a>, transporty peněz, <a class="link" href="family-wars.html">Války rodin</a>, výzvy, <a class="link" href="transport-company.html">Přepravní společnost</a>, ... Některé výzkumy ti zvýší šance na nalezení zlatých granátů!</div>
-<div class="faq_question" onclick="open_answer(2);">Ztracím stoupence, proč?</div>
-<div class="faq_answer" id="faq2">Ztratíš nanejvýš 2 <a class="link" href="followers.html">stoupenci</a> denně, ale nikdy ne víc, než je polovina tvého nejvyššího počtu stoupenců. Například pokud jsi někdy měl 80 stoupenců, pak jich nikdy nebudeš mít méně než 40. <a class="link" href="followers.html">Čti více</a></div>
-<div class="faq_question" onclick="open_answer(3);">Spoustu aut mi kradou ostatní hráči?</div>
-<div class="faq_answer" id="faq3">Neměl by sis nechávat auta příliš dlouho. Často je prodávej. "Ano, ale mohou ukrást moje peníze, když je prodám,..." Přečti si více o "Peněžní kořist" nebo "Uložení peněz" v <a class="link" href="attack-pvp.html">Útok PVP</a>.</div>
-<div class="faq_question" onclick="open_answer(4);">Kde jsou moje rodinné bomby?</div>
-<div class="faq_answer" id="faq4">Rodinné bomby můžeš použít pouze jako dar v <a class="link" href="family-wars.html">války rodin</a>, budou zobrazeny v tvém inventáři vybavení. Jednoky nebo bossové nemohou být vybaveni bombami. Můžeš je zobrazit nebo prodat v <a class="link" href="pawn-shop.html">Bazar</a>.</div>
-<div class="faq_question" onclick="open_answer(5);">Moje nová síla se nezapočítala do turnaje. Když odzbrojím své zbraně, stále dostávám protivníky s vyšší silou?</div>
-<div class="faq_answer" id="faq5">Hra ukládá a počítá maximální sílu, kterou jste kdy měli, aby se předešlo podvádění systému. Sejmout zbraně, abyste čelili slabším protivníkům s úrovní síly <a class="link" href="mafia-power.html">mafiánská síla</a>, nefunguje. Stejně tak to platí pro rodinné turnaje a <a class="link" href="family-wars.html">války rodin</a>.</div>
-<div class="faq_question" onclick="open_answer(6);">Proč není mé skóre započítáno do rodinného turnaje?</div>
-<div class="faq_answer" id="faq6">Pokud jsi se připojil do nové rodiny, pak se tvé skóre v daném týdnu nezapočítává!</div>
-<div class="faq_question" onclick="open_answer(7);">Co znamená hodnost "Nováček"?</div>
-<div class="faq_answer" id="faq7">Tato hodnost znamená, že hráč nebude zahrnutý do výzev / útoků na bosse / sázení tabáku / darování perníku / prodeje perníku své rodiny! (již není potřeba takového hráče vyhazovat z rodiny)</div>
-<div class="faq_question" onclick="open_answer(8);">Kde mohu najít Výzkumné body?</div>
-<div class="faq_answer" id="faq8">You can find them in <a class="link" href="bosses.html">rodinní bossové</a> fights, <a class="link" href="family-wars.html">války rodin</a>, <a class="link" href="research-lab.html">výzkumná laboratoř</a> and <a class="link" href="scrap-yard.html">vrakoviště</a>. Points are also given away frequently, so keep an eye on our Facebook page.</div>
+
+<div class="wiki-faq" id="wiki-faq">
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq0">
+      <span>Zlaté granáty?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq0" hidden>
+      Po té, co získáš úroveň 44, budeš potřebovat zlaté granáty. Jsou potřeba pro boje s
+      <a class="link" href="bosses.html">rodinnými bossy</a>. Rodinní bossové jsou skvělý způsob,
+      jak získat výzkumné body, které potřebuješ na své výzkumy ve
+      <a class="link" href="research-lab.html">Výzkumné laboratoři</a>.
+    </div>
+  </div>
+
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq1">
+      <span>Jak získám zlaté granáty?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq1" hidden>
+      Zlaté granáty můžeš získat několika způsoby: zločiny,
+      <a class="link" href="car-robbery.html">krádež auta</a>,
+      <a class="link" href="attack-pvp.html">Útok PVP</a>, transporty peněz,
+      <a class="link" href="family-wars.html">války rodin</a>, výzvy nebo
+      <a class="link" href="transport-company.html">Přepravní společnost</a>.
+      Některé výzkumy navíc zvyšují šanci na jejich nalezení.
+    </div>
+  </div>
+
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq2">
+      <span>Ztrácím stoupence, proč?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq2" hidden>
+      Ztratíš nanejvýš 2 <a class="link" href="followers.html">stoupence</a> denně,
+      ale nikdy ne více než polovinu svého nejvyššího dosaženého počtu stoupenců.
+      Pokud jsi například někdy měl 80 stoupenců, jejich počet neklesne pod 40.
+      <a class="link" href="followers.html">Číst více</a>
+    </div>
+  </div>
+
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq3">
+      <span>Proč mi ostatní hráči kradou tolik aut?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq3" hidden>
+      Auta by sis neměl nechávat příliš dlouho. Pravidelně je prodávej.
+      Informace o ochraně peněz po prodeji najdeš v částech „Peněžní kořist“
+      a „Uložení peněz“ na stránce
+      <a class="link" href="attack-pvp.html">Útok PVP</a>.
+    </div>
+  </div>
+
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq4">
+      <span>Kde jsou moje rodinné bomby?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq4" hidden>
+      Rodinné bomby můžeš použít pouze jako dar ve
+      <a class="link" href="family-wars.html">válkách rodin</a>. Zobrazují se v inventáři vybavení.
+      Jednotky ani bossové je nemohou používat jako výbavu. Zobrazit nebo prodat je můžeš v
+      <a class="link" href="pawn-shop.html">Bazaru</a>.
+    </div>
+  </div>
+
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq5">
+      <span>Proč se moje nová síla nezapočítala do turnaje?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq5" hidden>
+      Hra ukládá a počítá maximální sílu, kterou jsi kdy měl, aby se zabránilo obcházení systému.
+      Odzbrojení zbraní proto nepomůže získat slabší protivníky podle
+      <a class="link" href="mafia-power.html">mafiánské síly</a>.
+      Stejný princip platí pro rodinné turnaje a
+      <a class="link" href="family-wars.html">války rodin</a>.
+    </div>
+  </div>
+
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq6">
+      <span>Proč se moje skóre nezapočítalo do rodinného turnaje?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq6" hidden>
+      Pokud ses připojil do nové rodiny, tvoje skóre se v daném týdnu do rodinného turnaje nezapočítá.
+    </div>
+  </div>
+
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq7">
+      <span>Co znamená hodnost „Nováček“?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq7" hidden>
+      Hodnost znamená, že hráč nebude zahrnutý do výzev, útoků na bosse, sázení tabáku,
+      darování perníku ani prodeje perníku své rodině. Takového hráče už není nutné z rodiny vyhazovat.
+    </div>
+  </div>
+
+  <div class="wiki-faq-item">
+    <button class="faq_question" type="button" aria-expanded="false" aria-controls="faq8">
+      <span>Kde mohu získat výzkumné body?</span>
+      <span class="faq_icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq_answer" id="faq8" hidden>
+      Výzkumné body můžeš získat v bojích s
+      <a class="link" href="bosses.html">rodinnými bossy</a>,
+      ve <a class="link" href="family-wars.html">válkách rodin</a>,
+      ve <a class="link" href="research-lab.html">Výzkumné laboratoři</a>
+      a na <a class="link" href="scrap-yard.html">Vrakovišti</a>.
+      Čas od času se rozdávají také v rámci herních akcí.
+    </div>
+  </div>
 </div>
+
 <script>
-function open_answer(f) { $('.faq_answer').slideUp(600); $('#faq'+f).stop().slideDown(300); }
+document.addEventListener("DOMContentLoaded", function () {
+  const faq = document.getElementById("wiki-faq");
+  if (!faq) return;
+
+  faq.querySelectorAll(".faq_question").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const answerId = button.getAttribute("aria-controls");
+      const answer = document.getElementById(answerId);
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+
+      faq.querySelectorAll(".faq_question").forEach(function (otherButton) {
+        otherButton.setAttribute("aria-expanded", "false");
+        const otherIcon = otherButton.querySelector(".faq_icon");
+        if (otherIcon) otherIcon.textContent = "+";
+
+        const otherAnswer = document.getElementById(otherButton.getAttribute("aria-controls"));
+        if (otherAnswer) otherAnswer.hidden = true;
+      });
+
+      if (!isOpen && answer) {
+        button.setAttribute("aria-expanded", "true");
+        answer.hidden = false;
+
+        const icon = button.querySelector(".faq_icon");
+        if (icon) icon.textContent = "−";
+      }
+    });
+  });
+});
 </script>
 </div>
 <div style="clear: both; height: 0"></div>
