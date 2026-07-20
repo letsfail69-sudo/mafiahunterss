@@ -216,7 +216,34 @@
   <div id="bottom">
           
   </div>
-  </body>
+  
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+ const KEY="mhwiki-open";
+ function save(){
+   const arr=[];
+   document.querySelectorAll("#main .side .group").forEach((g,i)=>{if(g.classList.contains("on"))arr.push(i);});
+   localStorage.setItem(KEY,JSON.stringify(arr));
+ }
+ setTimeout(()=>{
+   try{
+    const arr=JSON.parse(localStorage.getItem(KEY)||"[]");
+    const groups=document.querySelectorAll("#main .side .group");
+    arr.forEach(i=>{
+      const g=groups[i];
+      if(g){
+        g.classList.add("on");
+        const m=g.nextElementSibling;
+        if(m)m.style.display="block";
+      }
+    });
+   }catch(e){}
+ },0);
+ document.querySelectorAll("#main .side .group").forEach(g=>g.addEventListener("click",()=>setTimeout(save,0)));
+});
+</script>
+
+</body>
 
 
 </html>
