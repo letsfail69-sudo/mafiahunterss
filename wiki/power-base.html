@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <title>Silová základna &mdash; Mafia Hunterss Wiki</title>
+    <meta name="description" value="Tato část funguje následovně: @wiki_powerbase_meta">
+    
+    <meta property="og:title" content="Mafia Hunterss Wiki" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:description" content="Česká herní dokumentace projektu Mafia Hunterss.">
+    <meta property="og:site_name" content="Mafia Hunterss Wiki" />
+    <meta property="og:image" content="images/game_socialbanner.jpg" />
+
+    
+      <link rel="stylesheet" href="styles/main.css?v=2">
+      <script src="scripts/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="bg"><div class="left"></div><div class="right"></div></div>
+    <div id="helicopter"><div id="heli" data-frame="-1" data-left="-100"></div></div>
+    <div id="top">
+      <div class="logo"><a href="index.html"></a></div>   
+     
+      <form method="post" id="update_lang"><input type="hidden" name="language" id="update_language" value=""></form>
+      
+      <div class="button_play"><input type="button" onclick="window.open('https://www.mafiahunterss.com');" value="Hrej teď"></div>
+      
+      
+    </div>
+    <div id="main">
+      <div class="side">
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Mafia Hunterss Wiki</div>
+        <ul class="menu">
+          <li class="home"><a href="index.html">Domů</a></li>
+          <li class="bosses"><a href="bosses.html">Bossov&eacute;</a></li>
+          <li class="followers"><a href="followers.html">Stoupenci</a></li>
+          <li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
+          <li class="mafia_power"><a href="mafia-power.html">Mafi&aacute;nsk&aacute; s&iacute;la</a></li>
+		  <li class="poker"><a href="poker.html">Poker</a></li>
+          <li class="changelog"><a href="changelog.html">Ned&aacute;vn&eacute; změny</a></li>
+          <li class="faq"><a href="faq.html">FAQ</a></li>
+          <li class="contact"><a href="https://www.mafiahunterss.com" target="_blank">Kontakt</a></li>
+        </ul>
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium I</div>
+        <ul class="menu">
+          <li class="ammunition_factory"><a href="ammunition-factory.html">Muničn&iacute; tov&aacute;rna</a></li>
+          <li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
+          <li class="bank"><a href="bank.html">Banka</a></li>
+          <li class="boss_mansion"><a href="boss-mansion.html">S&iacute;dlo bossů</a></li>
+          <li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
+          <li class="casino_robbery"><a href="casino-robbery.html">Přepaden&iacute; kasina</a></li>
+          <li class="cigar_factory"><a href="cigar-factory.html">Tov&aacute;rna na doutn&iacute;ky</a></li>
+          <li class="christmas_tree"><a href="christmas-tree.html">V&aacute;nočn&iacute; stromeček</a></li>
+          <li class="gemstones_factory"><a href="gemstones-factory.html">Tov&aacute;rna na drahokamy</a></li>
+          <li class="gym"><a href="gym.html">Posilovna</a></li>
+          <li class="hospital"><a href="hospital.html">Nemocnice</a></li>
+          <li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijn&iacute; st&aacute;nek</a></li>
+          <li class="mafia_mansion"><a href="mafia-mansion.html">Mafi&aacute;nsk&eacute; s&iacute;dlo</a></li>
+          <li class="meth_lab"><a href="meth-lab.html">Varna pern&iacute;ku</a></li>
+          <li class="money_press"><a href="money-press.html">Tisk&aacute;rna peněz</a></li>
+          <li class="nightclub"><a href="nightclub.html">Nočn&iacute; klub</a></li>
+          <li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
+          <li class="red_light_district"><a href="red-light-district.html">Ulička l&aacute;sky</a></li>
+          <li class="research_lab"><a href="research-lab.html">V&yacute;zkumn&aacute; laboratoř</a></li>
+          <li class="tattoo_shop"><a href="tattoo-shop.html">Tetovac&iacute; studio</a></li>
+          <li class="weapon_lab"><a href="weapon-lab.html">Zbraňov&aacute; laboratoř</a></li>
+          <li class="weed_farm"><a href="weed-farm.html">Pěst&iacute;rna tr&aacute;vy</a></li>
+        </ul>
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium II</div>
+          <ul class="menu">
+            <li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
+            <li class="airport"><a href="airport.html">Leti&scaron;tě</a></li>
+            <li class="boat_company"><a href="boat-company.html">Lodn&iacute; společnost</a></li>
+            <li class="crypto_mining"><a href="crypto-mining.html">Těžebn&iacute; farma</a></li>
+            <li class="diamond_factory"><a href="diamond-factory.html">Brus&iacute;rna diamantů</a></li>
+            <li class="flytipping_business"><a href="flytipping-business.html">Zpracov&aacute;n&iacute; odpadu</a></li>
+            <li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
+            <li class="horseracingstadium"><a href="horseracingstadium.html">Dostihov&yacute; stadion</a></li>
+            <li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
+            <li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
+            <li class="oil_field"><a href="oil-field.html">Ropn&eacute; pole</a></li>
+            <li class="powerbase"><a href="power-base.html">Silov&aacute; z&aacute;kladna</a></li>
+            <li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
+            <li class="repo_business"><a href="repo-business.html">Exekutorsk&yacute; byznys</a></li>
+            <li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
+            <li class="scrap_yard"><a href="scrap-yard.html">Vrakovi&scaron;tě</a></li>
+            <li class="secret_cave"><a href="secret-cave.html">Tajn&aacute; jeskyně</a></li>
+            <li class="stadium"><a href="stadium.html">Stadion</a></li>
+            <li class="steel_factory"><a href="steel-factory.html">Ocel&aacute;rna</a></li>
+            <li class="swiss_bank"><a href="swiss-bank.html">&Scaron;v&yacute;carsk&aacute; banka</a></li>
+            <li class="transport_company"><a href="transport-company.html">Přepravn&iacute; společnost</a></li>
+            <li class="vault"><a href="vault.html">Trezor</a></li>
+            <li class="warehouse"><a href="warehouse.html">Skladi&scaron;tě</a></li>
+            <li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na ext&aacute;zi</a></li>
+          </ul>
+          
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium III</div>
+        <ul class="menu">
+          <li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
+		  <li class="compound"><a href="compound.html">The Compound</a></li>
+          <li class="cargo_airstrip"><a href="cargo-airstrip.html">N&aacute;kladn&iacute; Leti&scaron;tě</a></li>
+          <li class="gold_factory"><a href="gold-factory.html">Zlat&aacute; tov&aacute;rna</a></li>
+          <li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexick&yacute; pal&aacute;c kartelu</a></li>
+          <li class="military_museum"><a href="military-museum.html">Vojensk&eacute; muzeum</a></li>
+        </ul>
+        
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Krimin&aacute;ln&iacute; činnost</div>
+        <ul class="menu">
+          <li class="car_robbery"><a href="car-robbery.html">Kr&aacute;dež auta</a></li>
+          <li class="contracts"><a href="contracts.html">Smlouvy na zak&aacute;zku</a></li>
+          <li class="crimes"><a href="crimes.html">Zločiny</a></li>
+          <li class="attack_pvp"><a href="attack-pvp.html">&Uacute;tok PVP</a></li>
+          <li class="mexican_contracts"><a href="mexican-contracts.html">Mexick&eacute; smluvn&iacute; pr&aacute;ce</a></li>
+        </ul>
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Rodina</div>
+        <ul class="menu">
+          <li class="family_home"><a href="family-home.html">Rodinn&eacute; s&iacute;dlo</a></li>
+          <li class="family_methtank"><a href="family-methtank.html">Rodinn&aacute; pern&iacute;kov&aacute; n&aacute;drž</a></li>
+          <li class="family_cashsafe"><a href="family-cashsafe.html">Rodinn&yacute; sejf</a></li>
+          <li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinn&aacute; tab&aacute;kov&aacute; farma</a></li>
+          <li class="family_cocafarm"><a href="family-cocafarm.html">Rodinn&aacute; Kokainov&aacute; plant&aacute;ž</a></li>
+          <li class="family_goldtank"><a href="family-goldtank.html">Rodinn&aacute; n&aacute;drž na zlato</a></li>
+          <li class="family_wars"><a href="family-wars.html">V&aacute;lky rodin</a></li>
+        </ul>      
+        <script type="text/javascript">
+          var nav = $(location).attr('href');
+          if (nav) {
+            jQuery('#main .side a[href^="'+nav+'"]').first().parent().addClass('current');
+            jQuery('#main .side a[href^="'+nav+'"]').first().parent().parent().prev().trigger('click');
+          }
+        </script>
+      </div>
+      <script>
+        function heli_animation() {
+          current = $('#heli').attr('data-left')*1;
+          current = current - 5;
+          if (current < -100 && Math.random() < 0.03) current = $('#helicopter').width() + 100;
+          frame = $('#heli').attr('data-frame')*1; frame++; if (frame > 2) { frame = 0; }
+          $('#heli').attr('data-left',current).attr('data-frame',frame).css({'left':current,'background-position':-frame*83+'px 0px'});
+        }
+        window.setInterval(heli_animation, 60);
+      </script>
+      <div class="content">        <div class="upper">
+          <div class="inner">
+          <h1>Silov&aacute; z&aacute;kladna</h1>
+          </div>
+        </div>
+        <div class="lower">
+          <h3>&Uacute;rovně</h3>
+          <p>Silová základna slouží k náboru speciálních jednotek, které zvyšují sílu mafie. Potřebné kontrakty musíš nejprve získat na různých místech ve hře. Najaté jednotky pak můžeš přímo v budově Silová základna vylepšovat a přidělovat jim zbraně.</p>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>Kapacita</th><th>Mafi&aacute;nsk&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_specialforces">3</td><td class="icon_power">6 000 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_specialforces">6</td><td class="icon_power">7 000 000</td><td class="icon_cash">10 000 000</td><td class="icon_timer">3 dnů</td><td></td></tr>
+            <tr><td>3</td><td class="icon_specialforces">10</td><td class="icon_power">7 500 000</td><td class="icon_cash">30 000 000</td><td class="icon_timer">4 dnů</td><td></td></tr>
+            <tr><td>4</td><td class="icon_specialforces">16</td><td class="icon_power">8 000 000</td><td class="icon_cash">60 000 000</td><td class="icon_timer">5 dnů</td><td></td></tr>
+            <tr><td>5</td><td class="icon_specialforces">24</td><td class="icon_power">8 500 000</td><td class="icon_cash">90 000 000</td><td class="icon_timer">6 dnů</td><td></td></tr>
+            <tr><td>6</td><td class="icon_specialforces">34</td><td class="icon_power">9 000 000</td><td class="icon_cash">120 000 000</td><td class="icon_timer">7 dnů</td><td class="icon_exp">Dos&aacute;hni &uacute;rovně 260</td></tr>
+            <tr><td>7</td><td class="icon_specialforces">46</td><td class="icon_power">9 500 000</td><td class="icon_cash">160 000 000</td><td class="icon_timer">10 dnů</td><td></td></tr>
+            <tr><td>8</td><td class="icon_specialforces">60</td><td class="icon_power">10 000 000</td><td class="icon_cash">190 000 000</td><td class="icon_timer">11 dnů</td><td></td></tr>
+            <tr><td>9</td><td class="icon_specialforces">76</td><td class="icon_power">10 500 000</td><td class="icon_cash">210 000 000</td><td class="icon_timer">13 dnů</td><td></td></tr>
+            <tr><td>10</td><td class="icon_specialforces">84</td><td class="icon_power">11 000 000</td><td class="icon_cash">240 000 000</td><td class="icon_timer">14 dnů</td><td class="icon_exp">Dos&aacute;hni &uacute;rovně 300</td></tr>
+            <tr><td>11</td><td class="icon_specialforces">96</td><td class="icon_power">13 000 000</td><td class="icon_cash">290 000 000</td><td class="icon_timer">17 dnů</td><td></td></tr>
+            <tr><td>12</td><td class="icon_specialforces">106</td><td class="icon_power">13 500 000</td><td class="icon_cash">340 000 000</td><td class="icon_timer">21 dnů</td><td></td></tr>
+            <tr><td>13</td><td class="icon_specialforces">120</td><td class="icon_power">14 000 000</td><td class="icon_cash">360 000 000</td><td class="icon_timer">21 dnů</td><td></td></tr>
+            <tr><td>14</td><td class="icon_specialforces">140</td><td class="icon_power">14 500 000</td><td class="icon_cash">380 000 000</td><td class="icon_timer">21 dnů</td><td class="icon_exp">Dos&aacute;hni &uacute;rovně 340</td></tr>
+            <tr><td>15</td><td class="icon_specialforces">160</td><td class="icon_power">16 000 000</td><td class="icon_cash">400 000 000</td><td class="icon_timer">24 dnů</td><td></td></tr>
+            <tr><td>16</td><td class="icon_specialforces">180</td><td class="icon_power">16 500 000</td><td class="icon_diamonds">1 000</td><td class="icon_timer">24 dnů</td><td></td></tr>
+            <tr><td>17</td><td class="icon_specialforces">210</td><td class="icon_power">17 000 000</td><td class="icon_cash">430 000 000</td><td class="icon_timer">24 dnů</td><td></td></tr>
+            <tr><td>18</td><td class="icon_specialforces">240</td><td class="icon_power">18 000 000</td><td class="icon_diamonds">3 000</td><td class="icon_timer">28 dnů</td><td></td></tr>
+            <tr><td>19</td><td class="icon_specialforces">260</td><td class="icon_power">19 500 000</td><td class="icon_cash">460 000 000</td><td class="icon_timer">28 dnů</td><td></td></tr>
+            <tr><td>20</td><td class="icon_specialforces">300</td><td class="icon_power">21 000 000</td><td class="icon_diamonds">4 000</td><td class="icon_timer">28 dnů</td><td></td></tr>
+            <tr><td>21</td><td class="icon_specialforces">330</td><td class="icon_power">22 500 000</td><td class="icon_cash">750 000 000</td><td class="icon_timer">30 dnů</td><td></td></tr>
+            <tr><td>22</td><td class="icon_specialforces">360</td><td class="icon_power">24 000 000</td><td class="icon_researchpoints">950</td><td class="icon_timer">30 dnů</td><td></td></tr>
+            <tr><td>23</td><td class="icon_specialforces">390</td><td class="icon_power">26 000 000</td><td class="icon_diamonds">4 250</td><td class="icon_timer">30 dnů</td><td></td></tr>
+            <tr><td>24</td><td class="icon_specialforces">420</td><td class="icon_power">27 500 000</td><td class="icon_researchpoints">1 000</td><td class="icon_timer">31 dnů</td><td></td></tr>
+            <tr><td>25</td><td class="icon_specialforces">460</td><td class="icon_power">29 000 000</td><td class="icon_cash">850 000 000</td><td class="icon_timer">31 dnů</td><td></td></tr>
+            <tr><td>26</td><td class="icon_specialforces">500</td><td class="icon_power">31 500 000</td><td class="icon_diamonds">4 500</td><td class="icon_timer">32 dnů</td><td></td></tr>
+            <tr><td>27</td><td class="icon_specialforces">550</td><td class="icon_power">33 000 000</td><td class="icon_researchpoints">1 050</td><td class="icon_timer">32 dnů</td><td></td></tr>
+            <tr><td>28</td><td class="icon_specialforces">600</td><td class="icon_power">36 000 000</td><td class="icon_researchpoints">1 150</td><td class="icon_timer">34 dnů</td><td></td></tr>
+          </table>
+          
+          <h3>Speci&aacute;ln&iacute; jednotky</h3>
+          <p>hodnotu 600 diamantů. Smlouvy na každou speci&aacute;ln&iacute; jednotku alespoň jednou jsou souč&aacute;st&iacute; kolekce &bdquo;V&scaron;echny speci&aacute;ln&iacute; jednotky&ldquo;, kter&aacute; m&aacute; Odměna za sbírku se připíše teprve po splnění popsaného cíle.</p>
+          <h5>Medik</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">3 000</td><td class="icon_defence">3 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">4 125</td><td class="icon_defence">4 125</td><td class="icon_cash">1 000 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">5 250</td><td class="icon_defence">5 250</td><td class="icon_cash">1 500 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">6 375</td><td class="icon_defence">6 375</td><td class="icon_cash">1 750 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">7 500</td><td class="icon_defence">7 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 30% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Voj&aacute;k</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">4 000</td><td class="icon_defence">3 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">5 500</td><td class="icon_defence">4 125</td><td class="icon_cash">1 100 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">7 000</td><td class="icon_defence">5 250</td><td class="icon_cash">1 600 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">8 500</td><td class="icon_defence">6 375</td><td class="icon_cash">1 900 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">10 000</td><td class="icon_defence">7 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 20% extra &uacute;toku / obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Dodavatel</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">6 000</td><td class="icon_defence">3 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">8 250</td><td class="icon_defence">4 125</td><td class="icon_cash">1 500 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">10 500</td><td class="icon_defence">5 250</td><td class="icon_cash">2 000 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">12 750</td><td class="icon_defence">6 375</td><td class="icon_cash">2 300 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">15 000</td><td class="icon_defence">7 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 20% extra &uacute;toku + 30% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Gran&aacute;tn&iacute;k</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">7 000</td><td class="icon_defence">4 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">9 625</td><td class="icon_defence">5 500</td><td class="icon_cash">1 750 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">12 250</td><td class="icon_defence">7 000</td><td class="icon_cash">2 400 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">14 875</td><td class="icon_defence">8 500</td><td class="icon_cash">3 000 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">17 500</td><td class="icon_defence">10 000</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 30% extra &uacute;točn&eacute; s&iacute;ly na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Kapit&aacute;n</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">6 000</td><td class="icon_defence">7 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">8 250</td><td class="icon_defence">9 625</td><td class="icon_cash">1 900 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">10 500</td><td class="icon_defence">12 250</td><td class="icon_cash">2 600 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">12 750</td><td class="icon_defence">14 875</td><td class="icon_cash">3 400 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">15 000</td><td class="icon_defence">17 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 40% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Chemik</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">11 000</td><td class="icon_defence">6 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">15 125</td><td class="icon_defence">8 250</td><td class="icon_cash">2 600 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">19 250</td><td class="icon_defence">10 500</td><td class="icon_cash">3 000 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">23 375</td><td class="icon_defence">12 750</td><td class="icon_cash">3 500 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">27 500</td><td class="icon_defence">15 000</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 60% extra &uacute;toku + 30% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Inžen&yacute;r</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">11 000</td><td class="icon_defence">10 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">15 125</td><td class="icon_defence">13 750</td><td class="icon_cash">3 000 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">19 250</td><td class="icon_defence">17 500</td><td class="icon_cash">3 500 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">23 375</td><td class="icon_defence">21 250</td><td class="icon_cash">4 000 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">27 500</td><td class="icon_defence">25 000</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 60% extra &uacute;točn&eacute; s&iacute;ly na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Plukovn&iacute;k</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">11 000</td><td class="icon_defence">13 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">15 125</td><td class="icon_defence">17 875</td><td class="icon_cash">3 100 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">19 250</td><td class="icon_defence">22 750</td><td class="icon_cash">3 700 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">23 375</td><td class="icon_defence">27 625</td><td class="icon_cash">4 300 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">27 500</td><td class="icon_defence">32 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 60% extra &uacute;toku + 40% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Kybernetik</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">17 000</td><td class="icon_defence">11 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">23 375</td><td class="icon_defence">15 125</td><td class="icon_cash">3 500 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">29 750</td><td class="icon_defence">19 250</td><td class="icon_cash">4 000 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">36 125</td><td class="icon_defence">23 375</td><td class="icon_cash">4 600 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">42 500</td><td class="icon_defence">27 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 80% extra &uacute;toku + 60% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Gener&aacute;l</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">9 000</td><td class="icon_defence">21 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">12 375</td><td class="icon_defence">28 875</td><td class="icon_cash">3 900 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">15 750</td><td class="icon_defence">36 750</td><td class="icon_cash">4 600 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">19 125</td><td class="icon_defence">44 625</td><td class="icon_cash">5 600 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">22 500</td><td class="icon_defence">52 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 60% extra &uacute;toku + 80% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Vesm&iacute;rn&aacute; str&aacute;ž</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">15 000</td><td class="icon_defence">17 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">20 625</td><td class="icon_defence">23 375</td><td class="icon_cash">4 300 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">26 250</td><td class="icon_defence">29 750</td><td class="icon_cash">5 000 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">31 875</td><td class="icon_defence">36 125</td><td class="icon_cash">6 000 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">37 500</td><td class="icon_defence">42 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 70% extra &uacute;toku + 80% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h5>Vesm&iacute;rn&eacute; s&iacute;ly</h5>
+          <table>
+            <tr><th>&Uacute;roveň</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th><th width=180>Odemčen&iacute;</th></tr>
+            <tr><td>1</td><td class="icon_attack">18 000</td><td class="icon_defence">17 000</td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td class="icon_attack">24 750</td><td class="icon_defence">23 375</td><td class="icon_cash">5 000 000</td><td class="icon_timer">10 minut</td><td></td></tr>
+            <tr><td>3</td><td class="icon_attack">31 500</td><td class="icon_defence">29 750</td><td class="icon_cash">5 750 000</td><td class="icon_timer">30 minut</td><td></td></tr>
+            <tr><td>4</td><td class="icon_attack">38 250</td><td class="icon_defence">36 125</td><td class="icon_cash">7 000 000</td><td class="icon_timer">1 hodina</td><td></td></tr>
+            <tr><td>5</td><td class="icon_attack">45 000</td><td class="icon_defence">42 500</td><td class="icon_diamonds">50</td><td class="icon_timer">3 hodin</td><td></td></tr>
+            <tr><td colspan=6 align=center>Speci&aacute;ln&iacute; informace: 80% extra &uacute;toku + 80% extra obrany na použ&iacute;van&eacute; vybaven&iacute;</td></tr>
+          </table>
+          <h3>Extra informace</h3>
+          <p>Jakmile dos&aacute;hnete &uacute;rovně <a class="link" href="mafia-mansion.html">Mafiánské sídlo</a> 28, můžete odemknout silov&aacute; z&aacute;kladna s 16 miliony hotovosti.</p>
+                   
+          <h3>Extra informace / v&yacute;zkumy</h3>
+          <p>Maximální síly dosáhneš spojením každé jednotky s vhodným typem zbraně. Nejvýhodnější kombinace ti pomůže určit Správce.</p>
+        </div>
+      </div>
+      <div style="clear: both; height: 0"></div>
+    
+    </div>
+  
+  <div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
+  <div id="bottom">
+          
+  </div>
+  
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+ const KEY="mhwiki-open";
+ function save(){
+   const arr=[];
+   document.querySelectorAll("#main .side .group").forEach((g,i)=>{if(g.classList.contains("on"))arr.push(i);});
+   localStorage.setItem(KEY,JSON.stringify(arr));
+ }
+ setTimeout(()=>{
+   try{
+    const arr=JSON.parse(localStorage.getItem(KEY)||"[]");
+    const groups=document.querySelectorAll("#main .side .group");
+    arr.forEach(i=>{
+      const g=groups[i];
+      if(g){
+        g.classList.add("on");
+        const m=g.nextElementSibling;
+        if(m)m.style.display="block";
+      }
+    });
+   }catch(e){}
+ },0);
+ document.querySelectorAll("#main .side .group").forEach(g=>g.addEventListener("click",()=>setTimeout(save,0)));
+});
+</script>
+
+</body>
+
+
+</html>
