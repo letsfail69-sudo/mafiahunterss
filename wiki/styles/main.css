@@ -8,3 +8,83 @@
 #bottom{display:none}.site-footer{border-top:1px solid var(--line);background:#07090d}.footer-inner{max-width:1440px;margin:auto;padding:28px 24px;display:flex;justify-content:space-between;gap:20px;color:#8f9aaa;font-size:13px}.footer-inner a{color:#cdd5df;text-decoration:none}.mobile-wiki-button{display:none}
 @media(max-width:1050px){.site-nav{display:none;position:absolute;top:76px;left:0;right:0;background:#0b0f15;border-bottom:1px solid var(--line);padding:12px 20px;flex-direction:column;align-items:stretch}.site-nav.open{display:flex}.site-nav a{text-align:center}.nav-toggle{display:block}.site-actions .btn:not(.btn-primary){display:none}#main{grid-template-columns:1fr}.side{position:relative;top:auto;max-height:none;display:none}.side.open{display:block}.mobile-wiki-button{display:flex;margin-bottom:12px;width:100%;padding:13px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:#fff;font-weight:900;justify-content:center}.content-source{grid-column:1}.wiki-hero{padding-top:24px}}
 @media(max-width:640px){.top-inner{padding:0 14px}.brand-text small{display:none}.brand-text span{font-size:14px}.site-actions{display:none}.wiki-hero{padding-left:14px;padding-right:14px}.wiki-hero-inner{padding:24px 20px}#main{padding:12px 14px 36px}.upper{padding:22px 18px}.content table{font-size:12px;display:block;overflow-x:auto}.footer-inner{flex-direction:column;padding:22px 14px}}
+
+
+/* Původní ikonky navigace wiki */
+.menu li{position:relative}
+.menu li::before{content:'';position:absolute;left:10px;top:50%;margin-top:-15px;width:30px;height:30px;pointer-events:none;z-index:1}
+.menu a{padding-left:50px}
+#main .side li::before { content: ''; position:absolute; left: 10px; top:50%; margin-top:-15px; width: 30px; height: 30px;  }
+#main .side li.ammunition_factory::before { background: url('../images/menu_ammunition_factory.png') no-repeat; background-size: contain; }
+#main .side li.bank::before { background: url('../images/menu_bank.png') no-repeat; background-size: contain; }
+#main .side li.boss_mansion::before { background: url('../images/menu_boss_mansion.png') no-repeat; background-size: contain; }
+#main .side li.car_robbery::before { background: url('../images/menu_car_robbery.png') no-repeat; background-size: contain; }
+#main .side li.contracts::before { background: url('../images/menu_contract_jobs.png') no-repeat; background-size: contain; }
+#main .side li.crimes::before { background: url('../images/menu_crimes.png') no-repeat; background-size: contain; margin-left: -2px; }
+#main .side li.car_showroom::before { background: url('../images/menu_car_showroom.png') no-repeat; background-size: contain; }
+#main .side li.casino_robbery::before { background: url('../images/menu_casino_robbery.png') no-repeat; background-size: contain; margin-left: 3px; }
+#main .side li.diamonds::before { background: url('../images/menu_diamonds.png') no-repeat; background-size: contain; }
+#main .side li.faq::before { background: url('../images/menu_faq.png') no-repeat; background-size: contain; }
+#main .side li.contact::before,#main .side li.changelog::before { background: url('../images/menu_contact.png') no-repeat; background-size: contain; }
+#main .side li.followers::before { background: url('../images/menu_followers.png') no-repeat; background-size: contain; }
+#main .side li.gemstones_factory::before { background: url('../images/menu_gemstones_factory.png') no-repeat; background-size: contain; }
+#main .side li.gym::before { background: url('../images/menu_gym.png') no-repeat; background-size: contain; }
+#main .side li.home::before { background: url('../images/menu_home.png') no-repeat; background-size: contain; }
+#main .side li.hospital::before { background: url('../images/menu_hospital.png') no-repeat; background-size: contain; }
+#main .side li.lottery_kiosk::before { background: url('../images/menu_lottery_kiosk.png') no-repeat; background-size: contain; }
+#main .side li.mafia_mansion::before { background: url('../images/menu_mafia_mansion.png') no-repeat; background-size: contain; }
+#main .side li.meth_lab::before { background: url('../images/menu_meth_lab.png') no-repeat; background-size: contain; }
+#main .side li.money_press::before { background: url('../images/menu_money_press.png') no-repeat; background-size: contain; }
+#main .side li.nightclub::before { background: url('../images/menu_nightclub.png') no-repeat; background-size: contain; }
+#main .side li.pawn_shop::before { background: url('../images/menu_pawn_shop.png') no-repeat; background-size: contain; }
+#main .side li.red_light_district::before { background: url('../images/menu_red_light_district.png') no-repeat; background-size: contain; }
+#main .side li.research_lab::before { background: url('../images/menu_research_lab.png') no-repeat; background-size: contain; }
+#main .side li.mafia_power::before { background: url('../images/menu_mafia_power.png') no-repeat; background-size: contain; margin-left: 5px; margin-top: -13px; }
+#main .side li.poker::before { background: url('../images/menu_poker.png') no-repeat; background-size: contain; margin-left:0px; margin-top: -13px; }
+#main .side li.bosses::before { background: url('../images/menu_bosses.png') no-repeat; background-size: contain; }
+#main .side li.family_wars::before { background: url('../images/menu_family_wars.png') no-repeat; background-size: contain;  }
+#main .side li.attack_pvp::before { background: url('../images/menu_attack_pvp.png') no-repeat; background-size: contain;  }
+#main .side li.tattoo_shop::before { background: url('../images/menu_tattoo_shop.png') no-repeat; background-size: contain; margin-left: 0px; margin-top: -13px; }
+#main .side li.weapon_lab::before { background: url('../images/menu_weapon_lab.png') no-repeat; background-size: contain; margin-left: 0px; margin-top: -13px; }
+#main .side li.weed_farm::before { background: url('../images/menu_weed_farm.png') no-repeat; background-size: contain; margin-left: 0px; margin-top: -13px; }
+#main .side li.airport::before { background: url('../images/menu_airport.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.transport_company::before { background: url('../images/menu_transport_company.png') no-repeat; background-size: contain; margin-left:2px; margin-top:-13px; }
+#main .side li.stadium::before { background: url('../images/menu_stadium.png') no-repeat; background-size: contain; margin-left:1px; margin-top:-13px; }
+#main .side li.swiss_bank::before { background: url('../images/menu_swiss_bank.png') no-repeat; background-size: contain; margin-left:2px; margin-top:-13px; }
+#main .side li.xtc_lab::before { background: url('../images/menu_xtc_lab.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-13px; }
+#main .side li.oil_field::before { background: url('../images/menu_oil_field.png') no-repeat; background-size: contain; margin-left:2px; margin-top:-13px; }
+#main .side li.steel_factory::before { background: url('../images/menu_steel_factory.png') no-repeat; background-size: contain; margin-left:2px; margin-top:-13px; }
+#main .side li.alcohol_factory::before { background: url('../images/menu_alcohol_factory.png') no-repeat; background-size: contain; margin-left:2px; margin-top:-13px; }
+#main .side li.mafia_bar::before { background: url('../images/menu_mafia_bar.png') no-repeat; background-size: contain; margin-left:2px; margin-top:-13px; }
+#main .side li.christmas_tree::before { background: url('../images/menu_christmas_tree.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.cigar_factory::before { background: url('../images/menu_cigar_factory.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.boat_company::before { background: url('../images/menu_boat_company.png') no-repeat; background-size: contain; margin-left:-4px; margin-top:-13px; }
+#main .side li.heroin_lab::before { background: url('../images/menu_heroin_lab.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.moto_club::before { background: url('../images/menu_moto_club.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.scrap_yard::before { background: url('../images/menu_scrap_yard.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.repo_business::before { background: url('../images/menu_repobusiness.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.diamond_factory::before { background: url('../images/menu_diamond_factory.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.restaurant::before { background: url('../images/menu_restaurant.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.secret_cave::before { background: url('../images/menu_secret_cave.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.flytipping_business::before { background: url('../images/menu_flytipping_business.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.crypto_mining::before { background: url('../images/menu_cryptomining.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.powernet_company::before { background: url('../images/menu_powernet.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.vault::before { background: url('../images/menu_vault.png') no-repeat; background-size: contain; margin-left:2px; margin-top:-13px; }
+#main .side li.warehouse::before { background: url('../images/menu_warehouse.png') no-repeat; background-size: contain; margin-left:2px; margin-top:-13px; }
+#main .side li.powerbase::before { background: url('../images/menu_powerbase.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.assemblypoint::before { background: url('../images/menu_assemblypoint.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.horseracingstadium::before { background: url('../images/menu_horseracingstadium.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-11px; }
+#main .side li.cocaine_lab::before { background: url('../images/menu_cocaine_lab.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-11px; }
+#main .side li.compound::before { background: url('../images/menu_compound.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-13px; }
+#main .side li.cargo_airstrip::before { background: url('../images/menu_cargo_airstrip.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-11px; }
+#main .side li.mexican_cartel_mansion::before { background: url('../images/menu_mexican_cartel_mansion.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-15px; }
+#main .side li.military_museum::before { background: url('../images/menu_military_museum.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-15px; }
+#main .side li.gold_factory::before { background: url('../images/menu_gold_factory.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-15px; }
+#main .side li.mexican_contracts::before { background: url('../images/menu_mexican_contract_jobs.png') no-repeat; background-size: contain; }
+#main .side li.family_home::before { background: url('../images/menu_family_home.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.family_methtank::before { background: url('../images/menu_family_methtank.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.family_cashsafe::before { background: url('../images/menu_family_cashsafe.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.family_tobaccofarm::before { background: url('../images/menu_family_tobaccofarm.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.family_cocafarm::before { background: url('../images/menu_family_cocafarm.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
+#main .side li.family_goldtank::before { background: url('../images/menu_family_goldtank.png') no-repeat; background-size: contain; margin-left: -2px; margin-top:-13px; }
+#main .side li::before {
