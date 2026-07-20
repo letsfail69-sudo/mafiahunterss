@@ -1,0 +1,16 @@
+MAFIA HUNTERSS WIKI – REPORT
+
+Počet zpracovaných HTML stránek: 72
+Počet kompletně přeformulovaných článků: 72
+Počet odstraněných odkazů na MafiaBattle: 212
+Počet nahrazených herních odkazů: 142
+Počet odstraněných analytických kódů: 71
+Počet odstraněných HTTrack komentářů a metadat: 283
+
+Soubory, které nebylo možné bezpečně upravit: žádné
+
+Kontrola interních odkazů a lokálních souborů: provedena.
+Kontrola názvů článků a tabulkových herních hodnot: provedena.
+Kontrola textové podobnosti významnějších odstavců: provedena.
+Kontrola původního brandingu, analytiky a HTTrack stop: provedena.
+Kontrola struktury ZIPu pro přímé rozbalení do /wiki: provedena.
