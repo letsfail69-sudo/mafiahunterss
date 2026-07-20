@@ -1,139 +1,125 @@
 <!DOCTYPE html>
+
 <html>
-  
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta content="text/html;charset=utf-8" http-equiv="content-type"/>
 <head>
-    <title>Rodinná tabáková farma &mdash; Mafia Hunterss Wiki</title>
-    <meta name="description" value="Tato část funguje následovně: ve vaší tabákové plantáži můžete společně pěstovat tabák. Mechanika se řídí právě uvedenými podmínkami a popsaným postupem.">
-    
-    <meta property="og:title" content="Mafia Hunterss Wiki" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="index.html" />
-    <meta property="og:description" content="Česká herní dokumentace projektu Mafia Hunterss.">
-    <meta property="og:site_name" content="Mafia Hunterss Wiki" />
-    <meta property="og:image" content="images/game_socialbanner.jpg" />
-
-    
-      <link rel="stylesheet" href="styles/main.css?v=2">
-      <script src="scripts/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id="bg"><div class="left"></div><div class="right"></div></div>
-    <div id="helicopter"><div id="heli" data-frame="-1" data-left="-100"></div></div>
-    <div id="top">
-      <div class="logo"><a href="index.html"></a></div>   
-     
-      <form method="post" id="update_lang"><input type="hidden" name="language" id="update_language" value=""></form>
-      
-      <div class="button_play"><input type="button" onclick="window.open('https://www.mafiahunterss.com');" value="Hrej teď"></div>
-      
-      
-    </div>
-    <div id="main">
-      <div class="side">
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Mafia Hunterss Wiki</div>
-        <ul class="menu">
-          <li class="home"><a href="index.html">Domů</a></li>
-          <li class="bosses"><a href="bosses.html">Bossov&eacute;</a></li>
-          <li class="followers"><a href="followers.html">Stoupenci</a></li>
-          <li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
-          <li class="mafia_power"><a href="mafia-power.html">Mafi&aacute;nsk&aacute; s&iacute;la</a></li>
-		  <li class="poker"><a href="poker.html">Poker</a></li>
-          <li class="changelog"><a href="changelog.html">Ned&aacute;vn&eacute; změny</a></li>
-          <li class="faq"><a href="faq.html">FAQ</a></li>
-          <li class="contact"><a href="https://www.mafiahunterss.com" target="_blank">Kontakt</a></li>
-        </ul>
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium I</div>
-        <ul class="menu">
-          <li class="ammunition_factory"><a href="ammunition-factory.html">Muničn&iacute; tov&aacute;rna</a></li>
-          <li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
-          <li class="bank"><a href="bank.html">Banka</a></li>
-          <li class="boss_mansion"><a href="boss-mansion.html">S&iacute;dlo bossů</a></li>
-          <li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
-          <li class="casino_robbery"><a href="casino-robbery.html">Přepaden&iacute; kasina</a></li>
-          <li class="cigar_factory"><a href="cigar-factory.html">Tov&aacute;rna na doutn&iacute;ky</a></li>
-          <li class="christmas_tree"><a href="christmas-tree.html">V&aacute;nočn&iacute; stromeček</a></li>
-          <li class="gemstones_factory"><a href="gemstones-factory.html">Tov&aacute;rna na drahokamy</a></li>
-          <li class="gym"><a href="gym.html">Posilovna</a></li>
-          <li class="hospital"><a href="hospital.html">Nemocnice</a></li>
-          <li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijn&iacute; st&aacute;nek</a></li>
-          <li class="mafia_mansion"><a href="mafia-mansion.html">Mafi&aacute;nsk&eacute; s&iacute;dlo</a></li>
-          <li class="meth_lab"><a href="meth-lab.html">Varna pern&iacute;ku</a></li>
-          <li class="money_press"><a href="money-press.html">Tisk&aacute;rna peněz</a></li>
-          <li class="nightclub"><a href="nightclub.html">Nočn&iacute; klub</a></li>
-          <li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
-          <li class="red_light_district"><a href="red-light-district.html">Ulička l&aacute;sky</a></li>
-          <li class="research_lab"><a href="research-lab.html">V&yacute;zkumn&aacute; laboratoř</a></li>
-          <li class="tattoo_shop"><a href="tattoo-shop.html">Tetovac&iacute; studio</a></li>
-          <li class="weapon_lab"><a href="weapon-lab.html">Zbraňov&aacute; laboratoř</a></li>
-          <li class="weed_farm"><a href="weed-farm.html">Pěst&iacute;rna tr&aacute;vy</a></li>
-        </ul>
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium II</div>
-          <ul class="menu">
-            <li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
-            <li class="airport"><a href="airport.html">Leti&scaron;tě</a></li>
-            <li class="boat_company"><a href="boat-company.html">Lodn&iacute; společnost</a></li>
-            <li class="crypto_mining"><a href="crypto-mining.html">Těžebn&iacute; farma</a></li>
-            <li class="diamond_factory"><a href="diamond-factory.html">Brus&iacute;rna diamantů</a></li>
-            <li class="flytipping_business"><a href="flytipping-business.html">Zpracov&aacute;n&iacute; odpadu</a></li>
-            <li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
-            <li class="horseracingstadium"><a href="horseracingstadium.html">Dostihov&yacute; stadion</a></li>
-            <li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
-            <li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
-            <li class="oil_field"><a href="oil-field.html">Ropn&eacute; pole</a></li>
-            <li class="powerbase"><a href="power-base.html">Silov&aacute; z&aacute;kladna</a></li>
-            <li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
-            <li class="repo_business"><a href="repo-business.html">Exekutorsk&yacute; byznys</a></li>
-            <li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
-            <li class="scrap_yard"><a href="scrap-yard.html">Vrakovi&scaron;tě</a></li>
-            <li class="secret_cave"><a href="secret-cave.html">Tajn&aacute; jeskyně</a></li>
-            <li class="stadium"><a href="stadium.html">Stadion</a></li>
-            <li class="steel_factory"><a href="steel-factory.html">Ocel&aacute;rna</a></li>
-            <li class="swiss_bank"><a href="swiss-bank.html">&Scaron;v&yacute;carsk&aacute; banka</a></li>
-            <li class="transport_company"><a href="transport-company.html">Přepravn&iacute; společnost</a></li>
-            <li class="vault"><a href="vault.html">Trezor</a></li>
-            <li class="warehouse"><a href="warehouse.html">Skladi&scaron;tě</a></li>
-            <li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na ext&aacute;zi</a></li>
-          </ul>
-          
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium III</div>
-        <ul class="menu">
-          <li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
-		  <li class="compound"><a href="compound.html">The Compound</a></li>
-          <li class="cargo_airstrip"><a href="cargo-airstrip.html">N&aacute;kladn&iacute; Leti&scaron;tě</a></li>
-          <li class="gold_factory"><a href="gold-factory.html">Zlat&aacute; tov&aacute;rna</a></li>
-          <li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexick&yacute; pal&aacute;c kartelu</a></li>
-          <li class="military_museum"><a href="military-museum.html">Vojensk&eacute; muzeum</a></li>
-        </ul>
-        
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Krimin&aacute;ln&iacute; činnost</div>
-        <ul class="menu">
-          <li class="car_robbery"><a href="car-robbery.html">Kr&aacute;dež auta</a></li>
-          <li class="contracts"><a href="contracts.html">Smlouvy na zak&aacute;zku</a></li>
-          <li class="crimes"><a href="crimes.html">Zločiny</a></li>
-          <li class="attack_pvp"><a href="attack-pvp.html">&Uacute;tok PVP</a></li>
-          <li class="mexican_contracts"><a href="mexican-contracts.html">Mexick&eacute; smluvn&iacute; pr&aacute;ce</a></li>
-        </ul>
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Rodina</div>
-        <ul class="menu">
-          <li class="family_home"><a href="family-home.html">Rodinn&eacute; s&iacute;dlo</a></li>
-          <li class="family_methtank"><a href="family-methtank.html">Rodinn&aacute; pern&iacute;kov&aacute; n&aacute;drž</a></li>
-          <li class="family_cashsafe"><a href="family-cashsafe.html">Rodinn&yacute; sejf</a></li>
-          <li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinn&aacute; tab&aacute;kov&aacute; farma</a></li>
-          <li class="family_cocafarm"><a href="family-cocafarm.html">Rodinn&aacute; Kokainov&aacute; plant&aacute;ž</a></li>
-          <li class="family_goldtank"><a href="family-goldtank.html">Rodinn&aacute; n&aacute;drž na zlato</a></li>
-          <li class="family_wars"><a href="family-wars.html">V&aacute;lky rodin</a></li>
-        </ul>      
-        <script type="text/javascript">
+<title>Rodinná tabáková farma — Mafia Hunterss Wiki</title>
+<meta content="Tato část funguje následovně: ve vaší tabákové plantáži můžete společně pěstovat tabák. Mechanika se řídí právě uvedenými podmínkami a popsaným postupem." name="description"/>
+<meta content="Mafia Hunterss Wiki" property="og:title">
+<meta content="website" property="og:type"/>
+<meta content="https://mafiahunterss.eu/wiki/family-tobaccofarm.html" property="og:url"/>
+<meta content="Česká herní dokumentace projektu Mafia Hunterss." property="og:description"/>
+<meta content="Mafia Hunterss Wiki" property="og:site_name">
+<meta content="images/game_socialbanner.jpg" property="og:image"/>
+<link href="styles/main.css?v=3" rel="stylesheet"/>
+<script src="scripts/jquery.min.js"></script>
+</meta></meta><script defer="" src="/js/analytics.js"></script><script defer="" src="scripts/wiki.js?v=3"></script></head>
+<body>
+<div id="bg"><div class="left"></div><div class="right"></div></div>
+<div id="helicopter"><div data-frame="-1" data-left="-100" id="heli"></div></div>
+<div id="top"><div class="top-inner"><a class="brand" href="/"><span class="brand-mark">MH</span><span class="brand-text"><small>Herní město od roku 2015</small><span>Mafia Hunterss</span></span></a><button aria-label="Otevřít menu" class="nav-toggle">☰</button><nav class="site-nav"><a href="/">Domů</a><a href="/about.html">O hře</a><a href="/download.html">Android</a><a href="/news.html">Novinky</a><a href="/gallery.html">Galerie</a><a href="/faq.html">FAQ</a><a class="active" href="/wiki/">Wiki</a><a href="/contact.html">Kontakt</a></nav><div class="site-actions"><a class="btn btn-primary" href="https://mafiahunterss.mafiacontrol.com/" rel="noopener" target="_blank">🎮 Hrát online</a></div></div></div><section class="wiki-hero"><div class="wiki-hero-inner"><div class="wiki-hero-content"><div class="wiki-kicker">Oficiální herní dokumentace</div><h1>Mafia Hunterss Wiki</h1><p>Budovy, herní mechaniky, rodiny, zločiny a užitečné návody na jednom místě.</p><div class="wiki-search"><input aria-label="Hledat ve wiki" id="wiki-search" placeholder="Hledat téma v navigaci…" type="search"/></div></div></div></section>
+<div id="main">
+<div class="side">
+<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Mafia Hunterss Wiki</div>
+<ul class="menu">
+<li class="home"><a href="index.html">Domů</a></li>
+<li class="bosses"><a href="bosses.html">Bossové</a></li>
+<li class="followers"><a href="followers.html">Stoupenci</a></li>
+<li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
+<li class="mafia_power"><a href="mafia-power.html">Mafiánská síla</a></li>
+<li class="poker"><a href="poker.html">Poker</a></li>
+<li class="changelog"><a href="changelog.html">Nedávné změny</a></li>
+<li class="faq"><a href="faq.html">FAQ</a></li>
+<li class="contact"><a href="/contact.html" target="_blank">Kontakt</a></li>
+</ul>
+<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Impérium I</div>
+<ul class="menu">
+<li class="ammunition_factory"><a href="ammunition-factory.html">Muniční továrna</a></li>
+<li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
+<li class="bank"><a href="bank.html">Banka</a></li>
+<li class="boss_mansion"><a href="boss-mansion.html">Sídlo bossů</a></li>
+<li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
+<li class="casino_robbery"><a href="casino-robbery.html">Přepadení kasina</a></li>
+<li class="cigar_factory"><a href="cigar-factory.html">Továrna na doutníky</a></li>
+<li class="christmas_tree"><a href="christmas-tree.html">Vánoční stromeček</a></li>
+<li class="gemstones_factory"><a href="gemstones-factory.html">Továrna na drahokamy</a></li>
+<li class="gym"><a href="gym.html">Posilovna</a></li>
+<li class="hospital"><a href="hospital.html">Nemocnice</a></li>
+<li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijní stánek</a></li>
+<li class="mafia_mansion"><a href="mafia-mansion.html">Mafiánské sídlo</a></li>
+<li class="meth_lab"><a href="meth-lab.html">Varna perníku</a></li>
+<li class="money_press"><a href="money-press.html">Tiskárna peněz</a></li>
+<li class="nightclub"><a href="nightclub.html">Noční klub</a></li>
+<li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
+<li class="red_light_district"><a href="red-light-district.html">Ulička lásky</a></li>
+<li class="research_lab"><a href="research-lab.html">Výzkumná laboratoř</a></li>
+<li class="tattoo_shop"><a href="tattoo-shop.html">Tetovací studio</a></li>
+<li class="weapon_lab"><a href="weapon-lab.html">Zbraňová laboratoř</a></li>
+<li class="weed_farm"><a href="weed-farm.html">Pěstírna trávy</a></li>
+</ul>
+<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Impérium II</div>
+<ul class="menu">
+<li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
+<li class="airport"><a href="airport.html">Letiště</a></li>
+<li class="boat_company"><a href="boat-company.html">Lodní společnost</a></li>
+<li class="crypto_mining"><a href="crypto-mining.html">Těžební farma</a></li>
+<li class="diamond_factory"><a href="diamond-factory.html">Brusírna diamantů</a></li>
+<li class="flytipping_business"><a href="flytipping-business.html">Zpracování odpadu</a></li>
+<li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
+<li class="horseracingstadium"><a href="horseracingstadium.html">Dostihový stadion</a></li>
+<li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
+<li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
+<li class="oil_field"><a href="oil-field.html">Ropné pole</a></li>
+<li class="powerbase"><a href="power-base.html">Silová základna</a></li>
+<li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
+<li class="repo_business"><a href="repo-business.html">Exekutorský byznys</a></li>
+<li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
+<li class="scrap_yard"><a href="scrap-yard.html">Vrakoviště</a></li>
+<li class="secret_cave"><a href="secret-cave.html">Tajná jeskyně</a></li>
+<li class="stadium"><a href="stadium.html">Stadion</a></li>
+<li class="steel_factory"><a href="steel-factory.html">Ocelárna</a></li>
+<li class="swiss_bank"><a href="swiss-bank.html">Švýcarská banka</a></li>
+<li class="transport_company"><a href="transport-company.html">Přepravní společnost</a></li>
+<li class="vault"><a href="vault.html">Trezor</a></li>
+<li class="warehouse"><a href="warehouse.html">Skladiště</a></li>
+<li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na extázi</a></li>
+</ul>
+<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Impérium III</div>
+<ul class="menu">
+<li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
+<li class="compound"><a href="compound.html">The Compound</a></li>
+<li class="cargo_airstrip"><a href="cargo-airstrip.html">Nákladní Letiště</a></li>
+<li class="gold_factory"><a href="gold-factory.html">Zlatá továrna</a></li>
+<li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexický palác kartelu</a></li>
+<li class="military_museum"><a href="military-museum.html">Vojenské muzeum</a></li>
+</ul>
+<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Kriminální činnost</div>
+<ul class="menu">
+<li class="car_robbery"><a href="car-robbery.html">Krádež auta</a></li>
+<li class="contracts"><a href="contracts.html">Smlouvy na zakázku</a></li>
+<li class="crimes"><a href="crimes.html">Zločiny</a></li>
+<li class="attack_pvp"><a href="attack-pvp.html">Útok PVP</a></li>
+<li class="mexican_contracts"><a href="mexican-contracts.html">Mexické smluvní práce</a></li>
+</ul>
+<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Rodina</div>
+<ul class="menu">
+<li class="family_home"><a href="family-home.html">Rodinné sídlo</a></li>
+<li class="family_methtank"><a href="family-methtank.html">Rodinná perníková nádrž</a></li>
+<li class="family_cashsafe"><a href="family-cashsafe.html">Rodinný sejf</a></li>
+<li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinná tabáková farma</a></li>
+<li class="family_cocafarm"><a href="family-cocafarm.html">Rodinná Kokainová plantáž</a></li>
+<li class="family_goldtank"><a href="family-goldtank.html">Rodinná nádrž na zlato</a></li>
+<li class="family_wars"><a href="family-wars.html">Války rodin</a></li>
+</ul>
+<script type="text/javascript">
           var nav = $(location).attr('href');
           if (nav) {
             jQuery('#main .side a[href^="'+nav+'"]').first().parent().addClass('current');
             jQuery('#main .side a[href^="'+nav+'"]').first().parent().parent().prev().trigger('click');
           }
         </script>
-      </div>
-      <script>
+</div>
+<script>
         function heli_animation() {
           current = $('#heli').attr('data-left')*1;
           current = current - 5;
@@ -143,50 +129,44 @@
         }
         window.setInterval(heli_animation, 60);
       </script>
-      <div class="content">        <div class="upper">
-          <div class="inner">
-          <h1>Rodinn&aacute; tab&aacute;kov&aacute; farma</h1>
-          </div>
-        </div>
-        <div class="lower">
-          <h3>&Uacute;rovně</h3>
-          <p>Na tabákové plantáži pěstují členové rodiny tabák společně. Od okamžiku dozrání má rodina 1 hodinu na sklizeň. Po dosažení 3. úrovně budovy <a class="link" href="cigar-factory.html"><a class="link" href="cigar-factory.html">Továrna na doutníky</a></a> se členové mohou při sklizni vzájemně podporovat. Ze sklizeného tabáku lze v Továrna na doutníky vyrábět a prodávat cigára. Jestliže úroda během stanovené hodiny sklizena nebude, uschne. Šéf, podšéf nebo honorace ji potom musí odstranit za rodinné peníze; bez odstranění bude místo na plantáži trvale blokované.</p>
-          <table>
-            <tr><th>&Uacute;roveň</th><th>Kapacita</th><th>Cena vylep&scaron;en&iacute;</th><th>Čas vylep&scaron;ov&aacute;n&iacute;</th></tr>
-            <tr><td>1</td><td class="icon_tobacco">5 sazenic</td><td class="icon_cash">3 000 000</td><td class="icon_timer">3 dnů</td></tr>
-            <tr><td>2</td><td class="icon_tobacco">10 sazenic</td><td class="icon_cash">9 000 000</td><td class="icon_timer">4 dnů</td></tr>
-            <tr><td>3</td><td class="icon_tobacco">15 sazenic</td><td class="icon_cash">22 500 000</td><td class="icon_timer">5 dnů</td></tr>
-            <tr><td>4</td><td class="icon_tobacco">20 sazenic</td><td class="icon_cash">90 250 000</td><td class="icon_timer">7 dnů</td></tr>
-            <tr><td>5</td><td class="icon_tobacco">25 sazenic</td><td class="icon_cash">250 000 000</td><td class="icon_timer">9 dnů</td></tr>
-            <tr><td>6</td><td class="icon_tobacco">30 sazenic</td><td class="icon_cash">550 000 000</td><td class="icon_timer">11 dnů</td></tr>
-            <tr><td>7</td><td class="icon_tobacco">35 sazenic</td><td class="icon_cash">1 000 000 000</td><td class="icon_timer">12 dnů</td></tr>
-            <tr><td>8</td><td class="icon_tobacco">45 sazenic</td><td class="icon_cash">2 000 000 000</td><td class="icon_timer">14 dnů</td></tr>
-            <tr><td>9</td><td class="icon_tobacco">55 sazenic</td><td class="icon_cash">3 000 000 000</td><td class="icon_timer">15 dnů</td></tr>
-            <tr><td>10</td><td class="icon_tobacco">70 sazenic</td><td class="icon_cash">4 000 000 000</td><td class="icon_timer">17 dnů</td></tr>
-          </table>
-          
-           <table class="weedfarm_special">
-            <tr><th>Tab&aacute;k</th><th>Čas skl&iacute;zen&iacute;</th><th>Sklizen&eacute; množstv&iacute;</th><th>Cena</th><th>Odemčen&iacute;</th></tr>
-            <tr><td>Aromatick&yacute; tab&aacute;k</td><td class="icon_timer">5 hodin</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">20 000</td><td class="icon_upgrade">Továrna na doutníky &uacute;roveň 1</td></tr>
-            <tr><td>Habano tab&aacute;k</td><td class="icon_timer">4 hodin</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">25 000</td><td class="icon_upgrade">Továrna na doutníky &uacute;roveň 2</td></tr>
-            <tr><td>Orient&aacute;ln&iacute; tab&aacute;k</td><td class="icon_timer">3 hodin</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">30 000</td><td class="icon_upgrade">Továrna na doutníky &uacute;roveň 4</td></tr>
-            <tr><td>Havana tab&aacute;k</td><td class="icon_timer">2 hodin</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">35 000</td><td class="icon_upgrade">Továrna na doutníky &uacute;roveň 7</td></tr>
-            <tr><td>Cohiba tab&aacute;k</td><td class="icon_timer">1 hodina</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">40 000</td><td class="icon_upgrade">Továrna na doutníky &uacute;roveň 10</td></tr>
-          </table>
-          
-          <h3>Extra informace</h3>
-          <p>Tabákovou plantáž můžeš koupit za 3 000 000 peněz poté, co <a class="link" href="family-home.html">Rodinné sídlo</a> dosáhne úrovně 10.</p>
-        </div>
-      </div>
-      <div style="clear: both; height: 0"></div>
-    
-    </div>
-  
-  <div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
-  <div id="bottom">
-          
-  </div>
-  
+<button class="mobile-wiki-button" type="button">☰ Otevřít navigaci wiki</button><div class="content"> <div class="upper">
+<div class="inner">
+<h1>Rodinná tabáková farma</h1>
+</div>
+</div>
+<div class="lower">
+<h3>Úrovně</h3>
+<p>Na tabákové plantáži pěstují členové rodiny tabák společně. Od okamžiku dozrání má rodina 1 hodinu na sklizeň. Po dosažení 3. úrovně budovy <a class="link" href="cigar-factory.html"><a class="link" href="cigar-factory.html">Továrna na doutníky</a></a> se členové mohou při sklizni vzájemně podporovat. Ze sklizeného tabáku lze v Továrna na doutníky vyrábět a prodávat cigára. Jestliže úroda během stanovené hodiny sklizena nebude, uschne. Šéf, podšéf nebo honorace ji potom musí odstranit za rodinné peníze; bez odstranění bude místo na plantáži trvale blokované.</p>
+<table>
+<tr><th>Úroveň</th><th>Kapacita</th><th>Cena vylepšení</th><th>Čas vylepšování</th></tr>
+<tr><td>1</td><td class="icon_tobacco">5 sazenic</td><td class="icon_cash">3 000 000</td><td class="icon_timer">3 dnů</td></tr>
+<tr><td>2</td><td class="icon_tobacco">10 sazenic</td><td class="icon_cash">9 000 000</td><td class="icon_timer">4 dnů</td></tr>
+<tr><td>3</td><td class="icon_tobacco">15 sazenic</td><td class="icon_cash">22 500 000</td><td class="icon_timer">5 dnů</td></tr>
+<tr><td>4</td><td class="icon_tobacco">20 sazenic</td><td class="icon_cash">90 250 000</td><td class="icon_timer">7 dnů</td></tr>
+<tr><td>5</td><td class="icon_tobacco">25 sazenic</td><td class="icon_cash">250 000 000</td><td class="icon_timer">9 dnů</td></tr>
+<tr><td>6</td><td class="icon_tobacco">30 sazenic</td><td class="icon_cash">550 000 000</td><td class="icon_timer">11 dnů</td></tr>
+<tr><td>7</td><td class="icon_tobacco">35 sazenic</td><td class="icon_cash">1 000 000 000</td><td class="icon_timer">12 dnů</td></tr>
+<tr><td>8</td><td class="icon_tobacco">45 sazenic</td><td class="icon_cash">2 000 000 000</td><td class="icon_timer">14 dnů</td></tr>
+<tr><td>9</td><td class="icon_tobacco">55 sazenic</td><td class="icon_cash">3 000 000 000</td><td class="icon_timer">15 dnů</td></tr>
+<tr><td>10</td><td class="icon_tobacco">70 sazenic</td><td class="icon_cash">4 000 000 000</td><td class="icon_timer">17 dnů</td></tr>
+</table>
+<table class="weedfarm_special">
+<tr><th>Tabák</th><th>Čas sklízení</th><th>Sklizené množství</th><th>Cena</th><th>Odemčení</th></tr>
+<tr><td>Aromatický tabák</td><td class="icon_timer">5 hodin</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">20 000</td><td class="icon_upgrade">Továrna na doutníky úroveň 1</td></tr>
+<tr><td>Habano tabák</td><td class="icon_timer">4 hodin</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">25 000</td><td class="icon_upgrade">Továrna na doutníky úroveň 2</td></tr>
+<tr><td>Orientální tabák</td><td class="icon_timer">3 hodin</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">30 000</td><td class="icon_upgrade">Továrna na doutníky úroveň 4</td></tr>
+<tr><td>Havana tabák</td><td class="icon_timer">2 hodin</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">35 000</td><td class="icon_upgrade">Továrna na doutníky úroveň 7</td></tr>
+<tr><td>Cohiba tabák</td><td class="icon_timer">1 hodina</td><td class="icon_tobacco">1 kg</td><td class="icon_cash">40 000</td><td class="icon_upgrade">Továrna na doutníky úroveň 10</td></tr>
+</table>
+<h3>Extra informace</h3>
+<p>Tabákovou plantáž můžeš koupit za 3 000 000 peněz poté, co <a class="link" href="family-home.html">Rodinné sídlo</a> dosáhne úrovně 10.</p>
+</div>
+</div>
+<div style="clear: both; height: 0"></div>
+</div>
+<div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
+<div id="bottom">
+</div>
 <script>
 document.addEventListener("DOMContentLoaded",function(){
  const KEY="mhwiki-open";
@@ -212,8 +192,5 @@ document.addEventListener("DOMContentLoaded",function(){
  document.querySelectorAll("#main .side .group").forEach(g=>g.addEventListener("click",()=>setTimeout(save,0)));
 });
 </script>
-
-</body>
-
-
+<footer class="site-footer"><div class="footer-inner"><div>© 2015–2026 Mafia Hunterss · Oficiální herní wiki</div><div><a href="/">Hlavní web</a> · <a href="/contact.html">Kontakt</a> · <a href="https://mafiahunterss.mafiacontrol.com/" rel="noopener" target="_blank">Hrát online</a></div></div></footer></body>
 </html>
