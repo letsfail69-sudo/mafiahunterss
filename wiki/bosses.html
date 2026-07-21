@@ -1,125 +1,140 @@
 <!DOCTYPE html>
-
 <html>
-<meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+  
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-<title>Bossové — Mafia Hunterss Wiki</title>
-<meta content="Podmínky a výsledek jsou následující: poraz bosse a získej mafiánskou sílu každý týden. Konkrétní výsledek vždy odpovídá splněné podmínce popsané výše." name="description"/>
-<meta content="Mafia Hunterss Wiki" property="og:title">
-<meta content="website" property="og:type"/>
-<meta content="https://mafiahunterss.eu/wiki/bosses.html" property="og:url"/>
-<meta content="Česká herní dokumentace projektu Mafia Hunterss." property="og:description"/>
-<meta content="Mafia Hunterss Wiki" property="og:site_name">
-<meta content="images/game_socialbanner.jpg" property="og:image"/>
-<link href="styles/main.css?v=4" rel="stylesheet"/>
-<script src="scripts/jquery.min.js"></script>
-</meta></meta><script defer="" src="/js/analytics.js"></script><script defer="" src="scripts/wiki.js?v=3"></script></head>
-<body>
-<div id="bg"><div class="left"></div><div class="right"></div></div>
-<div id="helicopter"><div data-frame="-1" data-left="-100" id="heli"></div></div>
-<div id="top"><div class="top-inner"><a class="brand" href="/"><span class="brand-mark">MH</span><span class="brand-text"><small>Herní město od roku 2015</small><span>Mafia Hunterss</span></span></a><button aria-label="Otevřít menu" class="nav-toggle">☰</button><nav class="site-nav"><a href="/">Domů</a><a href="/about.html">O hře</a><a href="/download.html">Android</a><a href="/news.html">Novinky</a><a href="/gallery.html">Galerie</a><a href="/faq.html">FAQ</a><a class="active" href="/wiki/">Wiki</a><a href="/contact.html">Kontakt</a></nav><div class="site-actions"><a class="btn btn-primary" href="https://mafiahunterss.mafiacontrol.com/" rel="noopener" target="_blank">🎮 Hrát online</a></div></div></div><section class="wiki-hero"><div class="wiki-hero-inner"><div class="wiki-hero-content"><div class="wiki-kicker">Oficiální herní dokumentace</div><h1>Mafia Hunterss Wiki</h1><p>Budovy, herní mechaniky, rodiny, zločiny a užitečné návody na jednom místě.</p><div class="wiki-search"><input aria-label="Hledat ve wiki" id="wiki-search" placeholder="Hledat téma v navigaci…" type="search"/></div></div></div></section>
-<div id="main">
-<div class="side">
-<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Mafia Hunterss Wiki</div>
-<ul class="menu">
-<li class="home"><a href="index.html">Domů</a></li>
-<li class="bosses"><a href="bosses.html">Bossové</a></li>
-<li class="followers"><a href="followers.html">Stoupenci</a></li>
-<li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
-<li class="mafia_power"><a href="mafia-power.html">Mafiánská síla</a></li>
-<li class="poker"><a href="poker.html">Poker</a></li>
-<li class="changelog"><a href="changelog.html">Nedávné změny</a></li>
-<li class="faq"><a href="faq.html">FAQ</a></li>
-<li class="contact"><a href="/contact.html" target="_blank">Kontakt</a></li>
-</ul>
-<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Impérium I</div>
-<ul class="menu">
-<li class="ammunition_factory"><a href="ammunition-factory.html">Muniční továrna</a></li>
-<li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
-<li class="bank"><a href="bank.html">Banka</a></li>
-<li class="boss_mansion"><a href="boss-mansion.html">Sídlo bossů</a></li>
-<li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
-<li class="casino_robbery"><a href="casino-robbery.html">Přepadení kasina</a></li>
-<li class="cigar_factory"><a href="cigar-factory.html">Továrna na doutníky</a></li>
-<li class="christmas_tree"><a href="christmas-tree.html">Vánoční stromeček</a></li>
-<li class="gemstones_factory"><a href="gemstones-factory.html">Továrna na drahokamy</a></li>
-<li class="gym"><a href="gym.html">Posilovna</a></li>
-<li class="hospital"><a href="hospital.html">Nemocnice</a></li>
-<li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijní stánek</a></li>
-<li class="mafia_mansion"><a href="mafia-mansion.html">Mafiánské sídlo</a></li>
-<li class="meth_lab"><a href="meth-lab.html">Varna perníku</a></li>
-<li class="money_press"><a href="money-press.html">Tiskárna peněz</a></li>
-<li class="nightclub"><a href="nightclub.html">Noční klub</a></li>
-<li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
-<li class="red_light_district"><a href="red-light-district.html">Ulička lásky</a></li>
-<li class="research_lab"><a href="research-lab.html">Výzkumná laboratoř</a></li>
-<li class="tattoo_shop"><a href="tattoo-shop.html">Tetovací studio</a></li>
-<li class="weapon_lab"><a href="weapon-lab.html">Zbraňová laboratoř</a></li>
-<li class="weed_farm"><a href="weed-farm.html">Pěstírna trávy</a></li>
-</ul>
-<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Impérium II</div>
-<ul class="menu">
-<li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
-<li class="airport"><a href="airport.html">Letiště</a></li>
-<li class="boat_company"><a href="boat-company.html">Lodní společnost</a></li>
-<li class="crypto_mining"><a href="crypto-mining.html">Těžební farma</a></li>
-<li class="diamond_factory"><a href="diamond-factory.html">Brusírna diamantů</a></li>
-<li class="flytipping_business"><a href="flytipping-business.html">Zpracování odpadu</a></li>
-<li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
-<li class="horseracingstadium"><a href="horseracingstadium.html">Dostihový stadion</a></li>
-<li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
-<li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
-<li class="oil_field"><a href="oil-field.html">Ropné pole</a></li>
-<li class="powerbase"><a href="power-base.html">Silová základna</a></li>
-<li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
-<li class="repo_business"><a href="repo-business.html">Exekutorský byznys</a></li>
-<li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
-<li class="scrap_yard"><a href="scrap-yard.html">Vrakoviště</a></li>
-<li class="secret_cave"><a href="secret-cave.html">Tajná jeskyně</a></li>
-<li class="stadium"><a href="stadium.html">Stadion</a></li>
-<li class="steel_factory"><a href="steel-factory.html">Ocelárna</a></li>
-<li class="swiss_bank"><a href="swiss-bank.html">Švýcarská banka</a></li>
-<li class="transport_company"><a href="transport-company.html">Přepravní společnost</a></li>
-<li class="vault"><a href="vault.html">Trezor</a></li>
-<li class="warehouse"><a href="warehouse.html">Skladiště</a></li>
-<li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na extázi</a></li>
-</ul>
-<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Impérium III</div>
-<ul class="menu">
-<li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
-<li class="compound"><a href="compound.html">The Compound</a></li>
-<li class="cargo_airstrip"><a href="cargo-airstrip.html">Nákladní Letiště</a></li>
-<li class="gold_factory"><a href="gold-factory.html">Zlatá továrna</a></li>
-<li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexický palác kartelu</a></li>
-<li class="military_museum"><a href="military-museum.html">Vojenské muzeum</a></li>
-</ul>
-<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Kriminální činnost</div>
-<ul class="menu">
-<li class="car_robbery"><a href="car-robbery.html">Krádež auta</a></li>
-<li class="contracts"><a href="contracts.html">Smlouvy na zakázku</a></li>
-<li class="crimes"><a href="crimes.html">Zločiny</a></li>
-<li class="attack_pvp"><a href="attack-pvp.html">Útok PVP</a></li>
-<li class="mexican_contracts"><a href="mexican-contracts.html">Mexické smluvní práce</a></li>
-</ul>
-<div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Rodina</div>
-<ul class="menu">
-<li class="family_home"><a href="family-home.html">Rodinné sídlo</a></li>
-<li class="family_methtank"><a href="family-methtank.html">Rodinná perníková nádrž</a></li>
-<li class="family_cashsafe"><a href="family-cashsafe.html">Rodinný sejf</a></li>
-<li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinná tabáková farma</a></li>
-<li class="family_cocafarm"><a href="family-cocafarm.html">Rodinná Kokainová plantáž</a></li>
-<li class="family_goldtank"><a href="family-goldtank.html">Rodinná nádrž na zlato</a></li>
-<li class="family_wars"><a href="family-wars.html">Války rodin</a></li>
-</ul>
-<script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Bossové &mdash; Mafia Hunterss Wiki</title>
+    <meta name="description" value="Podmínky a výsledek jsou následující: poraz bosse a získej mafiánskou sílu každý týden. Konkrétní výsledek vždy odpovídá splněné podmínce popsané výše.">
+    
+    <meta property="og:title" content="Mafia Hunterss Wiki" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:description" content="Česká herní dokumentace projektu Mafia Hunterss.">
+    <meta property="og:site_name" content="Mafia Hunterss Wiki" />
+    <meta property="og:image" content="images/game_socialbanner.jpg" />
+
+    
+      <link rel="stylesheet" href="styles/main.css?v=3">
+      <script src="scripts/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="bg"><div class="left"></div><div class="right"></div></div>
+    <div id="helicopter"><div id="heli" data-frame="-1" data-left="-100"></div></div>
+    <div id="top">
+      <div class="logo"><a href="index.html"></a></div>   
+     
+      <form method="post" id="update_lang"><input type="hidden" name="language" id="update_language" value=""></form>
+      
+      <div class="button_play"><input type="button" onclick="window.open('https://www.mafiahunterss.com');" value="Hrej teď"></div>
+      
+      
+    </div>
+    <div id="main">
+      <div class="side">
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Mafia Hunterss Wiki</div>
+        <ul class="menu">
+          <li class="home"><a href="index.html">Domů</a></li>
+          <li class="bosses"><a href="bosses.html">Bossov&eacute;</a></li>
+          <li class="followers"><a href="followers.html">Stoupenci</a></li>
+          <li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
+          <li class="mafia_power"><a href="mafia-power.html">Mafi&aacute;nsk&aacute; s&iacute;la</a></li>
+		  <li class="poker"><a href="poker.html">Poker</a></li>
+          <li class="changelog"><a href="changelog.html">Ned&aacute;vn&eacute; změny</a></li>
+          <li class="faq"><a href="faq.html">FAQ</a></li>
+          <li class="contact"><a href="https://www.mafiahunterss.com" target="_blank">Kontakt</a></li>
+        </ul>
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium I</div>
+        <ul class="menu">
+          <li class="ammunition_factory"><a href="ammunition-factory.html">Muničn&iacute; tov&aacute;rna</a></li>
+          <li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
+          <li class="bank"><a href="bank.html">Banka</a></li>
+          <li class="boss_mansion"><a href="boss-mansion.html">S&iacute;dlo bossů</a></li>
+          <li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
+          <li class="casino_robbery"><a href="casino-robbery.html">Přepaden&iacute; kasina</a></li>
+          <li class="cigar_factory"><a href="cigar-factory.html">Tov&aacute;rna na doutn&iacute;ky</a></li>
+          <li class="christmas_tree"><a href="christmas-tree.html">V&aacute;nočn&iacute; stromeček</a></li>
+          <li class="gemstones_factory"><a href="gemstones-factory.html">Tov&aacute;rna na drahokamy</a></li>
+          <li class="gym"><a href="gym.html">Posilovna</a></li>
+          <li class="hospital"><a href="hospital.html">Nemocnice</a></li>
+          <li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijn&iacute; st&aacute;nek</a></li>
+          <li class="mafia_mansion"><a href="mafia-mansion.html">Mafi&aacute;nsk&eacute; s&iacute;dlo</a></li>
+          <li class="meth_lab"><a href="meth-lab.html">Varna pern&iacute;ku</a></li>
+          <li class="money_press"><a href="money-press.html">Tisk&aacute;rna peněz</a></li>
+          <li class="nightclub"><a href="nightclub.html">Nočn&iacute; klub</a></li>
+          <li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
+          <li class="red_light_district"><a href="red-light-district.html">Ulička l&aacute;sky</a></li>
+          <li class="research_lab"><a href="research-lab.html">V&yacute;zkumn&aacute; laboratoř</a></li>
+          <li class="tattoo_shop"><a href="tattoo-shop.html">Tetovac&iacute; studio</a></li>
+          <li class="weapon_lab"><a href="weapon-lab.html">Zbraňov&aacute; laboratoř</a></li>
+          <li class="weed_farm"><a href="weed-farm.html">Pěst&iacute;rna tr&aacute;vy</a></li>
+        </ul>
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium II</div>
+          <ul class="menu">
+            <li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
+            <li class="airport"><a href="airport.html">Leti&scaron;tě</a></li>
+            <li class="boat_company"><a href="boat-company.html">Lodn&iacute; společnost</a></li>
+            <li class="crypto_mining"><a href="crypto-mining.html">Těžebn&iacute; farma</a></li>
+            <li class="diamond_factory"><a href="diamond-factory.html">Brus&iacute;rna diamantů</a></li>
+            <li class="flytipping_business"><a href="flytipping-business.html">Zpracov&aacute;n&iacute; odpadu</a></li>
+            <li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
+            <li class="horseracingstadium"><a href="horseracingstadium.html">Dostihov&yacute; stadion</a></li>
+            <li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
+            <li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
+            <li class="oil_field"><a href="oil-field.html">Ropn&eacute; pole</a></li>
+            <li class="powerbase"><a href="power-base.html">Silov&aacute; z&aacute;kladna</a></li>
+            <li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
+            <li class="repo_business"><a href="repo-business.html">Exekutorsk&yacute; byznys</a></li>
+            <li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
+            <li class="scrap_yard"><a href="scrap-yard.html">Vrakovi&scaron;tě</a></li>
+            <li class="secret_cave"><a href="secret-cave.html">Tajn&aacute; jeskyně</a></li>
+            <li class="stadium"><a href="stadium.html">Stadion</a></li>
+            <li class="steel_factory"><a href="steel-factory.html">Ocel&aacute;rna</a></li>
+            <li class="swiss_bank"><a href="swiss-bank.html">&Scaron;v&yacute;carsk&aacute; banka</a></li>
+            <li class="transport_company"><a href="transport-company.html">Přepravn&iacute; společnost</a></li>
+            <li class="vault"><a href="vault.html">Trezor</a></li>
+            <li class="warehouse"><a href="warehouse.html">Skladi&scaron;tě</a></li>
+            <li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na ext&aacute;zi</a></li>
+          </ul>
+          
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium III</div>
+        <ul class="menu">
+          <li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
+		  <li class="compound"><a href="compound.html">The Compound</a></li>
+          <li class="cargo_airstrip"><a href="cargo-airstrip.html">N&aacute;kladn&iacute; Leti&scaron;tě</a></li>
+          <li class="gold_factory"><a href="gold-factory.html">Zlat&aacute; tov&aacute;rna</a></li>
+          <li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexick&yacute; pal&aacute;c kartelu</a></li>
+          <li class="military_museum"><a href="military-museum.html">Vojensk&eacute; muzeum</a></li>
+        </ul>
+        
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Krimin&aacute;ln&iacute; činnost</div>
+        <ul class="menu">
+          <li class="car_robbery"><a href="car-robbery.html">Kr&aacute;dež auta</a></li>
+          <li class="contracts"><a href="contracts.html">Smlouvy na zak&aacute;zku</a></li>
+          <li class="crimes"><a href="crimes.html">Zločiny</a></li>
+          <li class="attack_pvp"><a href="attack-pvp.html">&Uacute;tok PVP</a></li>
+          <li class="mexican_contracts"><a href="mexican-contracts.html">Mexick&eacute; smluvn&iacute; pr&aacute;ce</a></li>
+        </ul>
+        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Rodina</div>
+        <ul class="menu">
+          <li class="family_home"><a href="family-home.html">Rodinn&eacute; s&iacute;dlo</a></li>
+          <li class="family_methtank"><a href="family-methtank.html">Rodinn&aacute; pern&iacute;kov&aacute; n&aacute;drž</a></li>
+          <li class="family_cashsafe"><a href="family-cashsafe.html">Rodinn&yacute; sejf</a></li>
+          <li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinn&aacute; tab&aacute;kov&aacute; farma</a></li>
+          <li class="family_cocafarm"><a href="family-cocafarm.html">Rodinn&aacute; Kokainov&aacute; plant&aacute;ž</a></li>
+          <li class="family_goldtank"><a href="family-goldtank.html">Rodinn&aacute; n&aacute;drž na zlato</a></li>
+          <li class="family_wars"><a href="family-wars.html">V&aacute;lky rodin</a></li>
+        </ul>      
+        <script type="text/javascript">
           var nav = $(location).attr('href');
           if (nav) {
             jQuery('#main .side a[href^="'+nav+'"]').first().parent().addClass('current');
             jQuery('#main .side a[href^="'+nav+'"]').first().parent().parent().prev().trigger('click');
           }
         </script>
-</div>
-<script>
+      </div>
+      <script>
         function heli_animation() {
           current = $('#heli').attr('data-left')*1;
           current = current - 5;
@@ -129,176 +144,202 @@
         }
         window.setInterval(heli_animation, 60);
       </script>
-<button class="mobile-wiki-button" type="button">☰ Otevřít navigaci wiki</button><div class="content"> <div class="upper">
-<div class="inner">
-<h1>Bossové</h1>
-</div>
-</div>
-<div class="lower">
-<h3>Všeobecné</h3>
-<p>řadu nových možnosti ve hře: Od úrovně 44 odemčeš</p>
-<ul>
-<li><a class="link" href="boss-mansion.html">Sídlo bossů</a></li>
-<li>Bossové</li>
-<li>Rodinní bossové</li>
-<li><a class="link" href="research-lab.html">Výzkumná laboratoř</a></li>
-</ul>
-<h3>Sídlo bossů</h3>
-<p>poražených bossů <a class="link" href="boss-mansion.html">Čti více</a>. Sídlo, které je využito pro uchování</p>
-<h3>Bossové</h3>
-<p>V průběhu přibližně dvou třetin týdne se postupně střídají různí Bossové; platný rozpis najdeš v budově Sídlo bossů. Každý boss nabízí 50 stupňů obtížnosti a s každým dalším stupněm sílí, takže jeho poražení vyžaduje stále lepší přípravu.</p>
-<p>Odměny obsahují Za každou pokořenou úroveň dostaneš pěknou odměnu, která je tím lepší, čím vyšší je obtížnost. Rozhodující je přitom aktuální úroveň a hodnoty uvedené v přehledu.</p>
-<ul>
-<li>Hotovost</li>
-<li>Diamanty/ů</li>
-<li>Munice</li>
-<li>Zdraví</li>
-<li>Vybavení</li>
-</ul>
-<p>Po prvním boji máš 2 hodiny, než se boss plně uzdraví a musíš začít znovu. S každým bossem dostaneš také 2 cíle: Na každý boj s bossem máš 1 minutu na vítězství.</p>
-<ul>
-<li>Poraž bosse (35/40)x (odměna: získáš bosse do svého sídla bossů)</li>
-<li>Rodinný cíl: Poraž bosse X-krát s tvojí rodinou (sám musíš minimálně 25-krát)(odměna: zbraň bosse)</li>
-</ul>
-<p>Budeš vyžadovat hodně zdraví a munice k jeho poražení. Proto je důležité průběžně vylepšovat <a class="link" href="hospital.html">Nemocnice</a> a <a class="link" href="mafia-power.html">Mafiánská síla</a>, čím více mafianské síly, tím více zranění způsobíš (ale ne víc jak 3,5 HP za zásah). To samé platí pro bosse, jestliže zasáhne tebe. Počítej s tím, že boss opětuje palbu a také sa často kryje před před tvojí střelbou, takže ho můžeš minout.</p>
-<h3>Rodinní bossové</h3>
-<p>rodinnou. Pro začátek úrovně bosse jsou vyžadovány <a class="link" href="faq.html">Zlaté granáty</a> a množství roste s každou další úrovní (5 až 50 zlatých granátů). S úrovní roste také obtížnost bosse. Jako u normálních bossů, za vítězství obdržíte odměny. Jakmile je úroveň bosse rodiny spuštěna, celá rodina má 3 hodiny na jeho poražení. Na rozdíl od normálních bossů, rodinné bosse musíš porazit společně se svojí Rozhodující je přitom aktuální úroveň a hodnoty uvedené v přehledu. Konkrétní výsledek vždy odpovídá splněné podmínce popsané výše.</p>
-<p>Pro rodinné bossy jsou stanoveny následující cíle:</p>
-<ul>
-<li>Poraž některou z úrovní bosse 30 krát (odměna: získáš bosse do svého sídla bossů)</li>
-<li>Poraž vše 10 úrovní bosse (odměna: získáš zbraň bosse)</li>
-</ul>
-<p>Za souboje s rodinnými bossy můžeš jako zvláštní odměnu obdržet Výzkumné body. Ty následně využiješ v budově <a class="link" href="research-lab.html">Výzkumná laboratoř</a>.</p>
-<h3>Běžné zbraně bosse</h3>
-<p>cenu 50 diamantů. Tato kolekce má</p>
+      <div class="content">        <div class="upper">
+          <div class="inner">
+          <h1>Bossov&eacute;</h1>
+          </div>
+        </div>
+        <div class="lower">
+          <h3>V&scaron;eobecn&eacute;</h3>
+          <p>řadu nov&yacute;ch možnosti ve hře: Od &uacute;rovně 44 odemče&scaron;</p>
+          <ul>
+             <li><a class="link" href="boss-mansion.html">S&iacute;dlo bossů</a></li>
+             <li>Bossov&eacute;</li>
+             <li>Rodinn&iacute; bossov&eacute;</li>
+             <li><a class="link" href="research-lab.html">V&yacute;zkumn&aacute; laboratoř</a></li>
+          </ul>
+          
+          <h3>S&iacute;dlo bossů</h3>
+          <p>poražen&yacute;ch bossů <a class="link" href="boss-mansion.html">Čti více</a>. S&iacute;dlo, kter&eacute; je využito pro uchov&aacute;n&iacute;</p>
+          
+          <h3>Bossov&eacute;</h3>
+          <p>V průběhu přibližně dvou třetin týdne se postupně střídají různí Bossové; platný rozpis najdeš v budově Sídlo bossů. Každý boss nabízí 50 stupňů obtížnosti a s každým dalším stupněm sílí, takže jeho poražení vyžaduje stále lepší přípravu.</p>
+          <p>Odměny obsahuj&iacute; Za každou pokořenou &uacute;roveň dostane&scaron; pěknou odměnu, kter&aacute; je t&iacute;m lep&scaron;&iacute;, č&iacute;m vy&scaron;&scaron;&iacute; je obt&iacute;žnost. Rozhodující je přitom aktuální úroveň a hodnoty uvedené v přehledu.</p>
+          <ul>
+           <li>Hotovost</li>
+           <li>Diamanty/ů</li>
+           <li>Munice</li>
+           <li>Zdrav&iacute;</li>
+           <li>Vybaven&iacute;</li>
+          </ul>
+          
+          <p>Po prvn&iacute;m boji m&aacute;&scaron; 2 hodiny, než se boss plně uzdrav&iacute; a mus&iacute;&scaron; zač&iacute;t znovu. S každ&yacute;m bossem dostane&scaron; tak&eacute; 2 c&iacute;le: Na každ&yacute; boj s bossem m&aacute;&scaron; 1 minutu na v&iacute;tězstv&iacute;.</p>
+            <ul>
+              <li>Poraž bosse (35/40)x (odměna: z&iacute;sk&aacute;&scaron; bosse do sv&eacute;ho s&iacute;dla bossů)</li>
+              <li>Rodinn&yacute; c&iacute;l: Poraž bosse X-kr&aacute;t s tvoj&iacute; rodinou (s&aacute;m mus&iacute;&scaron; minim&aacute;lně 25-kr&aacute;t)(odměna: zbraň bosse)</li>
+            </ul>
+            <p>Bude&scaron; vyžadovat hodně zdrav&iacute; a munice k jeho poražen&iacute;. </br></br>Proto je důležit&eacute; průběžně vylep&scaron;ovat <a class="link" href="hospital.html">Nemocnice</a> a <a class="link" href="mafia-power.html">Mafiánská síla</a>, č&iacute;m v&iacute;ce mafiansk&eacute; s&iacute;ly, t&iacute;m v&iacute;ce zraněn&iacute; způsob&iacute;&scaron; (ale ne v&iacute;c jak 3,5 HP za z&aacute;sah). To sam&eacute; plat&iacute; pro bosse, jestliže zas&aacute;hne tebe. Počítej s tím, že boss opětuje palbu a tak&eacute; sa často kryje před před tvoj&iacute; střelbou, takže ho může&scaron; minout.</p>
+         
+         <h3>Rodinn&iacute; bossov&eacute;</h3>
+         <p>rodinnou. Pro zač&aacute;tek &uacute;rovně bosse jsou vyžadov&aacute;ny <a class="link" href="faq.html">Zlaté granáty</a> a množstv&iacute; roste s každou dal&scaron;&iacute; &uacute;rovn&iacute; (5 až 50 zlat&yacute;ch gran&aacute;tů). S &uacute;rovn&iacute; roste tak&eacute; obt&iacute;žnost bosse. Jako u norm&aacute;ln&iacute;ch bossů, za v&iacute;tězstv&iacute; obdržíte odměny. Jakmile je &uacute;roveň bosse rodiny spu&scaron;těna, cel&aacute; rodina m&aacute; 3 hodiny na jeho poražen&iacute;. Na rozd&iacute;l od norm&aacute;ln&iacute;ch bossů, rodinn&eacute; bosse mus&iacute;&scaron; porazit společně se svoj&iacute; Rozhodující je přitom aktuální úroveň a hodnoty uvedené v přehledu. Konkrétní výsledek vždy odpovídá splněné podmínce popsané výše.</p>
+         <p>Pro rodinné bossy jsou stanoveny následující cíle:</p>
+         <ul>
+          <li>Poraž některou z &uacute;rovn&iacute; bosse 30 kr&aacute;t (odměna: z&iacute;sk&aacute;&scaron; bosse do sv&eacute;ho s&iacute;dla bossů)</li>
+          <li>Poraž v&scaron;e 10 &uacute;rovn&iacute; bosse (odměna: z&iacute;sk&aacute;&scaron; zbraň bosse)</li>
+         </ul>
+         <p>Za souboje s rodinnými bossy můžeš jako zvláštní odměnu obdržet Výzkumné body. Ty následně využiješ v budově <a class="link" href="research-lab.html">Výzkumná laboratoř</a>.</p>
+         
+         <h3>Běžn&eacute; zbraně bosse</h3>
+         <p>cenu 50 diamantů. Tato kolekce m&aacute;</p>
+         <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
 <table class="bosses_special">
-<tr><th>Zbraň</th><th>Název</th><th>Útočná síla</th><th>Obranná síla</th></tr>
-<tr><td><span class="weapon_wand"></span></td><td>Hůlka</td><td class="icon_attack">60</td><td class="icon_defence">40</td></tr>
-<tr><td><span class="weapon_staff"></span></td><td>Hůl</td><td class="icon_attack">50</td><td class="icon_defence">50</td></tr>
-<tr><td><span class="weapon_sword"></span></td><td>Meč</td><td class="icon_attack">60</td><td class="icon_defence">50</td></tr>
-<tr><td><span class="weapon_nunchuku"></span></td><td>Nunčaky</td><td class="icon_attack">80</td><td class="icon_defence">40</td></tr>
-<tr><td><span class="weapon_tonfa"></span></td><td>Tonfa</td><td class="icon_attack">60</td><td class="icon_defence">60</td></tr>
-<tr><td><span class="weapon_maul"></span></td><td>Kladivo</td><td class="icon_attack">90</td><td class="icon_defence">40</td></tr>
-<tr><td><span class="weapon_addchain"></span></td><td>Řetěz</td><td class="icon_attack">60</td><td class="icon_defence">100</td></tr>
-<tr><td><span class="weapon_sickle"></span></td><td>Srp</td><td class="icon_attack">90</td><td class="icon_defence">80</td></tr>
-<tr><td><span class="weapon_warhammer"></span></td><td>Bojové kladivo</td><td class="icon_attack">90</td><td class="icon_defence">80</td></tr>
-<tr><td><span class="weapon_polearnm"></span></td><td>Kopí</td><td class="icon_attack">150</td><td class="icon_defence">50</td></tr>
-<tr><td><span class="weapon_bowarrow"></span></td><td>Luk a šípy</td><td class="icon_attack">120</td><td class="icon_defence">120</td></tr>
-<tr><td><span class="weapon_lightflail"></span></td><td>Lehký palcát</td><td class="icon_attack">160</td><td class="icon_defence">80</td></tr>
-<tr><td><span class="weapon_lightmace"></span></td><td>Lehký kyj</td><td class="icon_attack">130</td><td class="icon_defence">130</td></tr>
-<tr><td><span class="weapon_dagger"></span></td><td>Dýka</td><td class="icon_attack">120</td><td class="icon_defence">140</td></tr>
-<tr><td><span class="weapon_shortsword"></span></td><td>Krátký meč</td><td class="icon_attack">140</td><td class="icon_defence">140</td></tr>
-<tr><td><span class="weapon_scythe"></span></td><td>Kosa</td><td class="icon_attack">180</td><td class="icon_defence">110</td></tr>
-<tr><td><span class="weapon_morningstar"></span></td><td>Jitřenka</td><td class="icon_attack">150</td><td class="icon_defence">140</td></tr>
-<tr><td><span class="weapon_lightpick"></span></td><td>Lehký krompáč</td><td class="icon_attack">150</td><td class="icon_defence">149</td></tr>
-</table>
-<h3>Neobyčejné zbraně bosse</h3>
-<p>cenu 100 diamantů. Tato kolekce má</p>
-<table class="bosses_special">
-<tr><th>Zbraň</th><th>Název</th><th>Útočná síla</th><th>Obranná síla</th></tr>
-<tr><td><span class="weapon_sai"></span></td><td>Sai</td><td class="icon_attack">160</td><td class="icon_defence">140</td></tr>
-<tr><td><span class="weapon_heavyflail"></span></td><td>Těžký palcát</td><td class="icon_attack">160</td><td class="icon_defence">160</td></tr>
-<tr><td><span class="weapon_heavymace"></span></td><td>Těžký kyj</td><td class="icon_attack">160</td><td class="icon_defence">160</td></tr>
-<tr><td><span class="weapon_m9111"></span></td><td>M9111</td><td class="icon_attack">200</td><td class="icon_defence">150</td></tr>
-<tr><td><span class="weapon_direflail"></span></td><td>Hrozivý palcát</td><td class="icon_attack">200</td><td class="icon_defence">200</td></tr>
-<tr><td><span class="weapon_bastardsword"></span></td><td>Bastardský meč</td><td class="icon_attack">300</td><td class="icon_defence">200</td></tr>
-<tr><td><span class="weapon_ringsword"></span></td><td>Prstencový meč</td><td class="icon_attack">300</td><td class="icon_defence">200</td></tr>
-<tr><td><span class="weapon_katar"></span></td><td>Katar</td><td class="icon_attack">250</td><td class="icon_defence">250</td></tr>
-<tr><td><span class="weapon_longsword"></span></td><td>Dlouhý meč</td><td class="icon_attack">300</td><td class="icon_defence">200</td></tr>
-<tr><td><span class="weapon_hookedhammer"></span></td><td>Kladivo trpaslíků</td><td class="icon_attack">200</td><td class="icon_defence">300</td></tr>
-<tr><td><span class="weapon_g88"></span></td><td>G88</td><td class="icon_attack">300</td><td class="icon_defence">250</td></tr>
-<tr><td><span class="weapon_riotshield"></span></td><td>Ochranný štít</td><td class="icon_attack">0</td><td class="icon_defence">600</td></tr>
-<tr><td><span class="weapon_halberd"></span></td><td>Halapartna</td><td class="icon_attack">350</td><td class="icon_defence">350</td></tr>
-<tr><td><span class="weapon_tokkarov"></span></td><td>Tokkarov DD-22</td><td class="icon_attack">380</td><td class="icon_defence">360</td></tr>
-<tr><td><span class="weapon_swallow"></span></td><td>Vlaštovka</td><td class="icon_attack">300</td><td class="icon_defence">500</td></tr>
-<tr><td><span class="weapon_urp"></span></td><td>URP 45</td><td class="icon_attack">400</td><td class="icon_defence">400</td></tr>
-<tr><td><span class="weapon_klambu"></span></td><td>Klambu</td><td class="icon_attack">400</td><td class="icon_defence">400</td></tr>
-<tr><td><span class="weapon_g9"></span></td><td>G9</td><td class="icon_attack">500</td><td class="icon_defence">400</td></tr>
-<tr><td><span class="weapon_mag"></span></td><td>.345 Mag</td><td class="icon_attack">450</td><td class="icon_defence">500</td></tr>
-</table>
-<h3>Vzácné zbraně bosse</h3>
-<p>cenu 150 diamantů. Tato kolekce má</p>
-<table class="bosses_special">
-<tr><th>Zbraň</th><th>Název</th><th>Útočná síla</th><th>Obranná síla</th></tr>
-<tr><td><span class="weapon_mace"></span></td><td>Palcát</td><td class="icon_attack">500</td><td class="icon_defence">500</td></tr>
-<tr><td><span class="weapon_miniuzi"></span></td><td>Mini Uzi</td><td class="icon_attack">600</td><td class="icon_defence">400</td></tr>
-<tr><td><span class="weapon_sagnum"></span></td><td>Sagnum 44</td><td class="icon_attack">600</td><td class="icon_defence">500</td></tr>
-<tr><td><span class="weapon_gerardp39"></span></td><td>Daffson P39</td><td class="icon_attack">600</td><td class="icon_defence">500</td></tr>
-<tr><td><span class="weapon_unp"></span></td><td>UNP55</td><td class="icon_attack">800</td><td class="icon_defence">600</td></tr>
-<tr><td><span class="weapon_m99"></span></td><td>M99 Raffico</td><td class="icon_attack">800</td><td class="icon_defence">600</td></tr>
-<tr><td><span class="weapon_de"></span></td><td>DE</td><td class="icon_attack">750</td><td class="icon_defence">750</td></tr>
-<tr><td><span class="weapon_tsp"></span></td><td>TSP</td><td class="icon_attack">900</td><td class="icon_defence">600</td></tr>
-<tr><td><span class="weapon_sinkfield"></span></td><td>Sinkfield</td><td class="icon_attack">1 000</td><td class="icon_defence">600</td></tr>
-<tr><td><span class="weapon_stv"></span></td><td>STV-41</td><td class="icon_attack">900</td><td class="icon_defence">700</td></tr>
-<tr><td><span class="weapon_gar"></span></td><td>GAR98K</td><td class="icon_attack">830</td><td class="icon_defence">830</td></tr>
-<tr><td><span class="weapon_mousien"></span></td><td>Mousien Nevegant</td><td class="icon_attack">850</td><td class="icon_defence">850</td></tr>
-<tr><td><span class="weapon_mf5l"></span></td><td>MF5L</td><td class="icon_attack">1 000</td><td class="icon_defence">800</td></tr>
-<tr><td><span class="weapon_fliker"></span></td><td>Fliker</td><td class="icon_attack">1 000</td><td class="icon_defence">800</td></tr>
-<tr><td><span class="weapon_yariska"></span></td><td>Yariska</td><td class="icon_attack">600</td><td class="icon_defence">1 200</td></tr>
-<tr><td><span class="weapon_lector"></span></td><td>Lector 31</td><td class="icon_attack">1 000</td><td class="icon_defence">950</td></tr>
-<tr><td><span class="weapon_gf48"></span></td><td>GF48</td><td class="icon_attack">1 000</td><td class="icon_defence">950</td></tr>
-</table>
-<h3>Epické zbraně bosse</h3>
-<p>cenu 250 diamantů. Tato kolekce má</p>
-<table class="bosses_special">
-<tr><th>Zbraň</th><th>Název</th><th>Útočná síla</th><th>Obranná síla</th></tr>
-<tr><td><span class="weapon_dt88"></span></td><td>DT-88</td><td class="icon_attack">1 000</td><td class="icon_defence">1 050</td></tr>
-<tr><td><span class="weapon_flas"></span></td><td>FLAS-14</td><td class="icon_attack">1 100</td><td class="icon_defence">1 100</td></tr>
-<tr><td><span class="weapon_housy"></span></td><td>Housy 45</td><td class="icon_attack">1 100</td><td class="icon_defence">1 100</td></tr>
-<tr><td><span class="weapon_m22"></span></td><td>M22 Garand</td><td class="icon_attack">1 200</td><td class="icon_defence">1 200</td></tr>
-<tr><td><span class="weapon_vb56"></span></td><td>VB56</td><td class="icon_attack">1 300</td><td class="icon_defence">900</td></tr>
-<tr><td><span class="weapon_ff13"></span></td><td>FF-13</td><td class="icon_attack">1 150</td><td class="icon_defence">1 150</td></tr>
-<tr><td><span class="weapon_carbine"></span></td><td>M98B3 Samopal</td><td class="icon_attack">1 350</td><td class="icon_defence">1 000</td></tr>
-<tr><td><span class="weapon_scat"></span></td><td>SCAT-H</td><td class="icon_attack">1 200</td><td class="icon_defence">1 200</td></tr>
-<tr><td><span class="weapon_pp2002"></span></td><td>PP2000</td><td class="icon_attack">1 200</td><td class="icon_defence">1 200</td></tr>
-<tr><td><span class="weapon_yar"></span></td><td>YAR</td><td class="icon_attack">1 050</td><td class="icon_defence">1 350</td></tr>
-<tr><td><span class="weapon_model1850"></span></td><td>Model 1850</td><td class="icon_attack">1 300</td><td class="icon_defence">1 300</td></tr>
-<tr><td><span class="weapon_fam"></span></td><td>FAM</td><td class="icon_attack">1 500</td><td class="icon_defence">1 200</td></tr>
-<tr><td><span class="weapon_m8a1"></span></td><td>M8A1</td><td class="icon_attack">1 500</td><td class="icon_defence">1 300</td></tr>
-<tr><td><span class="weapon_pssr"></span></td><td>PSSR-44</td><td class="icon_attack">1 600</td><td class="icon_defence">1 200</td></tr>
-<tr><td><span class="weapon_sgg"></span></td><td>SGG-46</td><td class="icon_attack">1 400</td><td class="icon_defence">1 400</td></tr>
-<tr><td><span class="weapon_af47"></span></td><td>AF-47</td><td class="icon_attack">1 500</td><td class="icon_defence">1 500</td></tr>
-<tr><td><span class="weapon_clumber"></span></td><td>Perkusovka</td><td class="icon_attack">1 500</td><td class="icon_defence">1 500</td></tr>
-<tr><td><span class="weapon_type887"></span></td><td>Typ 887</td><td class="icon_attack">1 600</td><td class="icon_defence">1 500</td></tr>
-<tr><td><span class="weapon_afr"></span></td><td>AFR</td><td class="icon_attack">1 600</td><td class="icon_defence">1 600</td></tr>
-<tr><td><span class="weapon_rad"></span></td><td>RAD</td><td class="icon_attack">1 800</td><td class="icon_defence">1 600</td></tr>
-<tr><td><span class="weapon_tanger"></span></td><td>Tanger</td><td class="icon_attack">1 700</td><td class="icon_defence">1 700</td></tr>
-<tr><td><span class="weapon_flarret"></span></td><td>Flarret 50cal</td><td class="icon_attack">1 800</td><td class="icon_defence">1 700</td></tr>
-<tr><td><span class="weapon_mx51"></span></td><td>MX51</td><td class="icon_attack">1 800</td><td class="icon_defence">1 900</td></tr>
-<tr><td><span class="weapon_f90"></span></td><td>F90</td><td class="icon_attack">2 000</td><td class="icon_defence">1 800</td></tr>
-<tr><td><span class="weapon_flompson"></span></td><td>Flompson</td><td class="icon_attack">1 900</td><td class="icon_defence">1 900</td></tr>
-<tr><td><span class="weapon_type99"></span></td><td>Typ 99</td><td class="icon_attack">2 000</td><td class="icon_defence">1 800</td></tr>
-<tr><td><span class="weapon_denchgun"></span></td><td>M1876</td><td class="icon_attack">2 000</td><td class="icon_defence">1 800</td></tr>
-<tr><td><span class="weapon_ttsh"></span></td><td>TTSh-42</td><td class="icon_attack">1 950</td><td class="icon_defence">1 950</td></tr>
-</table>
-<h3>Legendární zbraně bosse</h3>
-<p>cenu 500 diamantů. Tato kolekce má</p>
-<table class="bosses_special">
-<tr><th>Zbraň</th><th>Název</th><th>Útočná síla</th><th>Obranná síla</th></tr>
-<tr><td><span class="weapon_l99lsw"></span></td><td>L99 LWS</td><td class="icon_attack">2 200</td><td class="icon_defence">2 200</td></tr>
-<tr><td><span class="weapon_m12a8"></span></td><td>M12A8</td><td class="icon_attack">2 500</td><td class="icon_defence">2 000</td></tr>
-<tr><td><span class="weapon_ml4"></span></td><td>ML4</td><td class="icon_attack">2 400</td><td class="icon_defence">2 400</td></tr>
-<tr><td><span class="weapon_auk"></span></td><td>AUK HAR</td><td class="icon_attack">2 500</td><td class="icon_defence">2 500</td></tr>
-<tr><td><span class="weapon_m2011"></span></td><td>M2011</td><td class="icon_attack">2 500</td><td class="icon_defence">2 500</td></tr>
-<tr><td><span class="weapon_doubleshotgun"></span></td><td>Dvouhlavňová brokovnice</td><td class="icon_attack">3 000</td><td class="icon_defence">2 000</td></tr>
-<tr><td><span class="weapon_resistance"></span></td><td>Obrana</td><td class="icon_attack">3 000</td><td class="icon_defence">2 800</td></tr>
-<tr><td><span class="weapon_f4001"></span></td><td>F4001</td><td class="icon_attack">3 000</td><td class="icon_defence">3 000</td></tr>
-<tr><td><span class="weapon_m1140"></span></td><td>M1140</td><td class="icon_attack">3 500</td><td class="icon_defence">3 500</td></tr>
-<tr><td><span class="weapon_wf2001"></span></td><td>WF2001</td><td class="icon_attack">3 500</td><td class="icon_defence">3 500</td></tr>
-<tr><td><span class="weapon_m13"></span></td><td>M13/M44 ECR</td><td class="icon_attack">4 000</td><td class="icon_defence">3 000</td></tr>
-<tr><td><span class="weapon_crowning"></span></td><td>M9191</td><td class="icon_attack">3 600</td><td class="icon_defence">3 600</td></tr>
-<tr><td><span class="weapon_tao"></span></td><td>TAO-21</td><td class="icon_attack">4 000</td><td class="icon_defence">4 000</td></tr>
-<tr><td><span class="weapon_ag4"></span></td><td>AG4</td><td class="icon_attack">5 000</td><td class="icon_defence">4 000</td></tr>
-<tr><td><span class="weapon_fringer"></span></td><td>Fringer</td><td class="icon_attack">5 000</td><td class="icon_defence">4 500</td></tr>
-<tr><td><span class="weapon_danglin"></span></td><td>Danglin</td><td class="icon_attack">7 000</td><td class="icon_defence">2 500</td></tr>
-</table>
+            <tr><th>Zbraň</th><th>N&aacute;zev</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_wand.png" alt="" loading="lazy"></td><td>Hůlka</td><td class="icon_attack">60</td><td class="icon_defence">40</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_staff.png" alt="" loading="lazy"></td><td>Hůl</td><td class="icon_attack">50</td><td class="icon_defence">50</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_sword.png" alt="" loading="lazy"></td><td>Meč</td><td class="icon_attack">60</td><td class="icon_defence">50</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_nunchuku.png" alt="" loading="lazy"></td><td>Nunčaky</td><td class="icon_attack">80</td><td class="icon_defence">40</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_tonfa.png" alt="" loading="lazy"></td><td>Tonfa</td><td class="icon_attack">60</td><td class="icon_defence">60</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_maul.png" alt="" loading="lazy"></td><td>Kladivo</td><td class="icon_attack">90</td><td class="icon_defence">40</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_addchain.png" alt="" loading="lazy"></td><td>Řetěz</td><td class="icon_attack">60</td><td class="icon_defence">100</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_sickle.png" alt="" loading="lazy"></td><td>Srp</td><td class="icon_attack">90</td><td class="icon_defence">80</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_warhammer.png" alt="" loading="lazy"></td><td>Bojov&eacute; kladivo</td><td class="icon_attack">90</td><td class="icon_defence">80</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_polearm.png" alt="" loading="lazy"></td><td>Kop&iacute;</td><td class="icon_attack">150</td><td class="icon_defence">50</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_bowarrow.png" alt="" loading="lazy"></td><td>Luk a &scaron;&iacute;py</td><td class="icon_attack">120</td><td class="icon_defence">120</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_lightflail.png" alt="" loading="lazy"></td><td>Lehk&yacute; palc&aacute;t</td><td class="icon_attack">160</td><td class="icon_defence">80</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_lightmace.png" alt="" loading="lazy"></td><td>Lehk&yacute; kyj</td><td class="icon_attack">130</td><td class="icon_defence">130</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_dagger.png" alt="" loading="lazy"></td><td>D&yacute;ka</td><td class="icon_attack">120</td><td class="icon_defence">140</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_shortsword.png" alt="" loading="lazy"></td><td>Kr&aacute;tk&yacute; meč</td><td class="icon_attack">140</td><td class="icon_defence">140</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_scythe.png" alt="" loading="lazy"></td><td>Kosa</td><td class="icon_attack">180</td><td class="icon_defence">110</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_morningstar.png" alt="" loading="lazy"></td><td>Jitřenka</td><td class="icon_attack">150</td><td class="icon_defence">140</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_lightpick.png" alt="" loading="lazy"></td><td>Lehk&yacute; kromp&aacute;č</td><td class="icon_attack">150</td><td class="icon_defence">149</td></tr>
+         </table>
 </div>
+         
+        <h3>Neobyčejn&eacute; zbraně bosse</h3>
+        <p>cenu 100 diamantů. Tato kolekce m&aacute;</p>
+         <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
+<table class="bosses_special">
+            <tr><th>Zbraň</th><th>N&aacute;zev</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_sai.png" alt="" loading="lazy"></td><td>Sai</td><td class="icon_attack">160</td><td class="icon_defence">140</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_heavyflail.png" alt="" loading="lazy"></td><td>Těžk&yacute; palc&aacute;t</td><td class="icon_attack">160</td><td class="icon_defence">160</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_heavymace.png" alt="" loading="lazy"></td><td>Těžk&yacute; kyj</td><td class="icon_attack">160</td><td class="icon_defence">160</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_m9111.png" alt="" loading="lazy"></td><td>M9111</td><td class="icon_attack">200</td><td class="icon_defence">150</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_direflail.png" alt="" loading="lazy"></td><td>Hroziv&yacute; palc&aacute;t</td><td class="icon_attack">200</td><td class="icon_defence">200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_bastardsword.png" alt="" loading="lazy"></td><td>Bastardsk&yacute; meč</td><td class="icon_attack">300</td><td class="icon_defence">200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_ringsword.png" alt="" loading="lazy"></td><td>Prstencov&yacute; meč</td><td class="icon_attack">300</td><td class="icon_defence">200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_katar.png" alt="" loading="lazy"></td><td>Katar</td><td class="icon_attack">250</td><td class="icon_defence">250</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_longsword.png" alt="" loading="lazy"></td><td>Dlouh&yacute; meč</td><td class="icon_attack">300</td><td class="icon_defence">200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_hookedhammer.png" alt="" loading="lazy"></td><td>Kladivo trpasl&iacute;ků</td><td class="icon_attack">200</td><td class="icon_defence">300</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_g88.png" alt="" loading="lazy"></td><td>G88</td><td class="icon_attack">300</td><td class="icon_defence">250</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_riotshield.png" alt="" loading="lazy"></td><td>Ochrann&yacute; &scaron;t&iacute;t</td><td class="icon_attack">0</td><td class="icon_defence">600</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_halberd.png" alt="" loading="lazy"></td><td>Halapartna</td><td class="icon_attack">350</td><td class="icon_defence">350</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_tokkarov.png" alt="" loading="lazy"></td><td>Tokkarov DD-22</td><td class="icon_attack">380</td><td class="icon_defence">360</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_swallow.png" alt="" loading="lazy"></td><td>Vla&scaron;tovka</td><td class="icon_attack">300</td><td class="icon_defence">500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_urp.png" alt="" loading="lazy"></td><td>URP 45</td><td class="icon_attack">400</td><td class="icon_defence">400</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_klambu.png" alt="" loading="lazy"></td><td>Klambu</td><td class="icon_attack">400</td><td class="icon_defence">400</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_g9.png" alt="" loading="lazy"></td><td>G9</td><td class="icon_attack">500</td><td class="icon_defence">400</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_mag.png" alt="" loading="lazy"></td><td>.345 Mag</td><td class="icon_attack">450</td><td class="icon_defence">500</td></tr>
+         </table>
 </div>
-<div style="clear: both; height: 0"></div>
+         
+        <h3>Vz&aacute;cn&eacute; zbraně bosse</h3>
+        <p>cenu 150 diamantů. Tato kolekce m&aacute;</p>
+         <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
+<table class="bosses_special">
+            <tr><th>Zbraň</th><th>N&aacute;zev</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_mace.png" alt="" loading="lazy"></td><td>Palc&aacute;t</td><td class="icon_attack">500</td><td class="icon_defence">500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_miniuzi.png" alt="" loading="lazy"></td><td>Mini Uzi</td><td class="icon_attack">600</td><td class="icon_defence">400</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_sagnum.png" alt="" loading="lazy"></td><td>Sagnum 44</td><td class="icon_attack">600</td><td class="icon_defence">500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_gerardp39.png" alt="" loading="lazy"></td><td>Daffson P39</td><td class="icon_attack">600</td><td class="icon_defence">500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_unp.png" alt="" loading="lazy"></td><td>UNP55</td><td class="icon_attack">800</td><td class="icon_defence">600</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_m99.png" alt="" loading="lazy"></td><td>M99 Raffico</td><td class="icon_attack">800</td><td class="icon_defence">600</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_de.png" alt="" loading="lazy"></td><td>DE</td><td class="icon_attack">750</td><td class="icon_defence">750</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_tsp.png" alt="" loading="lazy"></td><td>TSP</td><td class="icon_attack">900</td><td class="icon_defence">600</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_sinkfield.png" alt="" loading="lazy"></td><td>Sinkfield</td><td class="icon_attack">1 000</td><td class="icon_defence">600</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_stv.png" alt="" loading="lazy"></td><td>STV-41</td><td class="icon_attack">900</td><td class="icon_defence">700</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_gar.png" alt="" loading="lazy"></td><td>GAR98K</td><td class="icon_attack">830</td><td class="icon_defence">830</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_mousien.png" alt="" loading="lazy"></td><td>Mousien Nevegant</td><td class="icon_attack">850</td><td class="icon_defence">850</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_mf5l.png" alt="" loading="lazy"></td><td>MF5L</td><td class="icon_attack">1 000</td><td class="icon_defence">800</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_fliker.png" alt="" loading="lazy"></td><td>Fliker</td><td class="icon_attack">1 000</td><td class="icon_defence">800</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_yariska.png" alt="" loading="lazy"></td><td>Yariska</td><td class="icon_attack">600</td><td class="icon_defence">1 200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_lector.png" alt="" loading="lazy"></td><td>Lector 31</td><td class="icon_attack">1 000</td><td class="icon_defence">950</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_gf48.png" alt="" loading="lazy"></td><td>GF48</td><td class="icon_attack">1 000</td><td class="icon_defence">950</td></tr>
+         </table>
 </div>
-<div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
-<div id="bottom">
+        
+        <h3>Epick&eacute; zbraně bosse</h3>
+        <p>cenu 250 diamantů. Tato kolekce m&aacute;</p>
+        <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
+<table class="bosses_special">
+            <tr><th>Zbraň</th><th>N&aacute;zev</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_dt88.png" alt="" loading="lazy"></td><td>DT-88</td><td class="icon_attack">1 000</td><td class="icon_defence">1 050</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_flas.png" alt="" loading="lazy"></td><td>FLAS-14</td><td class="icon_attack">1 100</td><td class="icon_defence">1 100</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_housy.png" alt="" loading="lazy"></td><td>Housy 45</td><td class="icon_attack">1 100</td><td class="icon_defence">1 100</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_m22.png" alt="" loading="lazy"></td><td>M22 Garand</td><td class="icon_attack">1 200</td><td class="icon_defence">1 200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_vb56.png" alt="" loading="lazy"></td><td>VB56</td><td class="icon_attack">1 300</td><td class="icon_defence">900</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_ff13.png" alt="" loading="lazy"></td><td>FF-13</td><td class="icon_attack">1 150</td><td class="icon_defence">1 150</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_carbine.png" alt="" loading="lazy"></td><td>M98B3 Samopal</td><td class="icon_attack">1 350</td><td class="icon_defence">1 000</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_scat.png" alt="" loading="lazy"></td><td>SCAT-H</td><td class="icon_attack">1 200</td><td class="icon_defence">1 200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_pp2002.png" alt="" loading="lazy"></td><td>PP2000</td><td class="icon_attack">1 200</td><td class="icon_defence">1 200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_yar.png" alt="" loading="lazy"></td><td>YAR</td><td class="icon_attack">1 050</td><td class="icon_defence">1 350</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_model1850.png" alt="" loading="lazy"></td><td>Model 1850</td><td class="icon_attack">1 300</td><td class="icon_defence">1 300</td></tr>
+            
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_fam.png" alt="" loading="lazy"></td><td>FAM</td><td class="icon_attack">1 500</td><td class="icon_defence">1 200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_m8a1.png" alt="" loading="lazy"></td><td>M8A1</td><td class="icon_attack">1 500</td><td class="icon_defence">1 300</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_pssr.png" alt="" loading="lazy"></td><td>PSSR-44</td><td class="icon_attack">1 600</td><td class="icon_defence">1 200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_sgg.png" alt="" loading="lazy"></td><td>SGG-46</td><td class="icon_attack">1 400</td><td class="icon_defence">1 400</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_af47.png" alt="" loading="lazy"></td><td>AF-47</td><td class="icon_attack">1 500</td><td class="icon_defence">1 500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_clumber.png" alt="" loading="lazy"></td><td>Perkusovka</td><td class="icon_attack">1 500</td><td class="icon_defence">1 500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_type887.png" alt="" loading="lazy"></td><td>Typ 887</td><td class="icon_attack">1 600</td><td class="icon_defence">1 500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_afr.png" alt="" loading="lazy"></td><td>AFR</td><td class="icon_attack">1 600</td><td class="icon_defence">1 600</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_rad.png" alt="" loading="lazy"></td><td>RAD</td><td class="icon_attack">1 800</td><td class="icon_defence">1 600</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_tanger.png" alt="" loading="lazy"></td><td>Tanger</td><td class="icon_attack">1 700</td><td class="icon_defence">1 700</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_flarret.png" alt="" loading="lazy"></td><td>Flarret 50cal</td><td class="icon_attack">1 800</td><td class="icon_defence">1 700</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_mx51.png" alt="" loading="lazy"></td><td>MX51</td><td class="icon_attack">1 800</td><td class="icon_defence">1 900</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_f90.png" alt="" loading="lazy"></td><td>F90</td><td class="icon_attack">2 000</td><td class="icon_defence">1 800</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_flompson.png" alt="" loading="lazy"></td><td>Flompson</td><td class="icon_attack">1 900</td><td class="icon_defence">1 900</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_type99.png" alt="" loading="lazy"></td><td>Typ 99</td><td class="icon_attack">2 000</td><td class="icon_defence">1 800</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_denchgun.png" alt="" loading="lazy"></td><td>M1876</td><td class="icon_attack">2 000</td><td class="icon_defence">1 800</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_ttsh.png" alt="" loading="lazy"></td><td>TTSh-42</td><td class="icon_attack">1 950</td><td class="icon_defence">1 950</td></tr>
+         </table>
+</div> 
+         
+         
+        <h3>Legend&aacute;rn&iacute; zbraně bosse</h3>
+        <p>cenu 500 diamantů. Tato kolekce m&aacute;</p>
+        <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
+<table class="bosses_special">
+            <tr><th>Zbraň</th><th>N&aacute;zev</th><th>&Uacute;točn&aacute; s&iacute;la</th><th>Obrann&aacute; s&iacute;la</th></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_l99lsw.png" alt="" loading="lazy"></td><td>L99 LWS</td><td class="icon_attack">2 200</td><td class="icon_defence">2 200</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_m12a8.png" alt="" loading="lazy"></td><td>M12A8</td><td class="icon_attack">2 500</td><td class="icon_defence">2 000</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_ml4.png" alt="" loading="lazy"></td><td>ML4</td><td class="icon_attack">2 400</td><td class="icon_defence">2 400</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_auk.png" alt="" loading="lazy"></td><td>AUK HAR</td><td class="icon_attack">2 500</td><td class="icon_defence">2 500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_m2011.png" alt="" loading="lazy"></td><td>M2011</td><td class="icon_attack">2 500</td><td class="icon_defence">2 500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_doubleshotgun.png" alt="" loading="lazy"></td><td>Dvouhlavňov&aacute; brokovnice</td><td class="icon_attack">3 000</td><td class="icon_defence">2 000</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_resistance.png" alt="" loading="lazy"></td><td>Obrana</td><td class="icon_attack">3 000</td><td class="icon_defence">2 800</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_f4001.png" alt="" loading="lazy"></td><td>F4001</td><td class="icon_attack">3 000</td><td class="icon_defence">3 000</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_m1140.png" alt="" loading="lazy"></td><td>M1140</td><td class="icon_attack">3 500</td><td class="icon_defence">3 500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_wf2001.png" alt="" loading="lazy"></td><td>WF2001</td><td class="icon_attack">3 500</td><td class="icon_defence">3 500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_m13.png" alt="" loading="lazy"></td><td>M13/M44 ECR</td><td class="icon_attack">4 000</td><td class="icon_defence">3 000</td></tr>
+            
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_crowning.png" alt="" loading="lazy"></td><td>M9191</td><td class="icon_attack">3 600</td><td class="icon_defence">3 600</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_tao.png" alt="" loading="lazy"></td><td>TAO-21</td><td class="icon_attack">4 000</td><td class="icon_defence">4 000</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_ag4.png" alt="" loading="lazy"></td><td>AG4</td><td class="icon_attack">5 000</td><td class="icon_defence">4 000</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_fringer.png" alt="" loading="lazy"></td><td>Fringer</td><td class="icon_attack">5 000</td><td class="icon_defence">4 500</td></tr>
+            <tr><td><img class="boss-weapon-img" src="images/bosses/weapon_danglin.png" alt="" loading="lazy"></td><td>Danglin</td><td class="icon_attack">7 000</td><td class="icon_defence">2 500</td></tr>
+         </table>
 </div>
+        </div>
+      </div>
+      <div style="clear: both; height: 0"></div>
+    
+    </div>
+  
+  <div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
+  <div id="bottom">
+          
+  </div>
+  
 <script>
 document.addEventListener("DOMContentLoaded",function(){
  const KEY="mhwiki-open";
@@ -324,5 +365,8 @@ document.addEventListener("DOMContentLoaded",function(){
  document.querySelectorAll("#main .side .group").forEach(g=>g.addEventListener("click",()=>setTimeout(save,0)));
 });
 </script>
-<footer class="site-footer"><div class="footer-inner"><div>© 2015–2026 Mafia Hunterss · Oficiální herní wiki</div><div><a href="/">Hlavní web</a> · <a href="/contact.html">Kontakt</a> · <a href="https://mafiahunterss.mafiacontrol.com/" rel="noopener" target="_blank">Hrát online</a></div></div></footer></body>
+
+</body>
+
+
 </html>

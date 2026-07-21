@@ -1199,3 +1199,88 @@ select:focus-visible {
     animation-iteration-count: 1 !important;
   }
 }
+
+
+/* Mafia Hunterss Wiki - mobile layout fix */
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 980px) {
+  html, body { width: 100%; min-width: 0; overflow-x: hidden; }
+  body { padding: 8px 6px 24px; }
+
+  #bg, #helicopter { display: none; }
+
+  #top, #main, #bottom {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #top {
+    min-height: 118px;
+    padding-bottom: 62px;
+  }
+
+  #top .logo {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+
+  #top .button_play {
+    left: 50%;
+    right: auto;
+    bottom: 5px;
+    top: auto;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  #top .button_play input {
+    max-width: calc(100vw - 28px);
+    height: 48px;
+    line-height: 38px;
+    padding: 3px 24px;
+    font-size: 20px;
+  }
+
+  #main { min-height: 0; border-radius: 14px; }
+
+  #main .side {
+    float: none;
+    width: 100%;
+    padding: 12px;
+  }
+
+  #main .side div.group,
+  #main .side ul.menu { width: 100%; }
+
+  #main .content {
+    margin: 0 12px 14px;
+    width: auto;
+    min-width: 0;
+    clear: both;
+  }
+
+  #main .content .upper .inner { padding: 12px; }
+  #main .content .upper h1 { font-size: 26px; line-height: 1.2; overflow-wrap: anywhere; }
+  #main .content .upper h2 { font-size: 19px; line-height: 1.3; }
+  #main .content .lower { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #main .content .lower table { min-width: 520px; }
+
+  .content-source {
+    margin: 10px 12px 14px !important;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 520px) {
+  #main .side { padding: 8px; }
+  #main .side div.group { font-size: 14px; padding-right: 40px; }
+  #main .side li a { padding: 10px 8px 10px 46px; }
+  #main .content { margin: 0 8px 10px; }
+  #main .content .upper h1 { font-size: 23px; }
+  #main .content .lower p,
+  #main .content .lower li { overflow-wrap: anywhere; }
+}

@@ -1,19 +1,53 @@
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, input { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
 
-:root{--bg:#070a0f;--panel:#10151d;--panel2:#151c26;--line:rgba(255,255,255,.09);--text:#f4f7fb;--muted:#aab5c4;--accent:#e0293e;--accent2:#ff5164;--shadow:0 18px 45px rgba(0,0,0,.35);--radius:18px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(224,41,62,.16),transparent 35%),linear-gradient(180deg,#080b11,#05070a 70%);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65;min-height:100vh}a{color:inherit}img{max-width:100%;height:auto}#bg,#helicopter,#update_lang{display:none!important}
-#top{position:sticky;top:0;z-index:1000;background:rgba(7,10,15,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.top-inner{max-width:1440px;margin:auto;min-height:76px;padding:0 24px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:.03em;white-space:nowrap}.brand-mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--accent),#8f1020);display:grid;place-items:center;box-shadow:0 8px 28px rgba(224,41,62,.28);font-size:20px}.brand-text small{display:block;color:var(--muted);font-size:10px;letter-spacing:.18em;text-transform:uppercase}.brand-text span{font-size:17px}.site-nav{margin-left:auto;display:flex;align-items:center;gap:6px}.site-nav a{padding:10px 12px;text-decoration:none;color:#c8d0dc;font-weight:700;font-size:14px;border-radius:10px}.site-nav a:hover,.site-nav a.active{background:rgba(255,255,255,.06);color:#fff}.site-actions{display:flex;gap:10px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:11px;padding:10px 15px;font-weight:800;text-decoration:none;background:rgba(255,255,255,.04)}.btn-primary{background:linear-gradient(135deg,var(--accent),#b3182b);border-color:transparent;box-shadow:0 8px 24px rgba(224,41,62,.24)}.nav-toggle{display:none;margin-left:auto;width:44px;height:44px;border:1px solid var(--line);border-radius:11px;background:var(--panel);color:#fff;font-size:22px}
-.wiki-hero{max-width:1440px;margin:0 auto;padding:38px 24px 18px}.wiki-hero-inner{border:1px solid var(--line);border-radius:24px;padding:30px;background:linear-gradient(135deg,rgba(224,41,62,.16),rgba(16,21,29,.88) 50%),url('../images/game_socialbanner.jpg') center/cover;box-shadow:var(--shadow);position:relative;overflow:hidden}.wiki-hero-inner:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,10,15,.92),rgba(7,10,15,.55));z-index:0}.wiki-hero-content{position:relative;z-index:1;max-width:720px}.wiki-kicker{color:#ff7180;font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:12px}.wiki-hero h1{font-size:clamp(30px,5vw,54px);line-height:1.05;margin:8px 0 12px}.wiki-hero p{color:#c3ccd8;margin:0}.wiki-search{margin-top:20px;display:flex;max-width:520px}.wiki-search input{width:100%;padding:14px 16px;border:1px solid var(--line);background:rgba(5,7,10,.8);color:#fff;border-radius:12px;outline:none}.wiki-search input:focus{border-color:rgba(255,81,100,.65);box-shadow:0 0 0 4px rgba(224,41,62,.12)}
-#main{max-width:1440px;margin:0 auto;padding:18px 24px 50px;display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:start}.side{position:sticky;top:94px;max-height:calc(100vh - 112px);overflow:auto;background:rgba(16,21,29,.88);border:1px solid var(--line);border-radius:var(--radius);padding:12px;box-shadow:var(--shadow);scrollbar-width:thin}.group{position:relative;margin-top:6px;padding:13px 38px 13px 14px;border-radius:11px;background:var(--panel2);font-weight:900;cursor:pointer;color:#fff}.group:after{content:'+';position:absolute;right:14px;top:11px;color:var(--muted);font-size:20px}.group.on:after{content:'−'}.menu{display:none;list-style:none;margin:5px 0 12px;padding:4px}.group.on+.menu{display:block}.menu li{margin:2px 0}.menu a{display:block;text-decoration:none;color:#aeb9c8;padding:9px 11px;border-radius:9px;font-size:14px}.menu a:hover,.menu li.current a{background:rgba(224,41,62,.13);color:#fff}.menu li.current a{box-shadow:inset 3px 0 var(--accent)}
-.content{min-width:0}.upper{background:rgba(16,21,29,.9);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(22px,4vw,42px);box-shadow:var(--shadow)}.inner{width:100%}.content h1{font-size:clamp(30px,4vw,48px);line-height:1.12;margin:0 0 20px}.content h2{font-size:26px;margin:34px 0 12px}.content h3{font-size:20px;margin:25px 0 10px;color:#fff}.content p,.content li{color:#c3ccd8}.content a{color:#ff7180;text-decoration-thickness:1px;text-underline-offset:3px}.content table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;overflow:hidden;border:1px solid var(--line);border-radius:13px;background:#0c1118}.content th,.content td{padding:13px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left}.content th{background:#171e28;color:#fff}.content tr:last-child td{border-bottom:0}.content th:last-child,.content td:last-child{border-right:0}.content ul,.content ol{padding-left:24px}.content img{border-radius:13px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.28)}.content-source{grid-column:2;margin-top:-8px;color:#8793a4;font-size:12px;padding:0 10px}.notice{padding:16px 18px;border-left:4px solid var(--accent);background:rgba(224,41,62,.08);border-radius:10px}
-#bottom{display:none}.site-footer{border-top:1px solid var(--line);background:#07090d}.footer-inner{max-width:1440px;margin:auto;padding:28px 24px;display:flex;justify-content:space-between;gap:20px;color:#8f9aaa;font-size:13px}.footer-inner a{color:#cdd5df;text-decoration:none}.mobile-wiki-button{display:none}
-@media(max-width:1050px){.site-nav{display:none;position:absolute;top:76px;left:0;right:0;background:#0b0f15;border-bottom:1px solid var(--line);padding:12px 20px;flex-direction:column;align-items:stretch}.site-nav.open{display:flex}.site-nav a{text-align:center}.nav-toggle{display:block}.site-actions .btn:not(.btn-primary){display:none}#main{grid-template-columns:1fr}.side{position:relative;top:auto;max-height:none;display:none}.side.open{display:block}.mobile-wiki-button{display:flex;margin-bottom:12px;width:100%;padding:13px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:#fff;font-weight:900;justify-content:center}.content-source{grid-column:1}.wiki-hero{padding-top:24px}}
-@media(max-width:640px){.top-inner{padding:0 14px}.brand-text small{display:none}.brand-text span{font-size:14px}.site-actions{display:none}.wiki-hero{padding-left:14px;padding-right:14px}.wiki-hero-inner{padding:24px 20px}#main{padding:12px 14px 36px}.upper{padding:22px 18px}.content table{font-size:12px;display:block;overflow-x:auto}.footer-inner{flex-direction:column;padding:22px 14px}}
+body, input, textarea { font-family: 'Roboto Condensed', sans-serif; }
 
+body { background: #45535c url('../images/bg-repeat.jpg') center top repeat-x; padding: 20px 0; position: relative; }
 
-/* Původní ikonky navigace wiki */
-.menu li{position:relative}
-.menu li::before{content:'';position:absolute;left:10px;top:50%;margin-top:-15px;width:30px;height:30px;pointer-events:none;z-index:1}
-.menu a{padding-left:50px}
+#bg { position: absolute; top: 0px; left: 0px; right: 0px; }
+#bg .left { background: url('../images/bg-left.jpg') right top no-repeat; height: 481px; position: absolute; top: 0px; left: 0; right: 50%; margin-right: 480px; }
+#bg .right { background: url('../images/bg-right.jpg') left top no-repeat; height: 481px; position: absolute; top: 0px; left: 50%; right: 0; margin-left: 480px; }
+
+#helicopter { position: absolute; top: 56px; left: 0; right: 0; height: 29px; overflow: hidden; }
+#heli { position: absolute; top: 0; left: -100px; width: 83px; height: 29px; background: url('../images/heli.png') no-repeat; }
+
+#top { height: 120px; width: 932px; margin: 0 auto; position: relative; }
+#top .logo { background: url('../images/mafiabattle.png') center center no-repeat; width: 209px; height: 120px; }
+#top a { width: 200px; height: 105px; margin: 5px auto; display: block; }
+
+#top .button_play { position: absolute; top: 45px; right: 5px; background: #55980a; border-top: 1px solid #bbf0fa; border-bottom: 1px solid #55980a; padding: 1px; display: inline-block; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,.3); }
+#top .button_play input { color: #4fb349; background: #b2fb36; border: 0; border-top: 2px solid #f7feff; border-bottom: 1px solid #8dde13; border-radius: 6px; padding: 3px 38px; outline: none; font-family: 'Roboto'; font-weight: 700; font-size: 24px; line-height: 46px; height: 54px; text-shadow: 0px 1px 1px #fff; cursor: pointer; text-transform: uppercase; }
+#top .button_play input:hover { background: #c3fc2f; }
+#top .button_play input:active { border-bottom: 1px solid #b2fb36; border-top: 1px solid #12b5de; padding-top: 5px; padding-bottom: 1px; }
+
+#top #fb_like { position: absolute; top: 15px; right: 40px; height:30px;  border:1px solid yellow; display: inline-block; }
+#top .footer_button_facebook { position:absolute; top:8px; right:5px; background:url('../images/facebook_icon.png') no-repeat; width:24px; height:24px; }
+
+#bottom { height: 60px; width: 932px; margin: 0 auto; position: relative; }
+#bottom .language_selector_box { position:absolute; bottom: 0px;  right: 6px; color:#e4e4e4; font-weight:700; font-size:17px; z-index: 1; }
+#bottom .language_selector_box .game_language { display:none; white-space: nowrap; }
+#bottom .language_selector_box .language_bar { position:relative; display:inline-block; margin-left:10px; margin-top:2px; }
+#bottom .language_selector_box select { width: 180px; }
+#bottom div.pre_selector.native_mobile { background: #ca95b8; padding: 1px; border-radius: 8px; display: inline-block; }
+#bottom div.pre_selector.native_mobile select { outline: none; background: #bf8bad url('../images/logs/logs_small_arrow_down.png') right 10px center no-repeat; white-space: nowrap; color: #FFF; font-family: 'Roboto'; font-weight: 700; text-shadow: 0 2px rgba(0, 0, 0, 0.3); font-size: 20px; line-height: 36px; height: 40px; padding: 0px 20px 0px 5px; border: 0; border-top: 2px solid #fdfbfd; border-bottom: 2px solid #825d76; border-radius: 8px; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+#main { background: #0f1f35; margin: 0 auto; width: 960px; position: relative; border: 2px solid #feffff; border-radius: 20px; min-height: 332px; }
+#main .side { float: left; width: 200px; padding: 20px; }
+
+#main .side div.group { background: #52ceff; border: 3px solid #534741; border-radius: 17px; position: relative; line-height: 25px; text-transform: uppercase; font-size: 15px; padding: 12px 10px 8px 15px; text-shadow: 0px 1px #fff; cursor: pointer; margin-top: 10px; }
+#main .side div.group:first-child { margin-top: 0; }
+#main .side div.group.on { border-radius: 17px 17px 0 0; }
+#main .side div.group:after { content: '▼'; position: absolute; right: 14px; top: 8px; line-height: 30px; }
+#main .side div.group.on:after { content: '▲'; }
+#main .side div.group+ul.menu { display: none; }
+#main .side div.group.on+ul.menu { display: block; border: 3px solid #534741; border-top: none; border-radius: 0 0 17px 17px; background: #5a6374; }
+
+#main .side li { line-height: 20px; position: relative; font-size: 15px; } 
+#main .side li+li { border-top: 1px solid #534741; }
+#main .side li:hover  { background: rgba(246,239,211,.1); }
+#main .side li.current  { background: rgba(82,206,255,.2); }
+#main .side li a { color: #fff; text-decoration: none; padding: 10px 10px 10px 50px; position: relative; display: block; }
 #main .side li::before { content: ''; position:absolute; left: 10px; top:50%; margin-top:-15px; width: 30px; height: 30px;  }
 #main .side li.ammunition_factory::before { background: url('../images/menu_ammunition_factory.png') no-repeat; background-size: contain; }
 #main .side li.bank::before { background: url('../images/menu_bank.png') no-repeat; background-size: contain; }
@@ -81,10 +115,1233 @@
 #main .side li.military_museum::before { background: url('../images/menu_military_museum.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-15px; }
 #main .side li.gold_factory::before { background: url('../images/menu_gold_factory.png') no-repeat; background-size: contain; margin-left:3px; margin-top:-15px; }
 #main .side li.mexican_contracts::before { background: url('../images/menu_mexican_contract_jobs.png') no-repeat; background-size: contain; }
+
 #main .side li.family_home::before { background: url('../images/menu_family_home.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
 #main .side li.family_methtank::before { background: url('../images/menu_family_methtank.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
 #main .side li.family_cashsafe::before { background: url('../images/menu_family_cashsafe.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
 #main .side li.family_tobaccofarm::before { background: url('../images/menu_family_tobaccofarm.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
 #main .side li.family_cocafarm::before { background: url('../images/menu_family_cocafarm.png') no-repeat; background-size: contain; margin-left:0px; margin-top:-13px; }
 #main .side li.family_goldtank::before { background: url('../images/menu_family_goldtank.png') no-repeat; background-size: contain; margin-left: -2px; margin-top:-13px; }
+
+#main .content { margin: 20px 20px 20px 240px; background: #8a8366; border: 3px solid #534741; border-radius: 17px; position: relative; }
+
+#main .content .upper { margin: 0px; background: #d1d2ca url('../images/upper-bg.png') center center; border: 3px solid #7f7e77; border-radius: 14px 14px 0 0; position: relative; }
+#main .content .upper .inner { border: 5px solid #afafa6; border-bottom: 5px solid #989890; border-top: 5px solid #c6c7bd; border-radius: 11px 11px 0 0; padding: 15px; }
+#main .content .upper h1 { font-size: 33px; line-height: 38px; text-align: center; color: #3b3b3b; text-shadow: 0px 2px #fff; font-family: Roboto; font-weight: 900; }
+#main .content .upper h2 { font-size: 20px; line-height: 25px; text-align: center; color: #3b3b3b; text-shadow: 0px 2px #fff; font-family: Roboto; font-weight: 900; }
+
+#main .content .lower { margin: 5px; background: #f6efd3; padding: 5px; border: 3px solid #d2c29a; border-top: 0; margin-top: 0; border-radius: 0 0 14px 14px; position: relative; }
+
+#main .content .lower table { width: calc(100% - 10px); border: 3px solid #533047; border-radius: 10px; border-spacing: 0; background: #7f4a6d; padding: 5px; margin: 10px 5px; }
+#main .content .lower table tr th { background: #7f4a6d; font-size: 15px; line-height: 18px; color: #fff; text-shadow: 0px 1px #000; text-align: left; padding: 5px 7px 10px 7px; }
+#main .content .lower table tr td { background: #d7cca4; padding: 8px 7px 7px 7px; border-top: 1px solid #fff; font-size: 15px; line-height: 18px; color: #3b3b3b; text-shadow: 0px 1px #fff; }
+
+#main .content .lower table tr:nth-child(even) td { background: #eee3ba; border-top: 1px solid #baaf8d; }
+#main .content .lower table tr:first-child td { border-top: 0; }
+#main .content .lower table tr:last-child td:first-child { border-radius: 0 0 0 5px; }
+#main .content .lower table tr:last-child td:last-child { border-radius: 0 0 5px 0; }
+#main .content .lower table tr:last-child td:first-child:last-child { border-radius: 0 0 5px 5px; }
+#main .content .lower table td { position: relative; }
+
+#main .content .lower table td { white-space: nowrap }
+#main .content .lower table td:last-child { white-space: initial; }
+
+#main .content .lower table td.icon_ammo { padding-left: 33px; }
+#main .content .lower table td.icon_ammo::before { content: ''; background: url('../images/icon_ammo.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_attack { padding-left: 33px; }
+#main .content .lower table td.icon_attack::before { content: ''; background: url('../images/icon_attack.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_badge { padding-left: 33px; }
+#main .content .lower table td.icon_badge::before { content: ''; background: url('../images/icon_badge.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_boss { padding-left: 33px; }
+#main .content .lower table td.icon_boss::before { content: ''; background: url('../images/icon_boss.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_cars { padding-left: 33px; }
+#main .content .lower table td.icon_cars::before { content: ''; background: url('../images/icon_cars.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_cash { padding-left: 33px; }
+#main .content .lower table td.icon_cash::before { content: ''; background: url('../images/icon_cash.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_cook { padding-left: 33px; }
+#main .content .lower table td.icon_cook::before { content: ''; background: url('../images/icon_cook.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_defence { padding-left: 33px; }
+#main .content .lower table td.icon_defence::before { content: ''; background: url('../images/icon_defence.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_diamonds { padding-left: 33px; }
+#main .content .lower table td.icon_diamonds::before { content: ''; background: url('../images/icon_diamonds.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_exp { padding-left: 33px; }
+#main .content .lower table td.icon_exp::before { content: ''; background: url('../images/icon_exp.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_followers { padding-left: 33px; }
+#main .content .lower table td.icon_followers::before { content: ''; background: url('../images/icon_followers.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_gym { padding-left: 33px; }
+#main .content .lower table td.icon_gym::before { content: ''; background: url('../images/icon_gym.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_health { padding-left: 33px; }
+#main .content .lower table td.icon_health::before { content: ''; background: url('../images/icon_health.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_lottery { padding-left: 33px; }
+#main .content .lower table td.icon_lottery::before { content: ''; background: url('../images/icon_lottery.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_meth { padding-left: 33px; }
+#main .content .lower table td.icon_meth::before { content: ''; background: url('../images/icon_meth.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_power { padding-left: 33px; }
+#main .content .lower table td.icon_power::before { content: ''; background: url('../images/icon_power.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_timer { padding-left: 33px; }
+#main .content .lower table td.icon_timer::before { content: ''; background: url('../images/icon_timer.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_troops { padding-left: 33px; }
+#main .content .lower table td.icon_troops::before { content: ''; background: url('../images/icon_troops.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_upgrade { padding-left: 33px; }
+#main .content .lower table td.icon_upgrade::before { content: ''; background: url('../images/icon_upgrade.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_stock { padding-left: 33px; }
+#main .content .lower table td.icon_stock::before { content: ''; background: url('../images/icon_stock.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_rooms { padding-left: 33px; }
+#main .content .lower table td.icon_rooms::before { content: ''; background: url('../images/icon_rooms.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_girls { padding-left: 33px; }
+#main .content .lower table td.icon_girls::before { content: ''; background: url('../images/icon_girls.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_researches { padding-left: 33px; }
+#main .content .lower table td.icon_researches::before { content: ''; background: url('../images/icon_researches.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_weed { padding-left: 33px; }
+#main .content .lower table td.icon_weed::before { content: ''; background: url('../images/icon_weed.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_plants{ padding-left: 33px; }
+#main .content .lower table td.icon_plants::before { content: ''; background: url('../images/icon_plants.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_xtc{ padding-left: 33px; }
+#main .content .lower table td.icon_xtc::before { content: ''; background: url('../images/icon_xtc.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_trucks{ padding-left: 33px; }
+#main .content .lower table td.icon_trucks::before { content: ''; background: url('../images/icon_trucks.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_oil{ padding-left: 33px; }
+#main .content .lower table td.icon_oil::before { content: ''; background: url('../images/icon_oil.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_steel{ padding-left: 33px; }
+#main .content .lower table td.icon_steel::before { content: ''; background: url('../images/icon_steel.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_alcohol{ padding-left: 33px; }
+#main .content .lower table td.icon_alcohol::before { content: ''; background: url('../images/icon_alcohol.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_events{ padding-left: 33px; }
+#main .content .lower table td.icon_events::before { content: ''; background: url('../images/icon_events.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_tobacco{ padding-left: 33px; }
+#main .content .lower table td.icon_tobacco::before { content: ''; background: url('../images/icon_tobacco.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_cigars{ padding-left: 33px; }
+#main .content .lower table td.icon_cigars::before { content: ''; background: url('../images/icon_cigar.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_boats { padding-left: 33px; }
+#main .content .lower table td.icon_boats::before { content: ''; background: url('../images/icon_boats.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_offers { padding-left: 33px; }
+#main .content .lower table td.icon_offers::before { content: ''; background: url('../images/icon_offers.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_repos { padding-left: 33px; }
+#main .content .lower table td.icon_repos::before { content: ''; background: url('../images/icon_repos.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_crypto { padding-left: 33px; }
+#main .content .lower table td.icon_crypto::before { content: ''; background: url('../images/icon_crypto.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_miningrig { padding-left: 33px; }
+#main .content .lower table td.icon_miningrig::before { content: ''; background: url('../images/icon_miningrig.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_specialforces { padding-left: 33px; }
+#main .content .lower table td.icon_specialforces::before { content: ''; background: url('../images/icon_specialforces.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_families { padding-left: 33px; }
+#main .content .lower table td.icon_families::before { content: ''; background: url('../images/icon_families.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_goldbars { padding-left: 33px; }
+#main .content .lower table td.icon_goldbars::before { content: ''; background: url('../images/icon_goldbars.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_gold { padding-left: 33px; }
+#main .content .lower table td.icon_gold::before { content: ''; background: url('../images/icon_gold.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_security { padding-left: 33px; }
+#main .content .lower table td.icon_security::before { content: ''; background: url('../images/icon_security.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+
+#main .content .lower table td.icon_researchpoints { padding-left: 33px; }
+#main .content .lower table td.icon_researchpoints::before { content: ''; background: url('../images/icon_researchpoints.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_heroin { padding-left: 33px; }
+#main .content .lower table td.icon_heroin::before { content: ''; background: url('../images/icon_heroin.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_moto { padding-left: 33px; }
+#main .content .lower table td.icon_moto::before { content: ''; background: url('../images/icon_moto.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+#main .content .lower table td.icon_chests { padding-left: 33px; }
+#main .content .lower table td.icon_chests::before { content: ''; background: url('../images/icon_chest.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+
+#main .content .lower table td.icon_garbage { padding-left: 33px; }
+#main .content .lower table td.icon_garbage::before { content: ''; background: url('../images/icon_garbage.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+
+#main .content .lower table td.icon_horses { padding-left: 33px; }
+#main .content .lower table td.icon_horses::before { content: ''; background: url('../images/icon_horses.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+
+#main .content .lower table td.icon_cocaine { padding-left: 33px; }
+#main .content .lower table td.icon_cocaine::before { content: ''; background: url('../images/icon_cocaine.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+
+#main .content .lower table td.icon_airplane { padding-left: 33px; }
+#main .content .lower table td.icon_airplane::before { content: ''; background: url('../images/icon_airplane.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+
+#main .content .lower table td.icon_cocaineplant { padding-left: 33px; }
+#main .content .lower table td.icon_cocaineplant::before { content: ''; background: url('../images/icon_cocaineplant.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+
+#main .content .lower table td.icon_militarytruck { padding-left: 33px; }
+#main .content .lower table td.icon_militarytruck::before { content: ''; background: url('../images/icon_militarytruck.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 7px; top: 50%; margin-top:-10px; }
+
+#main .content .lower table td span.gem_01 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_01::before { content: ''; background: url('../images/gem_01.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_02 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_02::before { content: ''; background: url('../images/gem_02.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_03 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_03::before { content: ''; background: url('../images/gem_03.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_04 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_04::before { content: ''; background: url('../images/gem_04.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_05 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_05::before { content: ''; background: url('../images/gem_05.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_06 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_06::before { content: ''; background: url('../images/gem_06.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_07 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_07::before { content: ''; background: url('../images/gem_07.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_08 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_08::before { content: ''; background: url('../images/gem_08.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_09 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_09::before { content: ''; background: url('../images/gem_09.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_10 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_10::before { content: ''; background: url('../images/gem_10.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_11 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_11::before { content: ''; background: url('../images/gem_11.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_12 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_12::before { content: ''; background: url('../images/gem_12.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_13 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_13::before { content: ''; background: url('../images/gem_13.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+#main .content .lower table td span.gem_14 { display: inline-block; width: 20px; height: 2px; position: relative; }
+#main .content .lower table td span.gem_14::before { content: ''; background: url('../images/gem_14.png') no-repeat; width: 20px; height: 20px; position: absolute; left: 0px; top: -12px; }
+
+#main .content .lower h3 { font-size: 20px; line-height: 25px; text-align: left; color: #3b3b3b; text-shadow: 0px 2px #fff; font-weight: 900; padding: 5px; margin: 5px; margin-top: 25px; }
+#main .content .lower h5 { font-size: 17px; line-height: 22px; text-align: left; color: #3b3b3b; text-shadow: 0px 2px #fff; font-weight: 900; padding: 5px 5px 0 5px; margin: 5px 5px -5px 5px; }
+#main .content .lower *:first-child { margin-top: 5px; }
+#main .content .lower p { font-size: 16px; line-height: 21px; color: #3b3b3b; padding: 5px; margin: 5px; }
+#main .content .lower ul { list-style: disc; padding: 5px; margin: 5px 5px 0 30px; }
+#main .content .lower li { font-size: 16px; line-height: 21px; color: #3b3b3b; padding: 0px; margin-bottom: 5px; }
+
+#main .content .lower .faq_answer { display: none; font-size: 16px; line-height: 21px; color: #3b3b3b; padding: 5px 5px 5px 30px; margin: 5px;  }
+#main .content .lower .faq_question { cursor: pointer; font-size: 16px; line-height: 21px; color: #3b3b3b; padding: 5px; margin: 5px; color:#466e7c; font-weight:bold; }
+
+#main .content .log { margin: 5px; background: #f6efd3; padding: 5px; padding-bottom:10px; border: 3px solid #d2c29a;  margin-top: 10px; margin-bottom:10px; border-radius: 14px 14px 14px 14px; position: relative;  }
+#main .content .log p {  font-size: 16px; line-height: 21px; color: #3b3b3b; padding-left:7px; margin-left: 5px; padding-top:5px; }
+#main .content .log h3 { font-size: 20px; line-height: 25px; text-align: left; color: #3b3b3b; text-shadow: 0px 2px #fff; font-weight: 900; padding-left: 5px; margin-left: 5px; padding-top: 5px; margin-top: 5px; }
+#main .content .log h5 { font-size: 17px; line-height: 22px; text-align: left; color: #3b3b3b; text-shadow: 0px 2px #fff; font-weight: 900; padding: 10px 5px 10px 5px; margin: 5px 5px -5px 5px; }
+
+#main .content a.link { border-bottom: 1px dotted #466e7c; text-decoration: none; color:#466e7c; }
+
+span.weapon_molotov { margin-left:10px; content: ''; background: url('../images/nightclub_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_flaregun { margin-left:10px; content: ''; background: url('../images/nightclub_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_silenceduzi { margin-left:10px; content: ''; background: url('../images/nightclub_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_assaultrifle { margin-left:10px; content: ''; background: url('../images/nightclub_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_combatpdw { margin-left:10px; content: ''; background: url('../images/nightclub_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_sawedoffshotgun { margin-left:10px; content: ''; background: url('../images/nightclub_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_bullpupshotgun { margin-left:10px; content: ''; background: url('../images/nightclub_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_heatseekinglauncher { margin-left:10px; content: ''; background: url('../images/nightclub_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*7) -0px !important; background-size: auto 40px !important;  }
+table.nightclub_special td.icon_attack::before,table.nightclub_special td.icon_defence::before { margin-top:14px; }
+table.cigar_special td.icon_attack::before,table.cigar_special td.icon_defence::before { margin-top:14px; }
+table.scrapyard_special td.icon_attack::before,table.scrapyard_special td.icon_defence::before { margin-top:14px; }
+
+span.weapon_mtjeep { margin-left:10px; content: ''; background: url('../images/weapon_mtjeep.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*0) -0px !important; background-size: auto 40px !important; }
+
+span.weapon_scrap1 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_scrap2 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_scrap3 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_scrap4 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_scrap5 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_scrap6 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_scrap7 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_scrap8 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_scrap9 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_scrap10 { margin-left:10px; content: ''; background: url('../images/scrapyard_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
+
+span.weapon_casino1 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_casino2 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_casino3 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_casino4 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_casino5 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_casino6 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_casino7 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_casino8 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_casino9 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_casino10 { margin-left:10px; content: ''; background: url('../images/casino_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
+
+
+span.weapon_robotech1 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_robotech2 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_robotech3 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_robotech4 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_robotech5 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_robotech6 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_robotech7 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_robotech8 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_robotech9 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_robotech10 { margin-left:10px; content: ''; background: url('../images/robotech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
+
+
+span.weapon_cigar1 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_cigar2 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_cigar3 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_cigar4 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_cigar5 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_cigar6 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar7 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar8 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar9 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar10 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*9) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar11 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*10) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar12 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*11) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar13 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*12) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar14 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*13) -0px !important; background-size: auto 40px !important;  }
+span.weapon_cigar15 { margin-left:10px; content: ''; background: url('../images/cigar_equipment.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*14) -0px !important; background-size: auto 40px !important;  }
+
+span.weapon_hitech1 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_hitech2 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_hitech3 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_hitech4 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_hitech5 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_hitech6 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech7 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech8 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech9 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech10 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*9) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech11 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*10) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech12 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*11) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech13 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*12) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech14 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*13) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitech15 { margin-left:10px; content: ''; background: url('../images/hitech_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/14*14) -0px !important; background-size: auto 40px !important;  }
+
+span.weapon_crypto1 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_crypto2 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_crypto3 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_crypto4 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_crypto5 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_crypto6 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_crypto7 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_crypto8 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_crypto9 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_crypto10 { margin-left:10px; content: ''; background: url('../images/crypto_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
+
+span.miningrig_1 { margin-left:10px; content: ''; background: url('../images/miningrigs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*0) -0px !important; background-size: auto 40px !important; }
+span.miningrig_2 { margin-left:10px; content: ''; background: url('../images/miningrigs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*1) -0px !important; background-size: auto 40px !important; }
+span.miningrig_3 { margin-left:10px; content: ''; background: url('../images/miningrigs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*2) -0px !important; background-size: auto 40px !important; }
+span.miningrig_4 { margin-left:10px; content: ''; background: url('../images/miningrigs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*3) -0px !important; background-size: auto 40px !important; }
+span.miningrig_5 { margin-left:10px; content: ''; background: url('../images/miningrigs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*4) -0px !important; background-size: auto 40px !important; }
+span.miningrig_6 { margin-left:10px; content: ''; background: url('../images/miningrigs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*5) -0px !important; background-size: auto 40px !important;  }
+span.miningrig_7 { margin-left:10px; content: ''; background: url('../images/miningrigs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*6) -0px !important; background-size: auto 40px !important;  }
+span.miningrig_8 { margin-left:10px; content: ''; background: url('../images/miningrigs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/7*7) -0px !important; background-size: auto 40px !important;  }
+
+span.weapon_bomb1 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_bomb2 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_bomb3 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_bomb4 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_bomb5 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_bomb6 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_bomb7 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_bomb8 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_bomb9 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_bomb10 { margin-left:10px; content: ''; background: url('../images/weapon_bombs.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
+table.weaponlab_special td.icon_attack::before,table.weaponlab_special td.icon_defence::before { margin-top:14px; }
+
+span.weapon_steeltruck1 { margin-left:10px; content: ''; background: url('../images/weapon_steeltruck1.png') no-repeat; width: 40px; height: 40px; display:inline-block;  background-size: auto 40px !important; }
+span.weapon_steelheli1 { margin-left:10px; content: ''; background: url('../images/weapon_steelheli1.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important;  }
+span.weapon_steeltruck2 { margin-left:10px; content: ''; background: url('../images/weapon_steeltruck2.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important;  }
+span.weapon_steelheli2 { margin-left:10px; content: ''; background: url('../images/weapon_steelheli2.png') no-repeat; width: 40px; height: 40px; display:inline-block;  background-size: auto 40px !important;  }
+table.steelfactory_special td.icon_attack::before,table.steelfactory_special td.icon_defence::before,table.steelfactory_special td.icon_steel::before { margin-top:14px; }
+
+span.weapon_warehouse1 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_warehouse2 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_warehouse3 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_warehouse4 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_warehouse5 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_warehouse6 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_warehouse7 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_warehouse8 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_warehouse9 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_warehouse10 { margin-left:10px; content: ''; background: url('../images/warehouse_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
+
+span.weapon_ltank { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*35) -0px !important; background-size: auto 40px !important; }
+span.weapon_bbazooka { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*48) -0px !important; background-size: auto 40px !important; }
+span.weapon_grenadelauncher { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*22) -0px !important; background-size: auto 40px !important; }
+span.weapon_gsniper { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*42) -0px !important; background-size: auto 40px !important;  }
+span.weapon_bsniper { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*47) -0px !important; background-size: auto 40px !important;  }
+span.weapon_gbazooka { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*41) -0px !important; background-size: auto 40px !important;  }
+span.weapon_tank { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*24) -0px !important; background-size: auto 40px !important;  }
+span.weapon_rocketlauncher { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*23) -0px !important; background-size: auto 40px !important;  }
+span.weapon_spw03 { margin-left:10px; content: ''; background: url('../images/SPW03.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+span.weapon_spw04 { margin-left:10px; content: ''; background: url('../images/SPW04.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+span.weapon_spw05 { margin-left:10px; content: ''; background: url('../images/SPW05.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+span.weapon_bztank { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*49) -0px !important; background-size: auto 40px !important;  }
+span.weapon_btank { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*36) -0px !important; background-size: auto 40px !important;  }
+span.weapon_stank { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*46) -0px !important; background-size: auto 40px !important;  }
+span.weapon_battletank { margin-left:10px; content: ''; background: url('../images/weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/51*37) -0px !important; background-size: auto 40px !important;  }
+
+span.weapon_203a2 { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*0) -0px !important; background-size: auto 40px !important; }
+span.weapon_airsoft { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*1) -0px !important; background-size: auto 40px !important; }
+span.weapon_armoredtruck { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*2) -0px !important; background-size: auto 40px !important; }
+span.weapon_autogrenadelauncher { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*3) -0px !important; background-size: auto 40px !important; }
+span.weapon_m134 { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*4) -0px !important; background-size: auto 40px !important; }
+span.weapon_armoreddrone { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_propelledtruck { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_monstruo { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_mortar { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_predator { margin-left:10px; content: ''; background: url('../images/airstrip_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
+
+span.weapon_gvest { margin-left:10px; content: ''; background: url('../images/weapon_gvest.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important;  }
+span.weapon_gknucklesring { margin-left:10px; content: ''; background: url('../images/weapon_gknucklesring.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important;  }
+span.weapon_gtaser { margin-left:10px; content: ''; background: url('../images/weapon_gtaser.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important;  }
+span.weapon_gak47 { margin-left:10px; content: ''; background: url('../images/weapon_gak47.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important;  }
+span.weapon_gdp12 { margin-left:10px; content: ''; background: url('../images/weapon_gdp12.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important;  }
+
+span.weapon_marco { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: -0px -0px !important; background-size: auto 40px !important; }
+span.weapon_leonel { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*1) -0px !important; background-size: auto 40px !important;  }
+span.weapon_enforcer_mexico { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*2) -0px !important; background-size: auto 40px !important;  }
+span.weapon_gunmen { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*3) -0px !important; background-size: auto 40px !important;  }
+span.weapon_hitmen { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*4) -0px !important; background-size: auto 40px !important;  }
+span.weapon_undeath { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*5) -0px !important; background-size: auto 40px !important;  }
+span.weapon_soldado { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*6) -0px !important; background-size: auto 40px !important;  }
+span.weapon_zeta { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*7) -0px !important; background-size: auto 40px !important;  }
+span.weapon_immortal { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
+span.weapon_chapo { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
+
+.weapon_afr { margin-left:10px; background: url('../images/bosses/weapon_afr.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_addchain { margin-left:10px; background: url('../images/bosses/weapon_addchain.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_af47 { margin-left:10px; background: url('../images/bosses/weapon_af47.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_auk { margin-left:10px; background: url('../images/bosses/weapon_auk.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_bastardsword { margin-left:10px; background: url('../images/bosses/weapon_bastardsword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_bowarrow { margin-left:10px; background: url('../images/bosses/weapon_bowarrow.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_dagger { margin-left:10px; background: url('../images/bosses/weapon_dagger.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_f4001 { margin-left:10px; background: url('../images/bosses/weapon_f4001.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_fam { margin-left:10px; background: url('../images/bosses/weapon_fam.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_halberd { margin-left:10px; background: url('../images/bosses/weapon_halberd.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_katar { margin-left:10px; background: url('../images/bosses/weapon_katar.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_l99lsw { margin-left:10px; background: url('../images/bosses/weapon_l99lsw.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_m8a1 { margin-left:10px; background: url('../images/bosses/weapon_m8a1.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_m12a8 { margin-left:10px; background: url('../images/bosses/weapon_m12a8.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_mace { margin-left:10px; background: url('../images/bosses/weapon_mace.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_maul { margin-left:10px; background: url('../images/bosses/weapon_maul.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_ml4 { margin-left:10px; background: url('../images/bosses/weapon_ml4.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_mf5l { margin-left:10px; background: url('../images/bosses/weapon_mf5l.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_nunchuku { margin-left:10px; background: url('../images/bosses/weapon_nunchuku.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_f90 { margin-left:10px; background: url('../images/bosses/weapon_f90.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_polearnm { margin-left:10px; background: url('../images/bosses/weapon_polearm.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_ringsword { margin-left:10px; background: url('../images/bosses/weapon_ringsword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_rad { margin-left:10px; background: url('../images/bosses/weapon_rad.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_sai { margin-left:10px; background: url('../images/bosses/weapon_sai.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_scat { margin-left:10px; background: url('../images/bosses/weapon_scat.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_scythe { margin-left:10px; background: url('../images/bosses/weapon_scythe.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_sickle { margin-left:10px; background: url('../images/bosses/weapon_sickle.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_staff { margin-left:10px; background: url('../images/bosses/weapon_staff.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_swallow { margin-left:10px; background: url('../images/bosses/weapon_swallow.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_sword { margin-left:10px; background: url('../images/bosses/weapon_sword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_tao { margin-left:10px; background: url('../images/bosses/weapon_tao.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_tonfa { margin-left:10px; background: url('../images/bosses/weapon_tonfa.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_unp { margin-left:10px; background: url('../images/bosses/weapon_unp.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_miniuzi { margin-left:10px; background: url('../images/bosses/weapon_miniuzi.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_lector { margin-left:10px; background: url('../images/bosses/weapon_lector.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_wand { margin-left:10px; background: url('../images/bosses/weapon_wand.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_warhammer { margin-left:10px; background: url('../images/bosses/weapon_warhammer.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_m1140 { margin-left:10px; background: url('../images/bosses/weapon_m1140.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_riotshield { margin-left:10px; background: url('../images/bosses/weapon_riotshield.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_resistance { margin-left:10px; background: url('../images/bosses/weapon_resistance.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_flarret { margin-left:10px; background: url('../images/bosses/weapon_flarret.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_wf2001 { margin-left:10px; background: url('../images/bosses/weapon_wf2001.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_m13 { margin-left:10px; background: url('../images/bosses/weapon_m13.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_urp { margin-left:10px; background: url('../images/bosses/weapon_urp.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_sagnum { margin-left:10px; background: url('../images/bosses/weapon_sagnum.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_g9 { margin-left:10px; background: url('../images/bosses/weapon_g9.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_de { margin-left:10px; background: url('../images/bosses/weapon_de.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+
+.weapon_pp2002 { margin-left:10px; background: url('../images/bosses/weapon_pp2002.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_g88 { margin-left:10px; background: url('../images/bosses/weapon_g88.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_m99 { margin-left:10px; background: url('../images/bosses/weapon_m99.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_tsp { margin-left:10px; background: url('../images/bosses/weapon_tsp.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_flas { margin-left:10px; background: url('../images/bosses/weapon_flas.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_ff13 { margin-left:10px; background: url('../images/bosses/weapon_ff13.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_fliker { margin-left:10px; background: url('../images/bosses/weapon_fliker.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_tanger { margin-left:10px; background: url('../images/bosses/weapon_tanger.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_m2011 { margin-left:10px; background: url('../images/bosses/weapon_m2011.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_model1850 { margin-left:10px; background: url('../images/bosses/weapon_model1850.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_ag4 { margin-left:10px; background: url('../images/bosses/weapon_ag4.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_clumber { margin-left:10px; background: url('../images/bosses/weapon_clumber.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_fringer { margin-left:10px; background: url('../images/bosses/weapon_fringer.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_danglin { margin-left:10px; background: url('../images/bosses/weapon_danglin.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_sinkfield { margin-left:10px; background: url('../images/bosses/weapon_sinkfield.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_yariska { margin-left:10px; background: url('../images/bosses/weapon_yariska.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_mousien { margin-left:10px; background: url('../images/bosses/weapon_mousien.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_gar { margin-left:10px; background: url('../images/bosses/weapon_gar.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_pssr { margin-left:10px; background: url('../images/bosses/weapon_pssr.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_stv { margin-left:10px; background: url('../images/bosses/weapon_stv.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_housy { margin-left:10px; background: url('../images/bosses/weapon_housy.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_m22 { margin-left:10px; background: url('../images/bosses/weapon_m22.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_sgg { margin-left:10px; background: url('../images/bosses/weapon_sgg.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_carbine { margin-left:10px; background: url('../images/bosses/weapon_carbine.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_flompson { margin-left:10px; background: url('../images/bosses/weapon_flompson.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_gf48 { margin-left:10px; background: url('../images/bosses/weapon_gf48.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_type99 { margin-left:10px; background: url('../images/bosses/weapon_type99.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_ttsh { margin-left:10px; background: url('../images/bosses/weapon_ttsh.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_denchgun { margin-left:10px; background: url('../images/bosses/weapon_denchgun.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_doubleshotgun { margin-left:10px; background: url('../images/bosses/weapon_doubleshotgun.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_type887 { margin-left:10px; background: url('../images/bosses/weapon_type887.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_yar { margin-left:10px; background: url('../images/bosses/weapon_yar.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_dt88 { margin-left:10px; background: url('../images/bosses/weapon_dt88.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_mx51 { margin-left:10px; background: url('../images/bosses/weapon_mx51.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_vb56 { margin-left:10px; background: url('../images/bosses/weapon_vb56.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_crowning { margin-left:10px; background: url('../images/bosses/weapon_crowning.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_m9111 { margin-left:10px; background: url('../images/bosses/weapon_m9111.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_klambu { margin-left:10px; background: url('../images/bosses/weapon_klambu.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_gerardp39 { margin-left:10px; background: url('../images/bosses/weapon_gerardp39.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_tokkarov { margin-left:10px; background: url('../images/bosses/weapon_tokkarov.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_mag { margin-left:10px; background: url('../images/bosses/weapon_mag.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_heavyflail { margin-left:10px; background: url('../images/bosses/weapon_heavyflail.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_lightflail { margin-left:10px; background: url('../images/bosses/weapon_lightflail.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_direflail { margin-left:10px; background: url('../images/bosses/weapon_direflail.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_shortsword { margin-left:10px; background: url('../images/bosses/weapon_shortsword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_morningstar { margin-left:10px; background: url('../images/bosses/weapon_morningstar.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_longsword { margin-left:10px; background: url('../images/bosses/weapon_longsword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_heavymace { margin-left:10px; background: url('../images/bosses/weapon_heavymace.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_lightmace { margin-left:10px; background: url('../images/bosses/weapon_lightmace.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_hookedhammer { margin-left:10px; background: url('../images/bosses/weapon_hookedhammer.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+.weapon_lightpick { margin-left:10px; background: url('../images/bosses/weapon_lightpick.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
+table.bosses_special td.icon_attack::before,table.bosses_special td.icon_defence::before { margin-top:14px; }
+
+.poker_cards { margin-left:10px; }
+.poker_card { display:inline-block; width:50px; height:70px; background:url('../images/poker_cards.png') no-repeat; box-shadow:0px 0px 3px #222; border-radius:5px; }
+.poker_card.heart-ace { background-position:0px 0px; }
+.poker_card.heart-king { background-position:0px -840px; }
+.poker_card.heart-queen { background-position:0px -770px; }
+.poker_card.heart-jack { background-position:0px -700px; }
+.poker_card.heart-ten { background-position:0px -630px; }
+.poker_card.heart-nine { background-position:0px -350px; }
+.poker_card.heart-seven { background-position:0px -560px; }
+.poker_card.heart-six { background-position:0px -350px; }
+
+.poker_card.heart-seven { background-position:0px -420px; }
+
+.poker_card.spade-ace { background-position:-50px 0px; }
+.poker_card.spade-king { background-position:-50px -840px; }
+.poker_card.spade-ten { background-position:-50px -630px; }
+.poker_card.spade-seven { background-position:-50px -420px; } 
+.poker_card.spade-five { background-position:-50px -280px; }
+.poker_card.spade-four { background-position:-50px -210px; }
+.poker_card.spade-three { background-position:-50px -140px; }
+
+.poker_card.clubs-king { background-position:-150px -840px; }
+.poker_card.clubs-ten { background-position:-150px -630px; }
+.poker_card.clubs-seven { background-position:-150px -420px; }
+.poker_card.clubs-five { background-position:-150px -280px; }
+
+.poker_card.diamond-ace { background-position:-100px 0px; }
+.poker_card.diamond-queen { background-position:-100px -770px; }
+.poker_card.diamond-ten { background-position:-100px -630px; }
+.poker_card.diamond-nine { background-position:-100px -560px; }
+.poker_card.diamond-eight { background-position:-100px -490px; }
+.poker_card.diamond-seven { background-position:-100px -420px; }
+.poker_card.diamond-six { background-position:-100px -350px; }
+.poker_card.diamond-three { background-position:-100px -140px; }
+.poker_card.diamond-two { background-position:-100px -70px; }
+
+span.chemicals_acetone { margin-left:10px; content: ''; background: url('../images/ingredients.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/4*0) -0px !important; background-size: auto 40px !important; }
+span.chemicals_opium { margin-left:10px; content: ''; background: url('../images/ingredients.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/4*1) -0px !important; background-size: auto 40px !important; }
+span.chemicals_calcium { margin-left:10px; content: ''; background: url('../images/ingredients.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/4*2) -0px !important; background-size: auto 40px !important; }
+span.chemicals_ammonium { margin-left:10px; content: ''; background: url('../images/ingredients.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/4*3) -0px !important; background-size: auto 40px !important; }
+span.chemicals_sodium { margin-left:10px; content: ''; background: url('../images/ingredients.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/4*4) -0px !important; background-size: auto 40px !important; }
+/* Mafia Hunterss Wiki branding */
+#top .logo a{background:none!important;color:#f2d28a!important;text-decoration:none!important;font:900 28px/65px Roboto,Arial,sans-serif;text-shadow:0 2px 3px #000;white-space:nowrap}
+#top .logo a:after{content:"Mafia Hunterss Wiki"}
+.content-source{max-width:940px;margin:16px auto 4px;padding:9px 16px;color:#999;font-size:11px;line-height:1.4;text-align:center}
+
+/* ========================================================================== 
+   MAFIA HUNTERSS WIKI — sjednocení s hlavním webem mafiahunterss.eu
+   Moderní tmavý vzhled, skleněné karty, modro-fialový akcent a responzivita.
+   Tato část je záměrně na konci a přepisuje původní vzhled bez změny HTML.
+   ========================================================================== */
+
+:root {
+  --mh-bg: #070a12;
+  --mh-bg-soft: #0c1220;
+  --mh-surface: rgba(17, 24, 39, 0.92);
+  --mh-surface-2: rgba(24, 34, 52, 0.94);
+  --mh-card: rgba(15, 23, 42, 0.88);
+  --mh-border: rgba(148, 163, 184, 0.18);
+  --mh-border-strong: rgba(56, 189, 248, 0.38);
+  --mh-text: #f8fafc;
+  --mh-muted: #a8b3c7;
+  --mh-primary: #38bdf8;
+  --mh-primary-2: #6366f1;
+  --mh-accent: #a855f7;
+  --mh-success: #22c55e;
+  --mh-shadow: 0 22px 60px rgba(0, 0, 0, 0.42);
+  --mh-shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.28);
+  --mh-radius: 18px;
+  --mh-radius-sm: 12px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body,
+body input,
+body textarea,
+body select,
+body button {
+  font-family: Inter, Roboto, "Roboto Condensed", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 24px 16px 36px;
+  color: var(--mh-text);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(56, 189, 248, 0.15), transparent 30%),
+    radial-gradient(circle at 88% 14%, rgba(168, 85, 247, 0.13), transparent 32%),
+    linear-gradient(180deg, #080b14 0%, #0a1020 46%, #070a12 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, #000, transparent 82%);
+}
+
+#bg,
+#helicopter { display: none !important; }
+
+#top,
+#bottom,
+#main {
+  width: min(1180px, 100%);
+}
+
+#top {
+  height: 112px;
+  margin: 0 auto 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#top a {
+  width: auto;
+  height: auto;
+  margin: 0;
+  text-decoration: none;
+}
+
+#top .logo {
+  width: auto;
+  min-width: 300px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none !important;
+  position: relative;
+}
+
+#top .logo::before {
+  content: "MAFIA HUNTERSS";
+  display: block;
+  color: #fff;
+  font-size: clamp(27px, 4vw, 43px);
+  line-height: 1;
+  letter-spacing: .075em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 0 28px rgba(56,189,248,.26);
+}
+
+#top .logo::after {
+  content: "WIKI";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  color: var(--mh-primary);
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: .48em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#top .button_play {
+  top: 27px;
+  right: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--mh-primary), var(--mh-primary-2));
+  box-shadow: 0 12px 28px rgba(56, 189, 248, .24);
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+#top .button_play:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(56, 189, 248, .32);
+}
+
+#top .button_play input {
+  height: auto;
+  min-height: 48px;
+  padding: 12px 28px;
+  border: 0 !important;
+  border-radius: 999px;
+  background: transparent !important;
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+#top #fb_like { display: none !important; }
+
+#top .footer_button_facebook {
+  top: 41px;
+  left: 0;
+  right: auto;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  border: 1px solid var(--mh-border);
+  border-radius: 50%;
+  background-color: rgba(15, 23, 42, .9);
+  background-position: center;
+  background-size: 20px;
+  box-shadow: var(--mh-shadow-soft);
+}
+
+#main {
+  margin: 0 auto;
+  min-height: 500px;
+  border: 1px solid var(--mh-border);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(15, 23, 42, .95), rgba(8, 13, 25, .95));
+  box-shadow: var(--mh-shadow);
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+}
+
+#main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main .side {
+  width: 270px;
+  padding: 22px 18px 26px;
+  border-right: 1px solid var(--mh-border);
+  background: rgba(7, 12, 23, .58);
+}
+
+#main .side div.group {
+  margin-top: 12px;
+  padding: 12px 42px 12px 14px;
+  border: 1px solid var(--mh-border);
+  border-radius: var(--mh-radius-sm);
+  background: linear-gradient(145deg, rgba(30, 41, 59, .96), rgba(15, 23, 42, .96));
+  color: #eaf2ff;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: .055em;
+  font-weight: 800;
+  text-shadow: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,.16);
+  transition: border-color .2s ease, background .2s ease, transform .2s ease;
+}
+
+#main .side div.group:hover,
+#main .side div.group.on {
+  border-color: var(--mh-border-strong);
+  background: linear-gradient(135deg, rgba(56,189,248,.17), rgba(99,102,241,.16));
+}
+
+#main .side div.group:hover { transform: translateY(-1px); }
+#main .side div.group.on { border-radius: var(--mh-radius-sm) var(--mh-radius-sm) 0 0; }
+#main .side div.group::after { top: 8px; color: var(--mh-primary); }
+
+#main .side div.group.on + ul.menu {
+  border: 1px solid var(--mh-border-strong);
+  border-top: 0;
+  border-radius: 0 0 var(--mh-radius-sm) var(--mh-radius-sm);
+  background: rgba(8, 15, 29, .92);
+  overflow: hidden;
+}
+
+#main .side li + li { border-top: 1px solid rgba(148,163,184,.1); }
+
+#main .side li {
+  font-size: 14px;
+  line-height: 20px;
+  transition: background .18s ease;
+}
+
+#main .side li:hover { background: rgba(56, 189, 248, .09); }
+#main .side li.current { background: linear-gradient(90deg, rgba(56,189,248,.18), rgba(99,102,241,.08)); }
+
+#main .side li.current::after {
+  content: "";
+  position: absolute;
+  inset: 7px auto 7px 0;
+  width: 3px;
+  border-radius: 3px;
+  background: linear-gradient(var(--mh-primary), var(--mh-accent));
+}
+
+#main .side li a {
+  padding: 10px 10px 10px 50px;
+  color: #cbd5e1;
+  transition: color .18s ease, transform .18s ease;
+}
+
+#main .side li:hover a,
+#main .side li.current a { color: #fff; }
+#main .side li:hover a { transform: translateX(2px); }
+
 #main .side li::before {
+  opacity: .92;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,.3));
+}
+
+#main .content {
+  margin: 22px 22px 22px 292px;
+  border: 1px solid var(--mh-border);
+  border-radius: var(--mh-radius);
+  background: rgba(15, 23, 42, .7);
+  box-shadow: 0 18px 42px rgba(0,0,0,.25);
+  overflow: hidden;
+}
+
+#main .content .upper {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid var(--mh-border);
+  border-radius: 0;
+  background:
+    radial-gradient(circle at 50% -50%, rgba(56,189,248,.24), transparent 70%),
+    linear-gradient(135deg, rgba(30,41,59,.95), rgba(15,23,42,.95));
+}
+
+#main .content .upper .inner {
+  padding: 26px 24px 22px;
+  border: 0;
+  border-radius: 0;
+}
+
+#main .content .upper h1 {
+  color: #fff;
+  font-size: clamp(27px, 4vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -.025em;
+  font-family: inherit;
+  font-weight: 900;
+  text-shadow: none;
+}
+
+#main .content .upper h2 {
+  margin-top: 7px;
+  color: var(--mh-muted);
+  font-size: 17px;
+  line-height: 1.45;
+  font-family: inherit;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+#main .content .lower,
+#main .content .log {
+  margin: 0;
+  padding: 18px 20px 24px;
+  border: 0;
+  border-radius: 0;
+  background: rgba(9, 15, 28, .68);
+}
+
+#main .content .log {
+  margin: 16px;
+  border: 1px solid var(--mh-border);
+  border-radius: var(--mh-radius-sm);
+  background: rgba(15, 23, 42, .72);
+}
+
+#main .content .lower p,
+#main .content .lower li,
+#main .content .log p {
+  color: #d5deeb;
+  font-size: 16px;
+  line-height: 1.72;
+  text-shadow: none;
+}
+
+#main .content .lower h3,
+#main .content .log h3 {
+  margin-top: 28px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 800;
+  text-shadow: none;
+}
+
+#main .content .lower h5,
+#main .content .log h5 {
+  color: #e2e8f0;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 750;
+  text-shadow: none;
+}
+
+#main .content .lower ul { margin-left: 34px; }
+#main .content .lower li::marker { color: var(--mh-primary); }
+
+#main .content a,
+#main .content a.link {
+  color: #7dd3fc;
+  border-bottom-color: rgba(125,211,252,.48);
+  text-decoration: none;
+  transition: color .18s ease;
+}
+
+#main .content a:hover,
+#main .content a.link:hover { color: #c4b5fd; }
+
+#main .content .lower table {
+  width: calc(100% - 10px);
+  margin: 14px 5px;
+  padding: 0;
+  border: 1px solid var(--mh-border);
+  border-radius: var(--mh-radius-sm);
+  border-spacing: 0;
+  background: rgba(15, 23, 42, .9);
+  box-shadow: 0 12px 26px rgba(0,0,0,.2);
+  overflow: hidden;
+}
+
+#main .content .lower table tr th {
+  padding: 12px 11px;
+  border: 0;
+  background: linear-gradient(135deg, rgba(56,189,248,.17), rgba(99,102,241,.16));
+  color: #f8fafc;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: .04em;
+  font-weight: 800;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+#main .content .lower table tr td,
+#main .content .lower table tr:nth-child(even) td {
+  padding: 10px 11px;
+  border-top: 1px solid rgba(148,163,184,.12);
+  background: rgba(15,23,42,.66);
+  color: #d7e0ec;
+  font-size: 14px;
+  line-height: 20px;
+  text-shadow: none;
+}
+
+#main .content .lower table tr:nth-child(even) td { background: rgba(30,41,59,.48); }
+#main .content .lower table tr:hover td { background: rgba(56,189,248,.08); }
+
+#main .content .lower .faq_question {
+  margin: 8px 5px;
+  padding: 13px 44px 13px 14px;
+  border: 1px solid var(--mh-border);
+  border-radius: var(--mh-radius-sm);
+  background: rgba(30,41,59,.68);
+  color: #eaf4ff;
+  position: relative;
+}
+
+#main .content .lower .faq_question::after {
+  content: "+";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--mh-primary);
+  font-size: 20px;
+}
+
+#main .content .lower .faq_answer {
+  color: #cbd5e1;
+  line-height: 1.65;
+}
+
+#bottom {
+  height: auto;
+  min-height: 66px;
+  margin: 18px auto 0;
+  color: var(--mh-muted);
+}
+
+#bottom .language_selector_box {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--mh-muted);
+  font-size: 14px;
+}
+
+#bottom div.pre_selector.native_mobile {
+  padding: 0;
+  border: 1px solid var(--mh-border);
+  border-radius: 10px;
+  background: rgba(15, 23, 42, .86);
+}
+
+#bottom div.pre_selector.native_mobile select {
+  height: 42px;
+  padding: 0 38px 0 13px;
+  border: 0;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #e2e8f0;
+  font-size: 14px;
+  line-height: 42px;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+/* Obecná poznámka o zdroji / footer vložený v článcích */
+.source-note,
+.wiki-source,
+footer,
+#footer {
+  color: #8190a6;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Lepší focus pro klávesnici */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(56,189,248,.5);
+  outline-offset: 3px;
+}
+
+/* Responzivní tabulky */
+#main .content .lower { overflow-x: hidden; }
+#main .content .lower table { max-width: 100%; }
+
+@media (max-width: 980px) {
+  body { padding: 14px 10px 28px; }
+
+  #top {
+    height: auto;
+    min-height: 132px;
+    padding: 8px 0 64px;
+  }
+
+  #top .button_play {
+    top: auto;
+    right: 50%;
+    bottom: 4px;
+    transform: translateX(50%);
+  }
+
+  #top .button_play:hover { transform: translateX(50%) translateY(-2px); }
+  #top .footer_button_facebook { top: 14px; left: 4px; }
+
+  #main { border-radius: 18px; }
+
+  #main .side {
+    float: none;
+    width: 100%;
+    padding: 14px;
+    border-right: 0;
+    border-bottom: 1px solid var(--mh-border);
+  }
+
+  #main .side div.group { margin-top: 8px; }
+
+  #main .content {
+    margin: 16px;
+  }
+}
+
+@media (max-width: 680px) {
+  body { padding-left: 7px; padding-right: 7px; }
+
+  #top .logo { min-width: 0; width: 100%; }
+  #top .logo::before { font-size: 27px; letter-spacing: .035em; }
+
+  #main,
+  #main .content { border-radius: 14px; }
+
+  #main .content { margin: 9px; }
+  #main .content .upper .inner { padding: 21px 15px 18px; }
+  #main .content .lower { padding: 12px 10px 18px; }
+
+  #main .content .lower p,
+  #main .content .lower li,
+  #main .content .log p { font-size: 15px; line-height: 1.65; }
+
+  #main .content .lower table {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #main .content .lower table tbody {
+    min-width: 560px;
+  }
+
+  #bottom .language_selector_box { justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+
+/* Mafia Hunterss Wiki - mobile layout fix */
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 980px) {
+  html, body { width: 100%; min-width: 0; overflow-x: hidden; }
+  body { padding: 8px 6px 24px; }
+
+  #bg, #helicopter { display: none; }
+
+  #top, #main, #bottom {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #top {
+    min-height: 118px;
+    padding-bottom: 62px;
+  }
+
+  #top .logo {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+
+  #top .button_play {
+    left: 50%;
+    right: auto;
+    bottom: 5px;
+    top: auto;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  #top .button_play input {
+    max-width: calc(100vw - 28px);
+    height: 48px;
+    line-height: 38px;
+    padding: 3px 24px;
+    font-size: 20px;
+  }
+
+  #main { min-height: 0; border-radius: 14px; }
+
+  #main .side {
+    float: none;
+    width: 100%;
+    padding: 12px;
+  }
+
+  #main .side div.group,
+  #main .side ul.menu { width: 100%; }
+
+  #main .content {
+    margin: 0 12px 14px;
+    width: auto;
+    min-width: 0;
+    clear: both;
+  }
+
+  #main .content .upper .inner { padding: 12px; }
+  #main .content .upper h1 { font-size: 26px; line-height: 1.2; overflow-wrap: anywhere; }
+  #main .content .upper h2 { font-size: 19px; line-height: 1.3; }
+  #main .content .lower { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #main .content .lower table { min-width: 520px; }
+
+  .content-source {
+    margin: 10px 12px 14px !important;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 520px) {
+  #main .side { padding: 8px; }
+  #main .side div.group { font-size: 14px; padding-right: 40px; }
+  #main .side li a { padding: 10px 8px 10px 46px; }
+  #main .content { margin: 0 8px 10px; }
+  #main .content .upper h1 { font-size: 23px; }
+  #main .content .lower p,
+  #main .content .lower li { overflow-wrap: anywhere; }
+}
+
+
+/* Mafia Hunterss Wiki - final table and boss icon revision */
+.boss-weapon-img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  max-width: none;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+  margin: 12px 0 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+}
+
+#main .content .lower .table-scroll table {
+  display: table;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+#main .content .lower .table-scroll tbody {
+  min-width: 0;
+}
+
+@media (max-width: 680px) {
+  #main .content .lower {
+    overflow-x: hidden;
+  }
+
+  #main .content .lower .table-scroll table {
+    display: table;
+    width: max-content;
+    min-width: 100%;
+    font-size: 13px;
+  }
+
+  #main .content .lower .table-scroll th,
+  #main .content .lower .table-scroll td {
+    padding: 7px 8px;
+    white-space: normal;
+    vertical-align: middle;
+  }
+
+  #main .content .lower .table-scroll th {
+    white-space: nowrap;
+  }
+
+  .boss-weapon-img {
+    width: 42px;
+    height: 42px;
+  }
+}
