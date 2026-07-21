@@ -1,178 +1,157 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Války rodin &mdash; Mafia Hunterss Wiki</title>
-    <meta name="description" content="Je tvá rodina ta nejmocnější? Hrajte války rodin.">
-    
-    <meta property="og:title" content="Mafia Hunterss Wiki" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="index.html" />
-    <meta property="og:description" content="Česká herní dokumentace projektu Mafia Hunterss.">
-    <meta property="og:site_name" content="Mafia Hunterss Wiki" />
-    <meta property="og:image" content="images/mafiabattle.png" />
-
-    
-      <link rel="stylesheet" href="styles/main.css?v=4">
-      <script src="scripts/jquery.min.js"></script>
-      <script src="scripts/wiki.js" defer></script>
-  </head>
-  <body>
-    <div id="bg"><div class="left"></div><div class="right"></div></div>
-    <div id="helicopter"><div id="heli" data-frame="-1" data-left="-100"></div></div>
-    <div id="top">
-      <div class="logo"><a href="index.html"></a></div>   
-     
-      <form method="post" id="update_lang"><input type="hidden" name="language" id="update_language" value=""></form>
-      
-      <div class="button_play"><input type="button" onclick="window.open('https://www.mafiahunterss.com');" value="Hrej teď"></div>
-      
-      
-    </div>
-    <div id="main">
-      <div class="side">
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Mafia Hunterss Wiki</div>
-        <ul class="menu">
-          <li class="home"><a href="index.html">Domů</a></li>
-          <li class="bosses"><a href="bosses.html">Bossov&eacute;</a></li>
-          <li class="followers"><a href="followers.html">Stoupenci</a></li>
-          <li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
-          <li class="mafia_power"><a href="mafia-power.html">Mafi&aacute;nsk&aacute; s&iacute;la</a></li>
-		  <li class="poker"><a href="poker.html">Poker</a></li>
-          <li class="changelog"><a href="changelog.html">Ned&aacute;vn&eacute; změny</a></li>
-          <li class="faq"><a href="faq.html">FAQ</a></li>
-          <li class="contact"><a href="https://www.mafiahunterss.com" target="_blank">Kontakt</a></li>
-        </ul>
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium I</div>
-        <ul class="menu">
-          <li class="ammunition_factory"><a href="ammunition-factory.html">Muničn&iacute; tov&aacute;rna</a></li>
-          <li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
-          <li class="bank"><a href="bank.html">Banka</a></li>
-          <li class="boss_mansion"><a href="boss-mansion.html">S&iacute;dlo bossů</a></li>
-          <li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
-          <li class="casino_robbery"><a href="casino-robbery.html">Přepaden&iacute; kasina</a></li>
-          <li class="cigar_factory"><a href="cigar-factory.html">Tov&aacute;rna na doutn&iacute;ky</a></li>
-          <li class="christmas_tree"><a href="christmas-tree.html">V&aacute;nočn&iacute; stromeček</a></li>
-          <li class="gemstones_factory"><a href="gemstones-factory.html">Tov&aacute;rna na drahokamy</a></li>
-          <li class="gym"><a href="gym.html">Posilovna</a></li>
-          <li class="hospital"><a href="hospital.html">Nemocnice</a></li>
-          <li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijn&iacute; st&aacute;nek</a></li>
-          <li class="mafia_mansion"><a href="mafia-mansion.html">Mafi&aacute;nsk&eacute; s&iacute;dlo</a></li>
-          <li class="meth_lab"><a href="meth-lab.html">Varna pern&iacute;ku</a></li>
-          <li class="money_press"><a href="money-press.html">Tisk&aacute;rna peněz</a></li>
-          <li class="nightclub"><a href="nightclub.html">Nočn&iacute; klub</a></li>
-          <li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
-          <li class="red_light_district"><a href="red-light-district.html">Ulička l&aacute;sky</a></li>
-          <li class="research_lab"><a href="research-lab.html">V&yacute;zkumn&aacute; laboratoř</a></li>
-          <li class="tattoo_shop"><a href="tattoo-shop.html">Tetovac&iacute; studio</a></li>
-          <li class="weapon_lab"><a href="weapon-lab.html">Zbraňov&aacute; laboratoř</a></li>
-          <li class="weed_farm"><a href="weed-farm.html">Pěst&iacute;rna tr&aacute;vy</a></li>
-        </ul>
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium II</div>
-          <ul class="menu">
-            <li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
-            <li class="airport"><a href="airport.html">Leti&scaron;tě</a></li>
-            <li class="boat_company"><a href="boat-company.html">Lodn&iacute; společnost</a></li>
-            <li class="crypto_mining"><a href="crypto-mining.html">Těžebn&iacute; farma</a></li>
-            <li class="diamond_factory"><a href="diamond-factory.html">Brus&iacute;rna diamantů</a></li>
-            <li class="flytipping_business"><a href="flytipping-business.html">Zpracov&aacute;n&iacute; odpadu</a></li>
-            <li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
-            <li class="horseracingstadium"><a href="horseracingstadium.html">Dostihov&yacute; stadion</a></li>
-            <li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
-            <li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
-            <li class="oil_field"><a href="oil-field.html">Ropn&eacute; pole</a></li>
-            <li class="powerbase"><a href="power-base.html">Silov&aacute; z&aacute;kladna</a></li>
-            <li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
-            <li class="repo_business"><a href="repo-business.html">Exekutorsk&yacute; byznys</a></li>
-            <li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
-            <li class="scrap_yard"><a href="scrap-yard.html">Vrakovi&scaron;tě</a></li>
-            <li class="secret_cave"><a href="secret-cave.html">Tajn&aacute; jeskyně</a></li>
-            <li class="stadium"><a href="stadium.html">Stadion</a></li>
-            <li class="steel_factory"><a href="steel-factory.html">Ocel&aacute;rna</a></li>
-            <li class="swiss_bank"><a href="swiss-bank.html">&Scaron;v&yacute;carsk&aacute; banka</a></li>
-            <li class="transport_company"><a href="transport-company.html">Přepravn&iacute; společnost</a></li>
-            <li class="vault"><a href="vault.html">Trezor</a></li>
-            <li class="warehouse"><a href="warehouse.html">Skladi&scaron;tě</a></li>
-            <li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na ext&aacute;zi</a></li>
-          </ul>
-          
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium III</div>
-        <ul class="menu">
-          <li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
-		  <li class="compound"><a href="compound.html">The Compound</a></li>
-          <li class="cargo_airstrip"><a href="cargo-airstrip.html">N&aacute;kladn&iacute; Leti&scaron;tě</a></li>
-          <li class="gold_factory"><a href="gold-factory.html">Zlat&aacute; tov&aacute;rna</a></li>
-          <li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexick&yacute; pal&aacute;c kartelu</a></li>
-          <li class="military_museum"><a href="military-museum.html">Vojensk&eacute; muzeum</a></li>
-        </ul>
-        
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Krimin&aacute;ln&iacute; činnost</div>
-        <ul class="menu">
-          <li class="car_robbery"><a href="car-robbery.html">Kr&aacute;dež auta</a></li>
-          <li class="contracts"><a href="contracts.html">Smlouvy na zak&aacute;zku</a></li>
-          <li class="crimes"><a href="crimes.html">Zločiny</a></li>
-          <li class="attack_pvp"><a href="attack-pvp.html">&Uacute;tok PVP</a></li>
-          <li class="mexican_contracts"><a href="mexican-contracts.html">Mexick&eacute; smluvn&iacute; pr&aacute;ce</a></li>
-        </ul>
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Rodina</div>
-        <ul class="menu">
-          <li class="family_home"><a href="family-home.html">Rodinn&eacute; s&iacute;dlo</a></li>
-          <li class="family_methtank"><a href="family-methtank.html">Rodinn&aacute; pern&iacute;kov&aacute; n&aacute;drž</a></li>
-          <li class="family_cashsafe"><a href="family-cashsafe.html">Rodinn&yacute; sejf</a></li>
-          <li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinn&aacute; tab&aacute;kov&aacute; farma</a></li>
-          <li class="family_cocafarm"><a href="family-cocafarm.html">Rodinn&aacute; Kokainov&aacute; plant&aacute;ž</a></li>
-          <li class="family_goldtank"><a href="family-goldtank.html">Rodinn&aacute; n&aacute;drž na zlato</a></li>
-          <li class="family_wars"><a href="family-wars.html">V&aacute;lky rodin</a></li>
-        </ul>
-      </div>
-      <div class="content">        <div class="upper">
-          <div class="inner">
-          <h1>V&aacute;lky rodin</h1>
-          </div>
-        </div>
-        <div class="lower">
-           <h3>Hledat</h3>
-           <p>Při hledání soupeře se porovnává celková mafiánská síla rodin. Čekání může trvat déle, protože systém vybírá pouze z rodin, které právě rovněž hledají válku, a snaží se jejich síly co nejvíce vyrovnat.<br><br>Pokud přesto dostaneš příliš těžkého protivníka, můžeš válku „zahodit“ bez ztráty zdrojů. Samotný rozdíl v síle však nemusí rozhodnout; další podrobnosti najdeš v části „Války“.</p>
-           
-           <h3>F&aacute;ze</h3>
-           <p>Průběh herní funkce Válka rodin se během 24 hodin dělí do 3 fází:</p>
-           <ul>
-            <li>Pouze &scaron;&eacute;f: &scaron;&eacute;f může rozhodnou kterou strategii zvolit ve v&aacute;lce. Na tomto rozhodnut&iacute; může z&aacute;viset v&yacute;sledek v&aacute;lky. Samozřejmě tak&eacute; hodně zavis&iacute; na strategii nepř&iacute;tele</li>
-            <li>Přihla&scaron;ovac&iacute; f&aacute;ze: v&scaron;ichni hr&aacute;či, co se přihl&aacute;s&iacute;, budou započ&iacute;t&aacute;n&iacute; do &quot;s&iacute;ly rodiny&quot;.</li>
-            <li>F&aacute;ze darov&aacute;n&iacute; munice: každ z&uacute;častněn&yacute; hr&aacute;č může dobrovolně přispět jak&yacute;mkoliv množstv&iacute;m munice</li>
-            <li>F&aacute;ze darov&aacute;n&iacute; vybaven&iacute;: Každž z&uacute;častněn&yacute; hr&aacute;č může dobrovolně darovat jak&eacute;koliv vybaven&iacute;</li>
-           </ul>
-           
-           <h3>V&aacute;lka</h3>
-           <p>Bojová část války zabere 6 hodin. Tvoří ji 3 samostatné vlny po 2 hodinách a výsledek každé z nich určují následující faktory:</p>
-           
-           <ul>
-            <li>Strategie &scaron;&eacute;fa: &scaron;&eacute;f zvol&iacute; kolik % darů munice a vybaven&iacute; použij&iacute; v každ&eacute; vlně</li>
-            <li>S&iacute;la v&scaron;ech z&uacute;častněn&yacute;ch hr&aacute;čů</li>
-            <li>Dary munice</li>
-            <li>Dary vybaven&iacute;</li>
-            <li>Podpory</li>
-           </ul>
-           
-           <p>Přínos podpory se ve válce neukáže okamžitě, přesto se započítá do výsledku aktuální vlny. Největší účinek získáš, pokud ji začneš využívat hned na začátku dané vlny.</p>
-           
-           <p>Ani protivník s 3–4× vyšší celkovou mafiánskou silou nemusí zvítězit. Výsledek může ve prospěch tvé rodiny obrátit vysoká účast, dostatečné příspěvky a správná motivace členů.</p>
-           
-           <h3>Kořist + kartely</h3>
-           <p>Základ celkové peněžní kořisti tvoří dary obou rodin, zatímco podíl jednotlivce vychází z jeho vlastního zapojení do války. Poražená strana získá výrazně nižší odměny než vítěz.<br/>Vedle hotovosti lze obdržet výzkumné body a zlaté granáty; počet výzkumných bodů ovlivňuje aktivita rodiny v předchozích válkách a snižuje jej také porážka. Nárok na odměnu vzniká jen po absolvování všech fází.<br><br>Čím větší je rozdíl mezi silou rodin, tím méně kartelů vítěz získá a poražený ztratí.</p>
-        </div> 
-      </div>
-      <div style="clear: both; height: 0"></div>
-    
-    </div>
-  
-  <div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
-  <div id="bottom">
-          
-  </div>
-
-</body>
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Války rodin — Mafia Hunterss Wiki</title>
+<meta content="Je tvá rodina ta nejmocnější? Hrajte války rodin." name="description"/>
+<meta content="Mafia Hunterss Wiki" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="index.html" property="og:url"/>
+<meta content="Česká herní dokumentace projektu Mafia Hunterss." property="og:description"/>
+<meta content="Mafia Hunterss Wiki" property="og:site_name"/>
+<meta content="images/mafiabattle.png" property="og:image"/>
+<link href="styles/main.css?v=4" rel="stylesheet"/>
+<script src="scripts/jquery.min.js"></script>
+<script defer="" src="scripts/wiki.js"></script>
+<link href="styles/repair.css?v=20260721-2" rel="stylesheet"/></head>
+<body>
+<div id="bg"><div class="left"></div><div class="right"></div></div>
+<div id="helicopter"><div data-frame="-1" data-left="-100" id="heli"></div></div>
+<div id="top">
+<div class="logo"><a href="index.html"></a></div>
+<form id="update_lang" method="post"><input id="update_language" name="language" type="hidden" value=""/></form>
+<div class="button_play"><input onclick="window.open('https://www.mafiahunterss.com');" type="button" value="Hrej teď"/></div>
+</div>
+<div id="main">
+<div class="side">
+<div aria-expanded="false" class="group" role="button" tabindex="0">Mafia Hunterss Wiki</div>
+<ul class="menu">
+<li class="home"><a href="index.html">Domů</a></li>
+<li class="bosses"><a href="bosses.html">Bossové</a></li>
+<li class="followers"><a href="followers.html">Stoupenci</a></li>
+<li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
+<li class="mafia_power"><a href="mafia-power.html">Mafiánská síla</a></li>
+<li class="poker"><a href="poker.html">Poker</a></li>
+<li class="changelog"><a href="changelog.html">Nedávné změny</a></li>
+<li class="faq"><a href="faq.html">FAQ</a></li>
+<li class="contact"><a href="https://www.mafiahunterss.com" target="_blank">Kontakt</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Impérium I</div>
+<ul class="menu">
+<li class="ammunition_factory"><a href="ammunition-factory.html">Muniční továrna</a></li>
+<li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
+<li class="bank"><a href="bank.html">Banka</a></li>
+<li class="boss_mansion"><a href="boss-mansion.html">Sídlo bossů</a></li>
+<li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
+<li class="casino_robbery"><a href="casino-robbery.html">Přepadení kasina</a></li>
+<li class="cigar_factory"><a href="cigar-factory.html">Továrna na doutníky</a></li>
+<li class="christmas_tree"><a href="christmas-tree.html">Vánoční stromeček</a></li>
+<li class="gemstones_factory"><a href="gemstones-factory.html">Továrna na drahokamy</a></li>
+<li class="gym"><a href="gym.html">Posilovna</a></li>
+<li class="hospital"><a href="hospital.html">Nemocnice</a></li>
+<li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijní stánek</a></li>
+<li class="mafia_mansion"><a href="mafia-mansion.html">Mafiánské sídlo</a></li>
+<li class="meth_lab"><a href="meth-lab.html">Varna perníku</a></li>
+<li class="money_press"><a href="money-press.html">Tiskárna peněz</a></li>
+<li class="nightclub"><a href="nightclub.html">Noční klub</a></li>
+<li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
+<li class="red_light_district"><a href="red-light-district.html">Ulička lásky</a></li>
+<li class="research_lab"><a href="research-lab.html">Výzkumná laboratoř</a></li>
+<li class="tattoo_shop"><a href="tattoo-shop.html">Tetovací studio</a></li>
+<li class="weapon_lab"><a href="weapon-lab.html">Zbraňová laboratoř</a></li>
+<li class="weed_farm"><a href="weed-farm.html">Pěstírna trávy</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Impérium II</div>
+<ul class="menu">
+<li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
+<li class="airport"><a href="airport.html">Letiště</a></li>
+<li class="boat_company"><a href="boat-company.html">Lodní společnost</a></li>
+<li class="crypto_mining"><a href="crypto-mining.html">Těžební farma</a></li>
+<li class="diamond_factory"><a href="diamond-factory.html">Brusírna diamantů</a></li>
+<li class="flytipping_business"><a href="flytipping-business.html">Zpracování odpadu</a></li>
+<li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
+<li class="horseracingstadium"><a href="horseracingstadium.html">Dostihový stadion</a></li>
+<li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
+<li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
+<li class="oil_field"><a href="oil-field.html">Ropné pole</a></li>
+<li class="powerbase"><a href="power-base.html">Silová základna</a></li>
+<li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
+<li class="repo_business"><a href="repo-business.html">Exekutorský byznys</a></li>
+<li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
+<li class="scrap_yard"><a href="scrap-yard.html">Vrakoviště</a></li>
+<li class="secret_cave"><a href="secret-cave.html">Tajná jeskyně</a></li>
+<li class="stadium"><a href="stadium.html">Stadion</a></li>
+<li class="steel_factory"><a href="steel-factory.html">Ocelárna</a></li>
+<li class="swiss_bank"><a href="swiss-bank.html">Švýcarská banka</a></li>
+<li class="transport_company"><a href="transport-company.html">Přepravní společnost</a></li>
+<li class="vault"><a href="vault.html">Trezor</a></li>
+<li class="warehouse"><a href="warehouse.html">Skladiště</a></li>
+<li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na extázi</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Impérium III</div>
+<ul class="menu">
+<li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
+<li class="compound"><a href="compound.html">The Compound</a></li>
+<li class="cargo_airstrip"><a href="cargo-airstrip.html">Nákladní Letiště</a></li>
+<li class="gold_factory"><a href="gold-factory.html">Zlatá továrna</a></li>
+<li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexický palác kartelu</a></li>
+<li class="military_museum"><a href="military-museum.html">Vojenské muzeum</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Kriminální činnost</div>
+<ul class="menu">
+<li class="car_robbery"><a href="car-robbery.html">Krádež auta</a></li>
+<li class="contracts"><a href="contracts.html">Smlouvy na zakázku</a></li>
+<li class="crimes"><a href="crimes.html">Zločiny</a></li>
+<li class="attack_pvp"><a href="attack-pvp.html">Útok PVP</a></li>
+<li class="mexican_contracts"><a href="mexican-contracts.html">Mexické smluvní práce</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Rodina</div>
+<ul class="menu">
+<li class="family_home"><a href="family-home.html">Rodinné sídlo</a></li>
+<li class="family_methtank"><a href="family-methtank.html">Rodinná perníková nádrž</a></li>
+<li class="family_cashsafe"><a href="family-cashsafe.html">Rodinný sejf</a></li>
+<li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinná tabáková farma</a></li>
+<li class="family_cocafarm"><a href="family-cocafarm.html">Rodinná Kokainová plantáž</a></li>
+<li class="family_goldtank"><a href="family-goldtank.html">Rodinná nádrž na zlato</a></li>
+<li class="family_wars"><a href="family-wars.html">Války rodin</a></li>
+</ul>
+</div>
+<div class="content"> <div class="upper">
+<div class="inner">
+<h1>Války rodin</h1>
+</div>
+</div>
+<div class="lower">
+<h3>Hledat</h3>
+<p>Při hledání soupeře se porovnává celková mafiánská síla rodin. Čekání může trvat déle, protože systém vybírá pouze z rodin, které právě rovněž hledají válku, a snaží se jejich síly co nejvíce vyrovnat.<br/><br/>Pokud přesto dostaneš příliš těžkého protivníka, můžeš válku „zahodit“ bez ztráty zdrojů. Samotný rozdíl v síle však nemusí rozhodnout; další podrobnosti najdeš v části „Války“.</p>
+<h3>Fáze</h3>
+<p>Průběh herní funkce Válka rodin se během 24 hodin dělí do 3 fází:</p>
+<ul>
+<li>Pouze šéf: šéf může rozhodnou kterou strategii zvolit ve válce. Na tomto rozhodnutí může záviset výsledek války. Samozřejmě také hodně zavisí na strategii nepřítele</li>
+<li>Přihlašovací fáze: všichni hráči, co se přihlásí, budou započítání do "síly rodiny".</li>
+<li>Fáze darování munice: každ zúčastněný hráč může dobrovolně přispět jakýmkoliv množstvím munice</li>
+<li>Fáze darování vybavení: Každž zúčastněný hráč může dobrovolně darovat jakékoliv vybavení</li>
+</ul>
+<h3>Válka</h3>
+<p>Bojová část války zabere 6 hodin. Tvoří ji 3 samostatné vlny po 2 hodinách a výsledek každé z nich určují následující faktory:</p>
+<ul>
+<li>Strategie šéfa: šéf zvolí kolik % darů munice a vybavení použijí v každé vlně</li>
+<li>Síla všech zúčastněných hráčů</li>
+<li>Dary munice</li>
+<li>Dary vybavení</li>
+<li>Podpory</li>
+</ul>
+<p>Přínos podpory se ve válce neukáže okamžitě, přesto se započítá do výsledku aktuální vlny. Největší účinek získáš, pokud ji začneš využívat hned na začátku dané vlny.</p>
+<p>Ani protivník s 3–4× vyšší celkovou mafiánskou silou nemusí zvítězit. Výsledek může ve prospěch tvé rodiny obrátit vysoká účast, dostatečné příspěvky a správná motivace členů.</p>
+<h3>Kořist + kartely</h3>
+<p>Základ celkové peněžní kořisti tvoří dary obou rodin, zatímco podíl jednotlivce vychází z jeho vlastního zapojení do války. Poražená strana získá výrazně nižší odměny než vítěz.<br/>Vedle hotovosti lze obdržet výzkumné body a zlaté granáty; počet výzkumných bodů ovlivňuje aktivita rodiny v předchozích válkách a snižuje jej také porážka. Nárok na odměnu vzniká jen po absolvování všech fází.<br/><br/>Čím větší je rozdíl mezi silou rodin, tím méně kartelů vítěz získá a poražený ztratí.</p>
+</div>
+</div>
+<div style="clear: both; height: 0"></div>
+</div>
+<div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
+<div id="bottom">
+</div>
+<script defer="True" src="scripts/mobile-fix.js?v=20260721-2"></script></body>
 </html>

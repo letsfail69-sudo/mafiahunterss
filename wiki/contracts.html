@@ -1,214 +1,192 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Smlouvy na zakázku &mdash; Mafia Hunterss Wiki</title>
-    <meta name="description" content="Podmínky a výsledek jsou následující: maximální výdělek ze smluvních úkolů lze navýšit o 3krát jejich hodnotu při zakoupení VIP. Mechanika se řídí právě uvedenými podmínkami a popsaným postupem.">
-    
-    <meta property="og:title" content="Mafia Hunterss Wiki" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="index.html" />
-    <meta property="og:description" content="Česká herní dokumentace projektu Mafia Hunterss.">
-    <meta property="og:site_name" content="Mafia Hunterss Wiki" />
-    <meta property="og:image" content="images/mafiabattle.png" />
-
-    
-      <link rel="stylesheet" href="styles/main.css?v=4">
-      <script src="scripts/jquery.min.js"></script>
-      <script src="scripts/wiki.js" defer></script>
-  </head>
-  <body>
-    <div id="bg"><div class="left"></div><div class="right"></div></div>
-    <div id="helicopter"><div id="heli" data-frame="-1" data-left="-100"></div></div>
-    <div id="top">
-      <div class="logo"><a href="index.html"></a></div>   
-     
-      <form method="post" id="update_lang"><input type="hidden" name="language" id="update_language" value=""></form>
-      
-      <div class="button_play"><input type="button" onclick="window.open('https://www.mafiahunterss.com');" value="Hrej teď"></div>
-      
-      
-    </div>
-    <div id="main">
-      <div class="side">
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Mafia Hunterss Wiki</div>
-        <ul class="menu">
-          <li class="home"><a href="index.html">Domů</a></li>
-          <li class="bosses"><a href="bosses.html">Bossov&eacute;</a></li>
-          <li class="followers"><a href="followers.html">Stoupenci</a></li>
-          <li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
-          <li class="mafia_power"><a href="mafia-power.html">Mafi&aacute;nsk&aacute; s&iacute;la</a></li>
-		  <li class="poker"><a href="poker.html">Poker</a></li>
-          <li class="changelog"><a href="changelog.html">Ned&aacute;vn&eacute; změny</a></li>
-          <li class="faq"><a href="faq.html">FAQ</a></li>
-          <li class="contact"><a href="https://www.mafiahunterss.com" target="_blank">Kontakt</a></li>
-        </ul>
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium I</div>
-        <ul class="menu">
-          <li class="ammunition_factory"><a href="ammunition-factory.html">Muničn&iacute; tov&aacute;rna</a></li>
-          <li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
-          <li class="bank"><a href="bank.html">Banka</a></li>
-          <li class="boss_mansion"><a href="boss-mansion.html">S&iacute;dlo bossů</a></li>
-          <li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
-          <li class="casino_robbery"><a href="casino-robbery.html">Přepaden&iacute; kasina</a></li>
-          <li class="cigar_factory"><a href="cigar-factory.html">Tov&aacute;rna na doutn&iacute;ky</a></li>
-          <li class="christmas_tree"><a href="christmas-tree.html">V&aacute;nočn&iacute; stromeček</a></li>
-          <li class="gemstones_factory"><a href="gemstones-factory.html">Tov&aacute;rna na drahokamy</a></li>
-          <li class="gym"><a href="gym.html">Posilovna</a></li>
-          <li class="hospital"><a href="hospital.html">Nemocnice</a></li>
-          <li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijn&iacute; st&aacute;nek</a></li>
-          <li class="mafia_mansion"><a href="mafia-mansion.html">Mafi&aacute;nsk&eacute; s&iacute;dlo</a></li>
-          <li class="meth_lab"><a href="meth-lab.html">Varna pern&iacute;ku</a></li>
-          <li class="money_press"><a href="money-press.html">Tisk&aacute;rna peněz</a></li>
-          <li class="nightclub"><a href="nightclub.html">Nočn&iacute; klub</a></li>
-          <li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
-          <li class="red_light_district"><a href="red-light-district.html">Ulička l&aacute;sky</a></li>
-          <li class="research_lab"><a href="research-lab.html">V&yacute;zkumn&aacute; laboratoř</a></li>
-          <li class="tattoo_shop"><a href="tattoo-shop.html">Tetovac&iacute; studio</a></li>
-          <li class="weapon_lab"><a href="weapon-lab.html">Zbraňov&aacute; laboratoř</a></li>
-          <li class="weed_farm"><a href="weed-farm.html">Pěst&iacute;rna tr&aacute;vy</a></li>
-        </ul>
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium II</div>
-          <ul class="menu">
-            <li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
-            <li class="airport"><a href="airport.html">Leti&scaron;tě</a></li>
-            <li class="boat_company"><a href="boat-company.html">Lodn&iacute; společnost</a></li>
-            <li class="crypto_mining"><a href="crypto-mining.html">Těžebn&iacute; farma</a></li>
-            <li class="diamond_factory"><a href="diamond-factory.html">Brus&iacute;rna diamantů</a></li>
-            <li class="flytipping_business"><a href="flytipping-business.html">Zpracov&aacute;n&iacute; odpadu</a></li>
-            <li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
-            <li class="horseracingstadium"><a href="horseracingstadium.html">Dostihov&yacute; stadion</a></li>
-            <li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
-            <li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
-            <li class="oil_field"><a href="oil-field.html">Ropn&eacute; pole</a></li>
-            <li class="powerbase"><a href="power-base.html">Silov&aacute; z&aacute;kladna</a></li>
-            <li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
-            <li class="repo_business"><a href="repo-business.html">Exekutorsk&yacute; byznys</a></li>
-            <li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
-            <li class="scrap_yard"><a href="scrap-yard.html">Vrakovi&scaron;tě</a></li>
-            <li class="secret_cave"><a href="secret-cave.html">Tajn&aacute; jeskyně</a></li>
-            <li class="stadium"><a href="stadium.html">Stadion</a></li>
-            <li class="steel_factory"><a href="steel-factory.html">Ocel&aacute;rna</a></li>
-            <li class="swiss_bank"><a href="swiss-bank.html">&Scaron;v&yacute;carsk&aacute; banka</a></li>
-            <li class="transport_company"><a href="transport-company.html">Přepravn&iacute; společnost</a></li>
-            <li class="vault"><a href="vault.html">Trezor</a></li>
-            <li class="warehouse"><a href="warehouse.html">Skladi&scaron;tě</a></li>
-            <li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na ext&aacute;zi</a></li>
-          </ul>
-          
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium III</div>
-        <ul class="menu">
-          <li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
-		  <li class="compound"><a href="compound.html">The Compound</a></li>
-          <li class="cargo_airstrip"><a href="cargo-airstrip.html">N&aacute;kladn&iacute; Leti&scaron;tě</a></li>
-          <li class="gold_factory"><a href="gold-factory.html">Zlat&aacute; tov&aacute;rna</a></li>
-          <li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexick&yacute; pal&aacute;c kartelu</a></li>
-          <li class="military_museum"><a href="military-museum.html">Vojensk&eacute; muzeum</a></li>
-        </ul>
-        
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Krimin&aacute;ln&iacute; činnost</div>
-        <ul class="menu">
-          <li class="car_robbery"><a href="car-robbery.html">Kr&aacute;dež auta</a></li>
-          <li class="contracts"><a href="contracts.html">Smlouvy na zak&aacute;zku</a></li>
-          <li class="crimes"><a href="crimes.html">Zločiny</a></li>
-          <li class="attack_pvp"><a href="attack-pvp.html">&Uacute;tok PVP</a></li>
-          <li class="mexican_contracts"><a href="mexican-contracts.html">Mexick&eacute; smluvn&iacute; pr&aacute;ce</a></li>
-        </ul>
-        <div class="group" role="button" tabindex="0" aria-expanded="false">Rodina</div>
-        <ul class="menu">
-          <li class="family_home"><a href="family-home.html">Rodinn&eacute; s&iacute;dlo</a></li>
-          <li class="family_methtank"><a href="family-methtank.html">Rodinn&aacute; pern&iacute;kov&aacute; n&aacute;drž</a></li>
-          <li class="family_cashsafe"><a href="family-cashsafe.html">Rodinn&yacute; sejf</a></li>
-          <li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinn&aacute; tab&aacute;kov&aacute; farma</a></li>
-          <li class="family_cocafarm"><a href="family-cocafarm.html">Rodinn&aacute; Kokainov&aacute; plant&aacute;ž</a></li>
-          <li class="family_goldtank"><a href="family-goldtank.html">Rodinn&aacute; n&aacute;drž na zlato</a></li>
-          <li class="family_wars"><a href="family-wars.html">V&aacute;lky rodin</a></li>
-        </ul>
-      </div>
-      <div class="content">        <div class="upper">
-          <div class="inner">
-          <h1>Smlouvy na zak&aacute;zku</h1>
-          </div>
-        </div>
-        <div class="lower">       
-          <h3>VIP členstv&iacute;</h3>
-          <p>S aktivním VIP mohou smluvní úkoly přinést až trojnásobek své běžné maximální hodnoty.</p>
-       
-          <h3>M&iacute;sto</h3>
-          <p>Uvidíte, že každá smlouva bude mít různé hodnoty, je zapotřebí dostatečná hodnota, aby bylo možné najmout konkrétní jednotky, a budou dražší.<br /><br />Některé typy smluv lze nalézt na určitých místech a obtížnější nebo vyšší lokace často poskytují extra hodnotné smlouvy. Při spouštění smluvních úkolů budete v pravidelných intervalech nalézat různé typy smluv, které lze využít k nasazení speciálních jednotek do vaší základny síly.<br /><br />Existují různé typy smluv a každá patří k určitému typu speciálních jednotek.</p>
-          
-          <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
-<table>
-            <tr><th width=350>Vojensk&aacute; z&aacute;kladna</th><th>Maxim&aacute;ln&iacute; př&iacute;jmy</th><th>% za klik</th><th>Max.</th><th>Zdrav&iacute;</th></tr>
-            <tr><td class="">Paděl&aacute;n&iacute; vojensk&eacute;ho průkazu</td><td class="icon_cash">4 300</td><td>1.40 %</td><td>90 %</td><td>11-28</td></tr>
-            <tr><td class="">Udeřte voj&aacute;ka a oloupejte mu pistoli</td><td class="icon_cash">4 680</td><td>1.00 %</td><td>80 %</td><td>17-34</td></tr>
-            <tr><td class="">Kr&aacute;dež vojensk&yacute;ch zbran&iacute;</td><td class="icon_cash">3 640</td><td>0.60 %</td><td>80 %</td><td>21-37</td></tr>
-            <tr><td class="">Kr&aacute;dež raketov&eacute;ho kamionu</td><td class="icon_cash">4 680</td><td>0.10 %</td><td>80 %</td><td>24-40</td></tr>
-          </table>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Smlouvy na zakázku — Mafia Hunterss Wiki</title>
+<meta content="Podmínky a výsledek jsou následující: maximální výdělek ze smluvních úkolů lze navýšit o 3krát jejich hodnotu při zakoupení VIP. Mechanika se řídí právě uvedenými podmínkami a popsaným postupem." name="description"/>
+<meta content="Mafia Hunterss Wiki" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="index.html" property="og:url"/>
+<meta content="Česká herní dokumentace projektu Mafia Hunterss." property="og:description"/>
+<meta content="Mafia Hunterss Wiki" property="og:site_name"/>
+<meta content="images/mafiabattle.png" property="og:image"/>
+<link href="styles/main.css?v=4" rel="stylesheet"/>
+<script src="scripts/jquery.min.js"></script>
+<script defer="" src="scripts/wiki.js"></script>
+<link href="styles/repair.css?v=20260721-2" rel="stylesheet"/></head>
+<body>
+<div id="bg"><div class="left"></div><div class="right"></div></div>
+<div id="helicopter"><div data-frame="-1" data-left="-100" id="heli"></div></div>
+<div id="top">
+<div class="logo"><a href="index.html"></a></div>
+<form id="update_lang" method="post"><input id="update_language" name="language" type="hidden" value=""/></form>
+<div class="button_play"><input onclick="window.open('https://www.mafiahunterss.com');" type="button" value="Hrej teď"/></div>
 </div>
-
-          <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
-<table>
-            <tr><th width=350>V&yacute;zkumn&aacute; laboratoř</th><th>Maxim&aacute;ln&iacute; př&iacute;jmy</th><th>% za klik</th><th>Max.</th><th>Zdrav&iacute;</th></tr>
-            <tr><td class="">Hacking do syst&eacute;mu laboratoře a kr&aacute;dež dat</td><td class="icon_cash">3 400</td><td>0.90 %</td><td>80 %</td><td>17-34</td></tr>
-            <tr><td class="">Kr&aacute;dež drah&eacute;ho vybaven&iacute;</td><td class="icon_cash">3 680</td><td>0.70 %</td><td>60 %</td><td>28-34</td></tr>
-            <tr><td class="">Kr&aacute;dež ingredienc&iacute;</td><td class="icon_cash">4 160</td><td>0.40 %</td><td>60 %</td><td>17-24</td></tr>
-            <tr><td class="">Kr&aacute;dež biologick&eacute; zbraně</td><td class="icon_cash">4 630</td><td>0.10 %</td><td>60 %</td><td>34-43</td></tr>
-          </table>
+<div id="main">
+<div class="side">
+<div aria-expanded="false" class="group" role="button" tabindex="0">Mafia Hunterss Wiki</div>
+<ul class="menu">
+<li class="home"><a href="index.html">Domů</a></li>
+<li class="bosses"><a href="bosses.html">Bossové</a></li>
+<li class="followers"><a href="followers.html">Stoupenci</a></li>
+<li class="diamonds"><a href="free-diamonds.html">Diamanty zdarma</a></li>
+<li class="mafia_power"><a href="mafia-power.html">Mafiánská síla</a></li>
+<li class="poker"><a href="poker.html">Poker</a></li>
+<li class="changelog"><a href="changelog.html">Nedávné změny</a></li>
+<li class="faq"><a href="faq.html">FAQ</a></li>
+<li class="contact"><a href="https://www.mafiahunterss.com" target="_blank">Kontakt</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Impérium I</div>
+<ul class="menu">
+<li class="ammunition_factory"><a href="ammunition-factory.html">Muniční továrna</a></li>
+<li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
+<li class="bank"><a href="bank.html">Banka</a></li>
+<li class="boss_mansion"><a href="boss-mansion.html">Sídlo bossů</a></li>
+<li class="car_showroom"><a href="car-showroom.html">Autosalon</a></li>
+<li class="casino_robbery"><a href="casino-robbery.html">Přepadení kasina</a></li>
+<li class="cigar_factory"><a href="cigar-factory.html">Továrna na doutníky</a></li>
+<li class="christmas_tree"><a href="christmas-tree.html">Vánoční stromeček</a></li>
+<li class="gemstones_factory"><a href="gemstones-factory.html">Továrna na drahokamy</a></li>
+<li class="gym"><a href="gym.html">Posilovna</a></li>
+<li class="hospital"><a href="hospital.html">Nemocnice</a></li>
+<li class="lottery_kiosk"><a href="lottery-kiosk.html">Loterijní stánek</a></li>
+<li class="mafia_mansion"><a href="mafia-mansion.html">Mafiánské sídlo</a></li>
+<li class="meth_lab"><a href="meth-lab.html">Varna perníku</a></li>
+<li class="money_press"><a href="money-press.html">Tiskárna peněz</a></li>
+<li class="nightclub"><a href="nightclub.html">Noční klub</a></li>
+<li class="pawn_shop"><a href="pawn-shop.html">Bazar</a></li>
+<li class="red_light_district"><a href="red-light-district.html">Ulička lásky</a></li>
+<li class="research_lab"><a href="research-lab.html">Výzkumná laboratoř</a></li>
+<li class="tattoo_shop"><a href="tattoo-shop.html">Tetovací studio</a></li>
+<li class="weapon_lab"><a href="weapon-lab.html">Zbraňová laboratoř</a></li>
+<li class="weed_farm"><a href="weed-farm.html">Pěstírna trávy</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Impérium II</div>
+<ul class="menu">
+<li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
+<li class="airport"><a href="airport.html">Letiště</a></li>
+<li class="boat_company"><a href="boat-company.html">Lodní společnost</a></li>
+<li class="crypto_mining"><a href="crypto-mining.html">Těžební farma</a></li>
+<li class="diamond_factory"><a href="diamond-factory.html">Brusírna diamantů</a></li>
+<li class="flytipping_business"><a href="flytipping-business.html">Zpracování odpadu</a></li>
+<li class="heroin_lab"><a href="heroin-lab.html">Laboratoř na heroin</a></li>
+<li class="horseracingstadium"><a href="horseracingstadium.html">Dostihový stadion</a></li>
+<li class="mafia_bar"><a href="mafia-bar.html">Mafia Bar</a></li>
+<li class="moto_club"><a href="moto-club.html">Moto klub</a></li>
+<li class="oil_field"><a href="oil-field.html">Ropné pole</a></li>
+<li class="powerbase"><a href="power-base.html">Silová základna</a></li>
+<li class="powernet_company"><a href="powernet-company.html">ČezeOn</a></li>
+<li class="repo_business"><a href="repo-business.html">Exekutorský byznys</a></li>
+<li class="restaurant"><a href="restaurant.html">Restaurace</a></li>
+<li class="scrap_yard"><a href="scrap-yard.html">Vrakoviště</a></li>
+<li class="secret_cave"><a href="secret-cave.html">Tajná jeskyně</a></li>
+<li class="stadium"><a href="stadium.html">Stadion</a></li>
+<li class="steel_factory"><a href="steel-factory.html">Ocelárna</a></li>
+<li class="swiss_bank"><a href="swiss-bank.html">Švýcarská banka</a></li>
+<li class="transport_company"><a href="transport-company.html">Přepravní společnost</a></li>
+<li class="vault"><a href="vault.html">Trezor</a></li>
+<li class="warehouse"><a href="warehouse.html">Skladiště</a></li>
+<li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na extázi</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Impérium III</div>
+<ul class="menu">
+<li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
+<li class="compound"><a href="compound.html">The Compound</a></li>
+<li class="cargo_airstrip"><a href="cargo-airstrip.html">Nákladní Letiště</a></li>
+<li class="gold_factory"><a href="gold-factory.html">Zlatá továrna</a></li>
+<li class="mexican_cartel_mansion"><a href="mexican-cartel-mansion.html">Mexický palác kartelu</a></li>
+<li class="military_museum"><a href="military-museum.html">Vojenské muzeum</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Kriminální činnost</div>
+<ul class="menu">
+<li class="car_robbery"><a href="car-robbery.html">Krádež auta</a></li>
+<li class="contracts"><a href="contracts.html">Smlouvy na zakázku</a></li>
+<li class="crimes"><a href="crimes.html">Zločiny</a></li>
+<li class="attack_pvp"><a href="attack-pvp.html">Útok PVP</a></li>
+<li class="mexican_contracts"><a href="mexican-contracts.html">Mexické smluvní práce</a></li>
+</ul>
+<div aria-expanded="false" class="group" role="button" tabindex="0">Rodina</div>
+<ul class="menu">
+<li class="family_home"><a href="family-home.html">Rodinné sídlo</a></li>
+<li class="family_methtank"><a href="family-methtank.html">Rodinná perníková nádrž</a></li>
+<li class="family_cashsafe"><a href="family-cashsafe.html">Rodinný sejf</a></li>
+<li class="family_tobaccofarm"><a href="family-tobaccofarm.html">Rodinná tabáková farma</a></li>
+<li class="family_cocafarm"><a href="family-cocafarm.html">Rodinná Kokainová plantáž</a></li>
+<li class="family_goldtank"><a href="family-goldtank.html">Rodinná nádrž na zlato</a></li>
+<li class="family_wars"><a href="family-wars.html">Války rodin</a></li>
+</ul>
 </div>
-
-          <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
-<table>
-            <tr><th width=350>Vl&aacute;da</th><th>Maxim&aacute;ln&iacute; př&iacute;jmy</th><th>% za klik</th><th>Max.</th><th>Zdrav&iacute;</th></tr>
-            <tr><td class="">Vyd&iacute;r&aacute;n&iacute; &uacute;ředn&iacute;ka vl&aacute;dy</td><td class="icon_cash">5 640</td><td>0.60 %</td><td>80 %</td><td>24-37</td></tr>
-            <tr><td class="">Paděl&aacute;n&iacute; dohody o vl&aacute;dn&iacute;m fondu</td><td class="icon_cash">4 320</td><td>0.40 %</td><td>60 %</td><td>28-37</td></tr>
-            <tr><td class="">Odebrat korupčn&iacute;mu vl&aacute;dn&iacute;mu ministru</td><td class="icon_cash">6 180</td><td>0.10 %</td><td>60 %</td><td>34-46</td></tr>
-            <tr><td class="">V&yacute;buch vl&aacute;dn&iacute; budovy</td><td class="icon_cash">7 160</td><td>0.04 %</td><td>60 %</td><td>37-49</td></tr>
-          </table>
+<div class="content"> <div class="upper">
+<div class="inner">
+<h1>Smlouvy na zakázku</h1>
 </div>
-
-          <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
-<table>
-            <tr><th width=350>Vojensk&eacute; leti&scaron;tě</th><th>Maxim&aacute;ln&iacute; př&iacute;jmy</th><th>% za klik</th><th>Max.</th><th>Zdrav&iacute;</th></tr>
-            <tr><td class="">Pa&scaron;ov&aacute;n&iacute; zlata</td><td class="icon_cash">7 160</td><td>0.10 %</td><td>40 %</td><td>24-37</td></tr>
-            <tr><td class="">&Uacute;nos letadla</td><td class="icon_cash">8 760</td><td>0.06 %</td><td>40 %</td><td>34-40</td></tr>
-            <tr><td class="">Hacking do syst&eacute;mu vojensk&eacute;ho dronu</td><td class="icon_cash">7 640</td><td>0.03 %</td><td>40 %</td><td>28-43</td></tr>
-            <tr><td class="">Kr&aacute;dež střeliv</td><td class="icon_cash">10 640</td><td>0.01 %</td><td>30 %</td><td>47-64</td></tr>
-          </table>
 </div>
-          
-          <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
+<div class="lower">
+<h3>VIP členství</h3>
+<p>S aktivním VIP mohou smluvní úkoly přinést až trojnásobek své běžné maximální hodnoty.</p>
+<h3>Místo</h3>
+<p>Uvidíte, že každá smlouva bude mít různé hodnoty, je zapotřebí dostatečná hodnota, aby bylo možné najmout konkrétní jednotky, a budou dražší.<br/><br/>Některé typy smluv lze nalézt na určitých místech a obtížnější nebo vyšší lokace často poskytují extra hodnotné smlouvy. Při spouštění smluvních úkolů budete v pravidelných intervalech nalézat různé typy smluv, které lze využít k nasazení speciálních jednotek do vaší základny síly.<br/><br/>Existují různé typy smluv a každá patří k určitému typu speciálních jednotek.</p>
+<div aria-label="Posuvná tabulka" class="table-scroll" role="region" tabindex="0">
 <table>
-            <tr><th width=350>Oblast 51</th><th>Maxim&aacute;ln&iacute; př&iacute;jmy</th><th>% za klik</th><th>Max.</th><th>Zdrav&iacute;</th></tr>
-            <tr><td class="">Uneste zpravodajsk&eacute;ho důstojn&iacute;ka</td><td class="icon_cash">8 400</td><td>0.04 %</td><td>40 %</td><td>43-67</td></tr>
-            <tr><td class="">Ukr&aacute;st tajn&eacute; dokumenty CIA</td><td class="icon_cash">9 300</td><td>0.03 %</td><td>40 %</td><td>37-57</td></tr>
-            <tr><td class="">Uneste UFO</td><td class="icon_cash">9 800</td><td>0.02 %</td><td>30 %</td><td>37-49</td></tr>
-            <tr><td class="">Vyhodit hang&aacute;r do povětř&iacute;</td><td class="icon_cash">11 860</td><td>0.01 %</td><td>30 %</td><td>50-70</td></tr>
-          </table>
+<tr><th width="350">Vojenská základna</th><th>Maximální příjmy</th><th>% za klik</th><th>Max.</th><th>Zdraví</th></tr>
+<tr><td class="">Padělání vojenského průkazu</td><td class="icon_cash">4 300</td><td>1.40 %</td><td>90 %</td><td>11-28</td></tr>
+<tr><td class="">Udeřte vojáka a oloupejte mu pistoli</td><td class="icon_cash">4 680</td><td>1.00 %</td><td>80 %</td><td>17-34</td></tr>
+<tr><td class="">Krádež vojenských zbraní</td><td class="icon_cash">3 640</td><td>0.60 %</td><td>80 %</td><td>21-37</td></tr>
+<tr><td class="">Krádež raketového kamionu</td><td class="icon_cash">4 680</td><td>0.10 %</td><td>80 %</td><td>24-40</td></tr>
+</table>
 </div>
-          
-          <div class="table-scroll" role="region" aria-label="Posuvná tabulka" tabindex="0">
+<div aria-label="Posuvná tabulka" class="table-scroll" role="region" tabindex="0">
 <table>
-            <tr><th width=350>Vesm&iacute;rn&aacute; laboratoř</th><th>Maxim&aacute;ln&iacute; př&iacute;jmy</th><th>% za klik</th><th>Max.</th><th>Zdrav&iacute;</th></tr>
-            <tr><td class="">Naru&scaron;it r&aacute;diov&yacute; frekvenčn&iacute; sign&aacute;l</td><td class="icon_cash">9 360</td><td>0.02 %</td><td>30 %</td><td>40-50</td></tr>
-            <tr><td class="">Demontovat rusk&yacute; satelit</td><td class="icon_cash">13 000</td><td>0.01 %</td><td>30 %</td><td>47-60</td></tr>
-            <tr><td class="">Ukr&aacute;st kluz&aacute;k</td><td class="icon_cash">13 600</td><td>0.01 %</td><td>30 %</td><td>57-76</td></tr>
-            <tr><td class="">Vyhodit mimozemskou loď</td><td class="icon_cash">15 000</td><td>0.01 %</td><td>20 %</td><td>60-80</td></tr>
-          </table>
+<tr><th width="350">Výzkumná laboratoř</th><th>Maximální příjmy</th><th>% za klik</th><th>Max.</th><th>Zdraví</th></tr>
+<tr><td class="">Hacking do systému laboratoře a krádež dat</td><td class="icon_cash">3 400</td><td>0.90 %</td><td>80 %</td><td>17-34</td></tr>
+<tr><td class="">Krádež drahého vybavení</td><td class="icon_cash">3 680</td><td>0.70 %</td><td>60 %</td><td>28-34</td></tr>
+<tr><td class="">Krádež ingrediencí</td><td class="icon_cash">4 160</td><td>0.40 %</td><td>60 %</td><td>17-24</td></tr>
+<tr><td class="">Krádež biologické zbraně</td><td class="icon_cash">4 630</td><td>0.10 %</td><td>60 %</td><td>34-43</td></tr>
+</table>
 </div>
-        </div>
-      </div>
-      <div style="clear: both; height: 0"></div>
-    
-    </div>
-  
-  <div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
-  <div id="bottom">
-          
-  </div>
-
-</body>
-
-
+<div aria-label="Posuvná tabulka" class="table-scroll" role="region" tabindex="0">
+<table>
+<tr><th width="350">Vláda</th><th>Maximální příjmy</th><th>% za klik</th><th>Max.</th><th>Zdraví</th></tr>
+<tr><td class="">Vydírání úředníka vlády</td><td class="icon_cash">5 640</td><td>0.60 %</td><td>80 %</td><td>24-37</td></tr>
+<tr><td class="">Padělání dohody o vládním fondu</td><td class="icon_cash">4 320</td><td>0.40 %</td><td>60 %</td><td>28-37</td></tr>
+<tr><td class="">Odebrat korupčnímu vládnímu ministru</td><td class="icon_cash">6 180</td><td>0.10 %</td><td>60 %</td><td>34-46</td></tr>
+<tr><td class="">Výbuch vládní budovy</td><td class="icon_cash">7 160</td><td>0.04 %</td><td>60 %</td><td>37-49</td></tr>
+</table>
+</div>
+<div aria-label="Posuvná tabulka" class="table-scroll" role="region" tabindex="0">
+<table>
+<tr><th width="350">Vojenské letiště</th><th>Maximální příjmy</th><th>% za klik</th><th>Max.</th><th>Zdraví</th></tr>
+<tr><td class="">Pašování zlata</td><td class="icon_cash">7 160</td><td>0.10 %</td><td>40 %</td><td>24-37</td></tr>
+<tr><td class="">Únos letadla</td><td class="icon_cash">8 760</td><td>0.06 %</td><td>40 %</td><td>34-40</td></tr>
+<tr><td class="">Hacking do systému vojenského dronu</td><td class="icon_cash">7 640</td><td>0.03 %</td><td>40 %</td><td>28-43</td></tr>
+<tr><td class="">Krádež střeliv</td><td class="icon_cash">10 640</td><td>0.01 %</td><td>30 %</td><td>47-64</td></tr>
+</table>
+</div>
+<div aria-label="Posuvná tabulka" class="table-scroll" role="region" tabindex="0">
+<table>
+<tr><th width="350">Oblast 51</th><th>Maximální příjmy</th><th>% za klik</th><th>Max.</th><th>Zdraví</th></tr>
+<tr><td class="">Uneste zpravodajského důstojníka</td><td class="icon_cash">8 400</td><td>0.04 %</td><td>40 %</td><td>43-67</td></tr>
+<tr><td class="">Ukrást tajné dokumenty CIA</td><td class="icon_cash">9 300</td><td>0.03 %</td><td>40 %</td><td>37-57</td></tr>
+<tr><td class="">Uneste UFO</td><td class="icon_cash">9 800</td><td>0.02 %</td><td>30 %</td><td>37-49</td></tr>
+<tr><td class="">Vyhodit hangár do povětří</td><td class="icon_cash">11 860</td><td>0.01 %</td><td>30 %</td><td>50-70</td></tr>
+</table>
+</div>
+<div aria-label="Posuvná tabulka" class="table-scroll" role="region" tabindex="0">
+<table>
+<tr><th width="350">Vesmírná laboratoř</th><th>Maximální příjmy</th><th>% za klik</th><th>Max.</th><th>Zdraví</th></tr>
+<tr><td class="">Narušit rádiový frekvenční signál</td><td class="icon_cash">9 360</td><td>0.02 %</td><td>30 %</td><td>40-50</td></tr>
+<tr><td class="">Demontovat ruský satelit</td><td class="icon_cash">13 000</td><td>0.01 %</td><td>30 %</td><td>47-60</td></tr>
+<tr><td class="">Ukrást kluzák</td><td class="icon_cash">13 600</td><td>0.01 %</td><td>30 %</td><td>57-76</td></tr>
+<tr><td class="">Vyhodit mimozemskou loď</td><td class="icon_cash">15 000</td><td>0.01 %</td><td>20 %</td><td>60-80</td></tr>
+</table>
+</div>
+</div>
+</div>
+<div style="clear: both; height: 0"></div>
+</div>
+<div class="content-source">Zdroj obsahu: Tato wiki vychází z původní wiki hry MafiaBattle. Texty byly přepracovány a jazykově upraveny pomocí AI pro projekt Mafia Hunterss Wiki.</div>
+<div id="bottom">
+</div>
+<script defer="True" src="scripts/mobile-fix.js?v=20260721-2"></script></body>
 </html>
