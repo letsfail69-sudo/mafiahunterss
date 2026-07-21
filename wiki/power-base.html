@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html>
-  
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html lang="cs">
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Silová základna &mdash; Mafia Hunterss Wiki</title>
-    <meta name="description" value="Tato část funguje následovně: @wiki_powerbase_meta">
+    <meta name="description" content="Tato část funguje následovně: @wiki_powerbase_meta">
     
     <meta property="og:title" content="Mafia Hunterss Wiki" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="index.html" />
     <meta property="og:description" content="Česká herní dokumentace projektu Mafia Hunterss.">
     <meta property="og:site_name" content="Mafia Hunterss Wiki" />
-    <meta property="og:image" content="images/game_socialbanner.jpg" />
+    <meta property="og:image" content="images/mafiabattle.png" />
 
     
-      <link rel="stylesheet" href="styles/main.css?v=3">
+      <link rel="stylesheet" href="styles/main.css?v=4">
       <script src="scripts/jquery.min.js"></script>
+      <script src="scripts/wiki.js" defer></script>
   </head>
   <body>
     <div id="bg"><div class="left"></div><div class="right"></div></div>
@@ -33,7 +32,7 @@
     </div>
     <div id="main">
       <div class="side">
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Mafia Hunterss Wiki</div>
+        <div class="group" role="button" tabindex="0" aria-expanded="false">Mafia Hunterss Wiki</div>
         <ul class="menu">
           <li class="home"><a href="index.html">Domů</a></li>
           <li class="bosses"><a href="bosses.html">Bossov&eacute;</a></li>
@@ -45,7 +44,7 @@
           <li class="faq"><a href="faq.html">FAQ</a></li>
           <li class="contact"><a href="https://www.mafiahunterss.com" target="_blank">Kontakt</a></li>
         </ul>
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium I</div>
+        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium I</div>
         <ul class="menu">
           <li class="ammunition_factory"><a href="ammunition-factory.html">Muničn&iacute; tov&aacute;rna</a></li>
           <li class="assemblypoint"><a href="assembly-point.html">Zasedačka</a></li>
@@ -70,7 +69,7 @@
           <li class="weapon_lab"><a href="weapon-lab.html">Zbraňov&aacute; laboratoř</a></li>
           <li class="weed_farm"><a href="weed-farm.html">Pěst&iacute;rna tr&aacute;vy</a></li>
         </ul>
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium II</div>
+        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium II</div>
           <ul class="menu">
             <li class="alcohol_factory"><a href="alcohol-factory.html">Lihovar</a></li>
             <li class="airport"><a href="airport.html">Leti&scaron;tě</a></li>
@@ -98,7 +97,7 @@
             <li class="xtc_lab"><a href="xtc-lab.html">Laboratoř na ext&aacute;zi</a></li>
           </ul>
           
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Imp&eacute;rium III</div>
+        <div class="group" role="button" tabindex="0" aria-expanded="false">Imp&eacute;rium III</div>
         <ul class="menu">
           <li class="cocaine_lab"><a href="cocaine-lab.html">Kokain laboratoře</a></li>
 		  <li class="compound"><a href="compound.html">The Compound</a></li>
@@ -108,7 +107,7 @@
           <li class="military_museum"><a href="military-museum.html">Vojensk&eacute; muzeum</a></li>
         </ul>
         
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Krimin&aacute;ln&iacute; činnost</div>
+        <div class="group" role="button" tabindex="0" aria-expanded="false">Krimin&aacute;ln&iacute; činnost</div>
         <ul class="menu">
           <li class="car_robbery"><a href="car-robbery.html">Kr&aacute;dež auta</a></li>
           <li class="contracts"><a href="contracts.html">Smlouvy na zak&aacute;zku</a></li>
@@ -116,7 +115,7 @@
           <li class="attack_pvp"><a href="attack-pvp.html">&Uacute;tok PVP</a></li>
           <li class="mexican_contracts"><a href="mexican-contracts.html">Mexick&eacute; smluvn&iacute; pr&aacute;ce</a></li>
         </ul>
-        <div class="group" onclick="if ($(this).hasClass('on')) { $(this).removeClass('on'); } else { $(this).parent().find('.on').removeClass('on'); $(this).addClass('on'); }">Rodina</div>
+        <div class="group" role="button" tabindex="0" aria-expanded="false">Rodina</div>
         <ul class="menu">
           <li class="family_home"><a href="family-home.html">Rodinn&eacute; s&iacute;dlo</a></li>
           <li class="family_methtank"><a href="family-methtank.html">Rodinn&aacute; pern&iacute;kov&aacute; n&aacute;drž</a></li>
@@ -125,25 +124,8 @@
           <li class="family_cocafarm"><a href="family-cocafarm.html">Rodinn&aacute; Kokainov&aacute; plant&aacute;ž</a></li>
           <li class="family_goldtank"><a href="family-goldtank.html">Rodinn&aacute; n&aacute;drž na zlato</a></li>
           <li class="family_wars"><a href="family-wars.html">V&aacute;lky rodin</a></li>
-        </ul>      
-        <script type="text/javascript">
-          var nav = $(location).attr('href');
-          if (nav) {
-            jQuery('#main .side a[href^="'+nav+'"]').first().parent().addClass('current');
-            jQuery('#main .side a[href^="'+nav+'"]').first().parent().parent().prev().trigger('click');
-          }
-        </script>
+        </ul>
       </div>
-      <script>
-        function heli_animation() {
-          current = $('#heli').attr('data-left')*1;
-          current = current - 5;
-          if (current < -100 && Math.random() < 0.03) current = $('#helicopter').width() + 100;
-          frame = $('#heli').attr('data-frame')*1; frame++; if (frame > 2) { frame = 0; }
-          $('#heli').attr('data-left',current).attr('data-frame',frame).css({'left':current,'background-position':-frame*83+'px 0px'});
-        }
-        window.setInterval(heli_animation, 60);
-      </script>
       <div class="content">        <div class="upper">
           <div class="inner">
           <h1>Silov&aacute; z&aacute;kladna</h1>
@@ -347,32 +329,6 @@
   <div id="bottom">
           
   </div>
-  
-<script>
-document.addEventListener("DOMContentLoaded",function(){
- const KEY="mhwiki-open";
- function save(){
-   const arr=[];
-   document.querySelectorAll("#main .side .group").forEach((g,i)=>{if(g.classList.contains("on"))arr.push(i);});
-   localStorage.setItem(KEY,JSON.stringify(arr));
- }
- setTimeout(()=>{
-   try{
-    const arr=JSON.parse(localStorage.getItem(KEY)||"[]");
-    const groups=document.querySelectorAll("#main .side .group");
-    arr.forEach(i=>{
-      const g=groups[i];
-      if(g){
-        g.classList.add("on");
-        const m=g.nextElementSibling;
-        if(m)m.style.display="block";
-      }
-    });
-   }catch(e){}
- },0);
- document.querySelectorAll("#main .side .group").forEach(g=>g.addEventListener("click",()=>setTimeout(save,0)));
-});
-</script>
 
 </body>
 

@@ -21,16 +21,7 @@ body { background: #45535c url('../images/bg-repeat.jpg') center top repeat-x; p
 #top .button_play input:hover { background: #c3fc2f; }
 #top .button_play input:active { border-bottom: 1px solid #b2fb36; border-top: 1px solid #12b5de; padding-top: 5px; padding-bottom: 1px; }
 
-#top #fb_like { position: absolute; top: 15px; right: 40px; height:30px;  border:1px solid yellow; display: inline-block; }
-#top .footer_button_facebook { position:absolute; top:8px; right:5px; background:url('../images/facebook_icon.png') no-repeat; width:24px; height:24px; }
-
 #bottom { height: 60px; width: 932px; margin: 0 auto; position: relative; }
-#bottom .language_selector_box { position:absolute; bottom: 0px;  right: 6px; color:#e4e4e4; font-weight:700; font-size:17px; z-index: 1; }
-#bottom .language_selector_box .game_language { display:none; white-space: nowrap; }
-#bottom .language_selector_box .language_bar { position:relative; display:inline-block; margin-left:10px; margin-top:2px; }
-#bottom .language_selector_box select { width: 180px; }
-#bottom div.pre_selector.native_mobile { background: #ca95b8; padding: 1px; border-radius: 8px; display: inline-block; }
-#bottom div.pre_selector.native_mobile select { outline: none; background: #bf8bad url('../images/logs/logs_small_arrow_down.png') right 10px center no-repeat; white-space: nowrap; color: #FFF; font-family: 'Roboto'; font-weight: 700; text-shadow: 0 2px rgba(0, 0, 0, 0.3); font-size: 20px; line-height: 36px; height: 40px; padding: 0px 20px 0px 5px; border: 0; border-top: 2px solid #fdfbfd; border-bottom: 2px solid #825d76; border-radius: 8px; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 #main { background: #0f1f35; margin: 0 auto; width: 960px; position: relative; border: 2px solid #feffff; border-radius: 20px; min-height: 332px; }
 #main .side { float: left; width: 200px; padding: 20px; }
@@ -480,106 +471,6 @@ span.weapon_zeta { margin-left:10px; content: ''; background: url('../images/mex
 span.weapon_immortal { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*8) -0px !important; background-size: auto 40px !important;  }
 span.weapon_chapo { margin-left:10px; content: ''; background: url('../images/mexican_weapons.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-position: calc(100%/9*9) -0px !important; background-size: auto 40px !important;  }
 
-.weapon_afr { margin-left:10px; background: url('../images/bosses/weapon_afr.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_addchain { margin-left:10px; background: url('../images/bosses/weapon_addchain.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_af47 { margin-left:10px; background: url('../images/bosses/weapon_af47.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_auk { margin-left:10px; background: url('../images/bosses/weapon_auk.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_bastardsword { margin-left:10px; background: url('../images/bosses/weapon_bastardsword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_bowarrow { margin-left:10px; background: url('../images/bosses/weapon_bowarrow.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_dagger { margin-left:10px; background: url('../images/bosses/weapon_dagger.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_f4001 { margin-left:10px; background: url('../images/bosses/weapon_f4001.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_fam { margin-left:10px; background: url('../images/bosses/weapon_fam.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_halberd { margin-left:10px; background: url('../images/bosses/weapon_halberd.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_katar { margin-left:10px; background: url('../images/bosses/weapon_katar.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_l99lsw { margin-left:10px; background: url('../images/bosses/weapon_l99lsw.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_m8a1 { margin-left:10px; background: url('../images/bosses/weapon_m8a1.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_m12a8 { margin-left:10px; background: url('../images/bosses/weapon_m12a8.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_mace { margin-left:10px; background: url('../images/bosses/weapon_mace.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_maul { margin-left:10px; background: url('../images/bosses/weapon_maul.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_ml4 { margin-left:10px; background: url('../images/bosses/weapon_ml4.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_mf5l { margin-left:10px; background: url('../images/bosses/weapon_mf5l.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_nunchuku { margin-left:10px; background: url('../images/bosses/weapon_nunchuku.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_f90 { margin-left:10px; background: url('../images/bosses/weapon_f90.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_polearnm { margin-left:10px; background: url('../images/bosses/weapon_polearm.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_ringsword { margin-left:10px; background: url('../images/bosses/weapon_ringsword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_rad { margin-left:10px; background: url('../images/bosses/weapon_rad.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_sai { margin-left:10px; background: url('../images/bosses/weapon_sai.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_scat { margin-left:10px; background: url('../images/bosses/weapon_scat.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_scythe { margin-left:10px; background: url('../images/bosses/weapon_scythe.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_sickle { margin-left:10px; background: url('../images/bosses/weapon_sickle.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_staff { margin-left:10px; background: url('../images/bosses/weapon_staff.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_swallow { margin-left:10px; background: url('../images/bosses/weapon_swallow.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_sword { margin-left:10px; background: url('../images/bosses/weapon_sword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_tao { margin-left:10px; background: url('../images/bosses/weapon_tao.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_tonfa { margin-left:10px; background: url('../images/bosses/weapon_tonfa.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_unp { margin-left:10px; background: url('../images/bosses/weapon_unp.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_miniuzi { margin-left:10px; background: url('../images/bosses/weapon_miniuzi.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_lector { margin-left:10px; background: url('../images/bosses/weapon_lector.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_wand { margin-left:10px; background: url('../images/bosses/weapon_wand.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_warhammer { margin-left:10px; background: url('../images/bosses/weapon_warhammer.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_m1140 { margin-left:10px; background: url('../images/bosses/weapon_m1140.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_riotshield { margin-left:10px; background: url('../images/bosses/weapon_riotshield.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_resistance { margin-left:10px; background: url('../images/bosses/weapon_resistance.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_flarret { margin-left:10px; background: url('../images/bosses/weapon_flarret.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_wf2001 { margin-left:10px; background: url('../images/bosses/weapon_wf2001.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_m13 { margin-left:10px; background: url('../images/bosses/weapon_m13.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_urp { margin-left:10px; background: url('../images/bosses/weapon_urp.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_sagnum { margin-left:10px; background: url('../images/bosses/weapon_sagnum.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_g9 { margin-left:10px; background: url('../images/bosses/weapon_g9.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_de { margin-left:10px; background: url('../images/bosses/weapon_de.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-
-.weapon_pp2002 { margin-left:10px; background: url('../images/bosses/weapon_pp2002.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_g88 { margin-left:10px; background: url('../images/bosses/weapon_g88.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_m99 { margin-left:10px; background: url('../images/bosses/weapon_m99.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_tsp { margin-left:10px; background: url('../images/bosses/weapon_tsp.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_flas { margin-left:10px; background: url('../images/bosses/weapon_flas.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_ff13 { margin-left:10px; background: url('../images/bosses/weapon_ff13.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_fliker { margin-left:10px; background: url('../images/bosses/weapon_fliker.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_tanger { margin-left:10px; background: url('../images/bosses/weapon_tanger.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_m2011 { margin-left:10px; background: url('../images/bosses/weapon_m2011.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_model1850 { margin-left:10px; background: url('../images/bosses/weapon_model1850.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_ag4 { margin-left:10px; background: url('../images/bosses/weapon_ag4.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_clumber { margin-left:10px; background: url('../images/bosses/weapon_clumber.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_fringer { margin-left:10px; background: url('../images/bosses/weapon_fringer.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_danglin { margin-left:10px; background: url('../images/bosses/weapon_danglin.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_sinkfield { margin-left:10px; background: url('../images/bosses/weapon_sinkfield.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_yariska { margin-left:10px; background: url('../images/bosses/weapon_yariska.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_mousien { margin-left:10px; background: url('../images/bosses/weapon_mousien.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_gar { margin-left:10px; background: url('../images/bosses/weapon_gar.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_pssr { margin-left:10px; background: url('../images/bosses/weapon_pssr.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_stv { margin-left:10px; background: url('../images/bosses/weapon_stv.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_housy { margin-left:10px; background: url('../images/bosses/weapon_housy.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_m22 { margin-left:10px; background: url('../images/bosses/weapon_m22.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_sgg { margin-left:10px; background: url('../images/bosses/weapon_sgg.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_carbine { margin-left:10px; background: url('../images/bosses/weapon_carbine.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_flompson { margin-left:10px; background: url('../images/bosses/weapon_flompson.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_gf48 { margin-left:10px; background: url('../images/bosses/weapon_gf48.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_type99 { margin-left:10px; background: url('../images/bosses/weapon_type99.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_ttsh { margin-left:10px; background: url('../images/bosses/weapon_ttsh.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_denchgun { margin-left:10px; background: url('../images/bosses/weapon_denchgun.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_doubleshotgun { margin-left:10px; background: url('../images/bosses/weapon_doubleshotgun.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_type887 { margin-left:10px; background: url('../images/bosses/weapon_type887.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_yar { margin-left:10px; background: url('../images/bosses/weapon_yar.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_dt88 { margin-left:10px; background: url('../images/bosses/weapon_dt88.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_mx51 { margin-left:10px; background: url('../images/bosses/weapon_mx51.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_vb56 { margin-left:10px; background: url('../images/bosses/weapon_vb56.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_crowning { margin-left:10px; background: url('../images/bosses/weapon_crowning.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_m9111 { margin-left:10px; background: url('../images/bosses/weapon_m9111.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_klambu { margin-left:10px; background: url('../images/bosses/weapon_klambu.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_gerardp39 { margin-left:10px; background: url('../images/bosses/weapon_gerardp39.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_tokkarov { margin-left:10px; background: url('../images/bosses/weapon_tokkarov.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_mag { margin-left:10px; background: url('../images/bosses/weapon_mag.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_heavyflail { margin-left:10px; background: url('../images/bosses/weapon_heavyflail.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_lightflail { margin-left:10px; background: url('../images/bosses/weapon_lightflail.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_direflail { margin-left:10px; background: url('../images/bosses/weapon_direflail.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_shortsword { margin-left:10px; background: url('../images/bosses/weapon_shortsword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_morningstar { margin-left:10px; background: url('../images/bosses/weapon_morningstar.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_longsword { margin-left:10px; background: url('../images/bosses/weapon_longsword.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_heavymace { margin-left:10px; background: url('../images/bosses/weapon_heavymace.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_lightmace { margin-left:10px; background: url('../images/bosses/weapon_lightmace.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_hookedhammer { margin-left:10px; background: url('../images/bosses/weapon_hookedhammer.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-.weapon_lightpick { margin-left:10px; background: url('../images/bosses/weapon_lightpick.png') no-repeat; width: 40px; height: 40px; display:inline-block; background-size: auto 40px !important; }
-table.bosses_special td.icon_attack::before,table.bosses_special td.icon_defence::before { margin-top:14px; }
 
 .poker_cards { margin-left:10px; }
 .poker_card { display:inline-block; width:50px; height:70px; background:url('../images/poker_cards.png') no-repeat; box-shadow:0px 0px 3px #222; border-radius:5px; }
@@ -588,8 +479,7 @@ table.bosses_special td.icon_attack::before,table.bosses_special td.icon_defence
 .poker_card.heart-queen { background-position:0px -770px; }
 .poker_card.heart-jack { background-position:0px -700px; }
 .poker_card.heart-ten { background-position:0px -630px; }
-.poker_card.heart-nine { background-position:0px -350px; }
-.poker_card.heart-seven { background-position:0px -560px; }
+.poker_card.heart-nine { background-position:0px -560px; }
 .poker_card.heart-six { background-position:0px -350px; }
 
 .poker_card.heart-seven { background-position:0px -420px; }
@@ -654,6 +544,7 @@ span.chemicals_sodium { margin-left:10px; content: ''; background: url('../image
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
 
 html { scroll-behavior: smooth; }
 
@@ -783,23 +674,6 @@ body::before {
   letter-spacing: .06em;
   text-shadow: none;
   text-transform: uppercase;
-}
-
-#top #fb_like { display: none !important; }
-
-#top .footer_button_facebook {
-  top: 41px;
-  left: 0;
-  right: auto;
-  width: 34px;
-  height: 34px;
-  padding: 7px;
-  border: 1px solid var(--mh-border);
-  border-radius: 50%;
-  background-color: rgba(15, 23, 42, .9);
-  background-position: center;
-  background-size: 20px;
-  box-shadow: var(--mh-shadow-soft);
 }
 
 #main {
@@ -1069,48 +943,8 @@ body::before {
   color: var(--mh-muted);
 }
 
-#bottom .language_selector_box {
-  position: relative;
-  right: auto;
-  bottom: auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: var(--mh-muted);
-  font-size: 14px;
-}
-
-#bottom div.pre_selector.native_mobile {
-  padding: 0;
-  border: 1px solid var(--mh-border);
-  border-radius: 10px;
-  background: rgba(15, 23, 42, .86);
-}
-
-#bottom div.pre_selector.native_mobile select {
-  height: 42px;
-  padding: 0 38px 0 13px;
-  border: 0;
-  border-radius: 10px;
-  background-color: transparent;
-  color: #e2e8f0;
-  font-size: 14px;
-  line-height: 42px;
-  font-weight: 700;
-  text-shadow: none;
-}
-
-/* Obecná poznámka o zdroji / footer vložený v článcích */
-.source-note,
-.wiki-source,
-footer,
-#footer {
-  color: #8190a6;
-  font-size: 13px;
-  line-height: 1.6;
-}
-
 /* Lepší focus pro klávesnici */
+#main .side div.group:focus-visible,
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -1120,43 +954,26 @@ select:focus-visible {
 }
 
 /* Responzivní tabulky */
-#main .content .lower { overflow-x: hidden; }
+#main .content { min-width: 0; }
+#main .content .lower { overflow-x: hidden; overflow-wrap: anywhere; }
 #main .content .lower table { max-width: 100%; }
 
 @media (max-width: 980px) {
-  body { padding: 14px 10px 28px; }
-
   #top {
     height: auto;
     min-height: 132px;
     padding: 8px 0 64px;
   }
 
-  #top .button_play {
-    top: auto;
-    right: 50%;
-    bottom: 4px;
-    transform: translateX(50%);
-  }
-
-  #top .button_play:hover { transform: translateX(50%) translateY(-2px); }
-  #top .footer_button_facebook { top: 14px; left: 4px; }
-
-  #main { border-radius: 18px; }
+  #top .button_play:hover { transform: translateX(-50%) translateY(-2px); }
 
   #main .side {
-    float: none;
-    width: 100%;
-    padding: 14px;
     border-right: 0;
     border-bottom: 1px solid var(--mh-border);
   }
 
   #main .side div.group { margin-top: 8px; }
 
-  #main .content {
-    margin: 16px;
-  }
 }
 
 @media (max-width: 680px) {
@@ -1176,19 +993,6 @@ select:focus-visible {
   #main .content .lower li,
   #main .content .log p { font-size: 15px; line-height: 1.65; }
 
-  #main .content .lower table {
-    display: block;
-    width: 100%;
-    margin: 12px 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  #main .content .lower table tbody {
-    min-width: 560px;
-  }
-
-  #bottom .language_selector_box { justify-content: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1201,10 +1005,7 @@ select:focus-visible {
 }
 
 
-/* Mafia Hunterss Wiki - mobile layout fix */
-*, *::before, *::after { box-sizing: border-box; }
-img { max-width: 100%; height: auto; }
-
+/* Mobile layout */
 @media (max-width: 980px) {
   html, body { width: 100%; min-width: 0; overflow-x: hidden; }
   body { padding: 8px 6px 24px; }
@@ -1266,9 +1067,6 @@ img { max-width: 100%; height: auto; }
   #main .content .upper .inner { padding: 12px; }
   #main .content .upper h1 { font-size: 26px; line-height: 1.2; overflow-wrap: anywhere; }
   #main .content .upper h2 { font-size: 19px; line-height: 1.3; }
-  #main .content .lower { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  #main .content .lower table { min-width: 520px; }
-
   .content-source {
     margin: 10px 12px 14px !important;
     overflow-wrap: anywhere;
@@ -1286,7 +1084,7 @@ img { max-width: 100%; height: auto; }
 }
 
 
-/* Mafia Hunterss Wiki - final table and boss icon revision */
+/* Responsive tables and boss weapon images */
 .boss-weapon-img {
   display: block;
   width: 48px;

@@ -5,17 +5,19 @@
   "menu_home": "Domů",
   "menu_about": "O hře",
   "menu_download": "Android",
+  "menu_iphone": "iPhone",
   "menu_news": "Novinky",
   "menu_game_news": "Novinky ve hře",
   "menu_gallery": "Galerie",
+  "nav_wiki": "Wiki",
   "menu_faq": "FAQ",
   "menu_contact": "Kontakt",
 
-  "home_pill": "🏙️ Herní město na platformě MafiaControl • od roku 2 015",
+  "home_pill": "🏙️ Herní město na platformě MafiaControl • od roku 2015",
   "home_lead": "Vybuduj vlastní mafiánské město, rozvíjej své impérium, přidej se k rodině a soupeř s ostatními hráči.",
 
   "play_online": "🎮 Hrát online",
-  "download_app": "📱 Stáhnout aplikaci",
+  "download_app": "📥 Stáhnout aplikaci",
   "about_game": "📖 O hře",
 
   "stat_year": "rok založení",
@@ -61,29 +63,26 @@
   "footer_about": "Mafia Hunterss je herní město provozované na platformě MafiaControl. Každý hráč si buduje vlastní mafiánské město a rozvíjí své impérium.",
   "footer_links_title": "Odkazy",
   "footer_project_title": "Projekt",
-  "footer_project_text": "Oficiální stránky herního města."
+  "footer_project_text": "Oficiální stránky herního města.",
 
   "about_page_title": "O hře",
-"about_page_lead": "Mafia Hunterss je herní město provozované na platformě MafiaControl od roku 2015.",
-"about_what_title": "Co je Mafia Hunterss?",
-"about_what_text_1": "Mafia Hunterss je vlastní herní město na platformě MafiaControl. Nejde o samostatný herní engine, ale o dlouhodobě provozovaný projekt se svojí komunitou, webem a Android aplikací.",
-"about_what_text_2": "Každý hráč si po registraci buduje vlastní mafiánské město. Postupně rozvíjí ekonomiku, získává respekt, spolupracuje s ostatními a soupeří o postavení v podsvětí.",
-"about_princip_title": "Princip hry",
-"about_princip_1": "vybuduj vlastní město,",
-"about_princip_2": "získávej peníze a respekt,",
-"about_princip_3": "přidej se k mafiánské rodině,",
-"about_princip_4": "soupeř s ostatními hráči,",
-"about_princip_5": "hraj v jednom z pěti jazyků."
+  "about_page_lead": "Mafia Hunterss je herní město provozované na platformě MafiaControl od roku 2015.",
+  "about_what_title": "Co je Mafia Hunterss?",
+  "about_what_text_1": "Mafia Hunterss je vlastní herní město na platformě MafiaControl. Nejde o samostatný herní engine, ale o dlouhodobě provozovaný projekt se svojí komunitou, webem a Android aplikací.",
+  "about_what_text_2": "Každý hráč si po registraci buduje vlastní mafiánské město. Postupně rozvíjí ekonomiku, získává respekt, spolupracuje s ostatními a soupeří o postavení v podsvětí.",
+  "about_princip_title": "Princip hry",
+  "about_princip_1": "vybuduj vlastní město,",
+  "about_princip_2": "získávej peníze a respekt,",
+  "about_princip_3": "přidej se k mafiánské rodině,",
+  "about_princip_4": "soupeř s ostatními hráči,",
+  "about_princip_5": "hraj v jednom z pěti jazyků.",
 
-  {
   "download_title": "Android aplikace",
   "download_lead": "Stáhni si oficiální Android aplikaci Mafia Hunterss a spusť hru jediným kliknutím.",
 
   "download_beta": "📱 Beta ukázka aplikace",
   "download_app_title": "Mafia Hunterss Android 2.0",
   "download_app_text": "Nová Android aplikace slouží jako jednoduchý launcher pro Mafia Hunterss. Po kliknutí na tlačítko Spustit hru se hra otevře ve výchozím internetovém prohlížeči.",
-  "download_app": "📥 Stáhnout aplikaci",
-  "play_online": "🎮 Hrát online",
 
   "download_preview_title": "📸 Náhled aplikace",
   "download_preview_note": "Obrázek je zatím z beta verze aplikace.",
@@ -115,9 +114,6 @@
   "download_planned_3": "🔔 Upozornění na novou verzi aplikace.",
   "download_planned_4": "🌍 Další drobná vylepšení.",
 
-  "android_app": "Android aplikace"
-
-  {
   "faq_title": "FAQ",
   "faq_lead": "Často kladené otázky.",
 
@@ -129,11 +125,19 @@
 
   "faq_q_3": "Má hra Android aplikaci?",
   "faq_a_3": "Ano, první verze aplikace je dostupná na stránce Android.",
+  "faq_android_button": "Zobrazit Android aplikaci",
 
   "faq_q_4": "V jakých jazycích je hra dostupná?",
-  "faq_a_4": "Web je dostupný v češtině, angličtině, němčině, polštině a slovenštině."
+  "faq_a_4": "Web je dostupný v češtině, angličtině, němčině, polštině a slovenštině.",
 
-  {
+  "faq_q_5": "Kde najdu návody ke hře?",
+  "faq_a_5": "Návody, informace o zaměstnáních, budovách, předmětech, příkazech a dalších herních mechanikách najdete v oficiální Mafia Hunterss Wiki.",
+  "faq_wiki_button": "Otevřít Mafia Hunterss Wiki",
+
+  "faq_q_6": "Co mám dělat, když ve Wiki nenajdu potřebnou informaci?",
+  "faq_a_6": "Pokud ve Wiki některá informace chybí nebo je zastaralá, napište nám prostřednictvím kontaktní stránky. Wiki průběžně rozšiřujeme podle zpětné vazby hráčů.",
+  "faq_contact_button": "Kontaktovat nás",
+
   "contact_title": "Kontakt",
   "contact_lead": "Kontakt a odkazy projektu Mafia Hunterss.",
   "contact_web_title": "Oficiální web",
@@ -141,7 +145,4 @@
   "contact_support_title": "Podpora a komunita",
   "contact_support_text": "Sem později doplníme Facebook, e-mail, Discord nebo další kontakty.",
   "contact_support_tip": "Tip: po zřízení e-mailu můžeš používat například support@mafiahunterss.eu."
-}
-}
-}
 }
