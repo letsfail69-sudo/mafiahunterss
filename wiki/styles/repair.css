@@ -45,3 +45,20 @@ img { max-width:100%; height:auto; }
   #main .content .lower { padding:10px 7px 16px !important; }
   .boss-weapon-img { width:50px !important; height:50px !important; min-width:50px; }
 }
+#main .side .menu {
+  display: none;
+}
+
+#main .side .group.on + .menu {
+  display: block;
+}
+
+#main .side .group {
+  cursor: pointer;
+  user-select: none;
+}
+
+#main .side .group:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
