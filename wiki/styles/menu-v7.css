@@ -1,0 +1,19 @@
+/* Mafia Hunterss Wiki – accordion menu v7 */
+#main .side > ul.menu {
+  display: none !important;
+}
+
+#main .side > ul.menu.is-open,
+#main .side > .group.on + ul.menu {
+  display: block !important;
+}
+
+#main .side > .group {
+  cursor: pointer;
+  user-select: none;
+}
+
+#main .side > .group:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

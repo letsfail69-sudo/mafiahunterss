@@ -1143,3 +1143,17 @@ select:focus-visible {
     height: 42px;
   }
 }
+
+
+/* MHWIKI MENU FAILSAFE V6 */
+#main .side .menu { display: none; }
+#main .side .group.on + .menu { display: block; }
+#main .side .group { cursor: pointer; user-select: none; }
+#main .side .group:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+@media (max-width: 980px) {
+  #main { display: flex; flex-direction: column; }
+  #main .side { order: 1; float: none; width: 100%; box-sizing: border-box; }
+  #main .content { order: 2; min-width: 0; box-sizing: border-box; }
+  #main .content img { max-width: 100%; height: auto; }
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
