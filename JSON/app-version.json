@@ -1,9 +1,14 @@
 {
+  "versionCode": 36,
+  "versionName": "5.0",
   "version": "5.0",
-  "build": "500",
+  "build": "36",
   "releaseDate": "26.7.2026",
-  "apkSize": "22 MB",
+  "date": "26.7.2026",
+  "apkSize": "Doplň velikost APK",
   "minAndroid": "5.0",
   "downloadUrl": "https://github.com/letsfail69-sudo/mafiahunterss/releases/download/Aplikace/Mafiahunterss50.apk",
-  "apkName": "Mafiahunterss50.apk"
+  "apkName": "Mafiahunterss50.apk",
+  "changelog": "Novinky, eventy, integrovaný herní prohlížeč, vylepšené platební okno, opravy chyb a vyšší stabilita.",
+  "forceUpdate": false
 }
