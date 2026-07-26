@@ -1,6 +1,9 @@
 {
-  "version": "Verze 5.0",
+  "version": "5.0",
+  "build": "500",
+  "releaseDate": "26.7.2026",
+  "apkSize": "22 MB",
+  "minAndroid": "5.0",
   "downloadUrl": "https://github.com/letsfail69-sudo/mafiahunterss/releases/download/Aplikace/Mafiahunterss50.apk",
-  "apkName": "Mafiahunterss50.apk",
-  "date": "26.7.2026"
+  "apkName": "Mafiahunterss50.apk"
 }
