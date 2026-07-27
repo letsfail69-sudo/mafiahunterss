@@ -24,7 +24,7 @@
           '<a href="https://mafiahunterss.eu/wiki/" class="mh-active" aria-current="page">Wiki</a>',
           '<a href="https://mafiahunterss.eu/faq.html">FAQ</a>',
           '<a href="https://mafiahunterss.eu/contact.html">Kontakt</a>',
-          '<a href="https://mafiahunterss.mafiacontrol.com/" target="_blank" rel="noopener" class="mh-play">🎮 Hrát</a>',
+          '<a href="https://mafiahunterss.com/" target="_blank" rel="noopener" class="mh-play">🎮 Hrát</a>',
         '</nav>',
       '</div>'
     ].join('');
