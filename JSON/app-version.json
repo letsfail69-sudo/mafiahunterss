@@ -1,6 +1,14 @@
 {
-  "version": "Beta Verze",
-  "downloadUrl": "https://github.com/letsfail69-sudo/mafiahunterss/releases/download/Aplikace/MafiaHunterssBetaverze2.apk",
-  "apkName": "MafiaHunterssBeta.apk",
-  "date": "12.7.2026"
+  "versionCode": 35,
+  "versionName": "5.0",
+  "version": "5.0",
+  "build": "35",
+  "releaseDate": "26.7.2026",
+  "date": "26.7.2026",
+  "apkSize": "Doplň velikost APK",
+  "minAndroid": "5.0",
+  "downloadUrl": "https://github.com/letsfail69-sudo/mafiahunterss/releases/download/Aplikace/MafiaHunterss50.apk",
+  "apkName": "MafiaHunterss50.apk",
+  "changelog": "Novinky, eventy, integrovaný herní prohlížeč, vylepšené platební okno, opravy chyb a vyšší stabilita.",
+  "forceUpdate": false
 }

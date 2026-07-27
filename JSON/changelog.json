@@ -1,0 +1,13 @@
+{
+  "plannedVersion": "5.1",
+  "plannedFeatures": [
+    "📋 Přidána historie verzí přímo v aplikaci.",
+    "🌐 Vylepšená kontrola internetového připojení.",
+    "🟢 Zobrazení dostupnosti herního serveru.",
+    "🔔 Podpora push notifikací přes Firebase Cloud Messaging.",
+    "🛠️ Další opravy a optimalizace WebView.",
+    "💳 Vylepšení platebního okna a celkové stability aplikace.",
+    "⚡ Optimalizace výkonu a rychlejší spouštění aplikace.",
+    "🐞 Opravy nahlášených chyb a drobná vylepšení uživatelského prostředí."
+  ]
+}
