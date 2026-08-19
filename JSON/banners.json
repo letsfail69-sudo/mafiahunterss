@@ -1,13 +1,13 @@
 [
   {
-    "id": "diamond-sale-august-2026",
+    "id": "diamond-sale-september-2026",
     "active": true,
     "priority": 10,
     "title": "💎 Výprodej diamantů",
     "text": "Speciální časově omezená nabídka diamantů pro hráče Mafia Hunterss.",
-    "showFrom": "2026-07-14T00:00:00+02:00",
-    "eventFrom": "2026-08-03T10:00:00+02:00",
-    "eventTo": "2026-08-06T10:00:00+02:00",
+    "showFrom": "2026-09-01T00:00:00+02:00",
+    "eventFrom": "2026-09-11T10:00:00+02:00",
+    "eventTo": "2026-09-14T10:00:00+02:00",
     "image": "https://mafiahunterss.eu/obr%C3%A1zky/ChatGPT%20Image%2015.%207.%202026%2010_32_12.png",
     "buttonText": "🎮 Spustit hru",
     "buttonUrl": "https://mafiahunterss.com/"
